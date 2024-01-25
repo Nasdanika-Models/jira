@@ -2,5 +2,66 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="jira" nsURI="ecore://nasdanika.org/models/jira" nsPrefix="org.nasdanika.models.jira">
   <eClassifiers xsi:type="ecore:EClass" name="User"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Project"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Project" eSuperTypes="#//IssueSource">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
+        eType="#//Issue" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//Category" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="releases" upperBound="-1"
+        eType="#//Release" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
+        eType="#//UserRole" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueCollectors" upperBound="-1"
+        eType="#//IssueCollector" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UserRole">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
+        eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" eType="#//Role"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Issue" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//Category" eOpposite="#//Category/issues"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versions" upperBound="-1"
+        eType="#//Release" eOpposite="#//Release/issues"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignee" upperBound="-1"
+        eType="#//User"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Initiative" eSuperTypes="#//Issue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="epics" upperBound="-1"
+        eType="#//Epic" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Epic" eSuperTypes="#//Issue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stories" upperBound="-1"
+        eType="#//Story" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Story" eSuperTypes="#//Issue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subTasks" upperBound="-1"
+        eType="#//Subtask" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="#//Story"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Subtask" eSuperTypes="#//Issue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Category">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
+        eType="#//Issue" eOpposite="#//Issue/categories"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Release">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
+        eType="#//Issue" eOpposite="#//Issue/versions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueCollector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueSource" abstract="true">
+    <eOperations name="getIssues" upperBound="-1" eType="#//Issue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Filter" eSuperTypes="#//IssueSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Board" eSuperTypes="#//IssueSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Plan">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueSources" upperBound="-1"
+        eType="#//IssueSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Program">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="plans" upperBound="-1"
+        eType="#//Plan"/>
+  </eClassifiers>
 </ecore:EPackage>

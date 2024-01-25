@@ -58,6 +58,20 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 		switch (eClass.getClassifierID()) {
 			case JiraPackage.USER: return createUser();
 			case JiraPackage.PROJECT: return createProject();
+			case JiraPackage.ROLE: return createRole();
+			case JiraPackage.USER_ROLE: return createUserRole();
+			case JiraPackage.INITIATIVE: return createInitiative();
+			case JiraPackage.EPIC: return createEpic();
+			case JiraPackage.STORY: return createStory();
+			case JiraPackage.TASK: return createTask();
+			case JiraPackage.SUBTASK: return createSubtask();
+			case JiraPackage.CATEGORY: return createCategory();
+			case JiraPackage.RELEASE: return createRelease();
+			case JiraPackage.ISSUE_COLLECTOR: return createIssueCollector();
+			case JiraPackage.FILTER: return createFilter();
+			case JiraPackage.BOARD: return createBoard();
+			case JiraPackage.PLAN: return createPlan();
+			case JiraPackage.PROGRAM: return createProgram();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -83,6 +97,160 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public Project createProject() {
 		ProjectImpl project = new ProjectImpl();
 		return project;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Role createRole() {
+		RoleImpl role = new RoleImpl();
+		return role;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserRole createUserRole() {
+		UserRoleImpl userRole = new UserRoleImpl();
+		return userRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Initiative createInitiative() {
+		InitiativeImpl initiative = new InitiativeImpl();
+		return initiative;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Epic createEpic() {
+		EpicImpl epic = new EpicImpl();
+		return epic;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Story createStory() {
+		StoryImpl story = new StoryImpl();
+		return story;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Task createTask() {
+		TaskImpl task = new TaskImpl();
+		return task;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Subtask createSubtask() {
+		SubtaskImpl subtask = new SubtaskImpl();
+		return subtask;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Category createCategory() {
+		CategoryImpl category = new CategoryImpl();
+		return category;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Release createRelease() {
+		ReleaseImpl release = new ReleaseImpl();
+		return release;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IssueCollector createIssueCollector() {
+		IssueCollectorImpl issueCollector = new IssueCollectorImpl();
+		return issueCollector;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Filter createFilter() {
+		FilterImpl filter = new FilterImpl();
+		return filter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Board createBoard() {
+		BoardImpl board = new BoardImpl();
+		return board;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Plan createPlan() {
+		PlanImpl plan = new PlanImpl();
+		return plan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Program createProgram() {
+		ProgramImpl program = new ProgramImpl();
+		return program;
 	}
 
 	/**

@@ -38,4 +38,5 @@ Jira objects can be loaded and cross-referenced with internal organization objec
 ## Resources
 
 * https://www.baeldung.com/jira-rest-api - an old article explaining how to use Jira Java API
-* https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/5.2.6 - Jira client in Maven Central
+* https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-api/5.2.7 - Jira client in Maven Central
+* [Javadoc](https://javadoc.io/doc/com.atlassian.jira/jira-rest-java-client-api/latest/index.html) 
