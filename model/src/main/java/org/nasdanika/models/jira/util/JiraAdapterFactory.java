@@ -11,6 +11,8 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.nasdanika.models.jira.*;
 
+import org.nasdanika.ncore.Reference;
+
 /**
  * <!-- begin-user-doc -->
  * The <b>Adapter Factory</b> for the model.
@@ -68,76 +70,148 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 	protected JiraSwitch<Adapter> modelSwitch =
 		new JiraSwitch<Adapter>() {
 			@Override
-			public Adapter caseUser(User object) {
-				return createUserAdapter();
+			public Adapter caseJira(Jira object) {
+				return createJiraAdapter();
 			}
 			@Override
-			public Adapter caseProject(Project object) {
-				return createProjectAdapter();
+			public Adapter caseAddressableEntity(AddressableEntity object) {
+				return createAddressableEntityAdapter();
 			}
 			@Override
-			public Adapter caseRole(Role object) {
-				return createRoleAdapter();
+			public Adapter caseNamedEntity(NamedEntity object) {
+				return createNamedEntityAdapter();
 			}
 			@Override
-			public Adapter caseUserRole(UserRole object) {
-				return createUserRoleAdapter();
+			public <T> Adapter caseIdentifiableEntity(IdentifiableEntity<T> object) {
+				return createIdentifiableEntityAdapter();
+			}
+			@Override
+			public Adapter caseAdressableNamedEntity(AdressableNamedEntity object) {
+				return createAdressableNamedEntityAdapter();
+			}
+			@Override
+			public <T> Adapter caseAdressableNamedIdentifiableEntity(AdressableNamedIdentifiableEntity<T> object) {
+				return createAdressableNamedIdentifiableEntityAdapter();
+			}
+			@Override
+			public Adapter caseBasicIssue(BasicIssue object) {
+				return createBasicIssueAdapter();
+			}
+			@Override
+			public Adapter caseIssueReference(IssueReference object) {
+				return createIssueReferenceAdapter();
 			}
 			@Override
 			public Adapter caseIssue(Issue object) {
 				return createIssueAdapter();
 			}
 			@Override
-			public Adapter caseInitiative(Initiative object) {
-				return createInitiativeAdapter();
+			public Adapter caseVersion(Version object) {
+				return createVersionAdapter();
 			}
 			@Override
-			public Adapter caseEpic(Epic object) {
-				return createEpicAdapter();
+			public Adapter caseBasicUser(BasicUser object) {
+				return createBasicUserAdapter();
 			}
 			@Override
-			public Adapter caseStory(Story object) {
-				return createStoryAdapter();
+			public Adapter caseUser(User object) {
+				return createUserAdapter();
 			}
 			@Override
-			public Adapter caseTask(Task object) {
-				return createTaskAdapter();
+			public Adapter caseAttachment(Attachment object) {
+				return createAttachmentAdapter();
+			}
+			@Override
+			public Adapter caseChangelogGroup(ChangelogGroup object) {
+				return createChangelogGroupAdapter();
+			}
+			@Override
+			public Adapter caseChangelogItem(ChangelogItem object) {
+				return createChangelogItemAdapter();
+			}
+			@Override
+			public Adapter caseComment(Comment object) {
+				return createCommentAdapter();
+			}
+			@Override
+			public Adapter caseVisibility(Visibility object) {
+				return createVisibilityAdapter();
+			}
+			@Override
+			public Adapter caseBasicComponent(BasicComponent object) {
+				return createBasicComponentAdapter();
+			}
+			@Override
+			public Adapter caseIssueField(IssueField object) {
+				return createIssueFieldAdapter();
+			}
+			@Override
+			public Adapter caseIssueLink(IssueLink object) {
+				return createIssueLinkAdapter();
+			}
+			@Override
+			public Adapter caseOperations(Operations object) {
+				return createOperationsAdapter();
+			}
+			@Override
+			public Adapter caseBasicPriority(BasicPriority object) {
+				return createBasicPriorityAdapter();
+			}
+			@Override
+			public Adapter caseBasicProject(BasicProject object) {
+				return createBasicProjectAdapter();
+			}
+			@Override
+			public Adapter caseProjectReference(ProjectReference object) {
+				return createProjectReferenceAdapter();
+			}
+			@Override
+			public Adapter caseProject(Project object) {
+				return createProjectAdapter();
+			}
+			@Override
+			public Adapter caseBasicProjectRole(BasicProjectRole object) {
+				return createBasicProjectRoleAdapter();
+			}
+			@Override
+			public Adapter caseResolution(Resolution object) {
+				return createResolutionAdapter();
+			}
+			@Override
+			public Adapter caseStatus(Status object) {
+				return createStatusAdapter();
+			}
+			@Override
+			public Adapter caseStatusCategory(StatusCategory object) {
+				return createStatusCategoryAdapter();
 			}
 			@Override
 			public Adapter caseSubtask(Subtask object) {
 				return createSubtaskAdapter();
 			}
 			@Override
-			public Adapter caseCategory(Category object) {
-				return createCategoryAdapter();
+			public Adapter caseTimeTracking(TimeTracking object) {
+				return createTimeTrackingAdapter();
 			}
 			@Override
-			public Adapter caseRelease(Release object) {
-				return createReleaseAdapter();
+			public Adapter caseBasicVotes(BasicVotes object) {
+				return createBasicVotesAdapter();
 			}
 			@Override
-			public Adapter caseIssueCollector(IssueCollector object) {
-				return createIssueCollectorAdapter();
+			public Adapter caseBasicWatchers(BasicWatchers object) {
+				return createBasicWatchersAdapter();
 			}
 			@Override
-			public Adapter caseIssueSource(IssueSource object) {
-				return createIssueSourceAdapter();
+			public Adapter caseWorklog(Worklog object) {
+				return createWorklogAdapter();
 			}
 			@Override
-			public Adapter caseFilter(Filter object) {
-				return createFilterAdapter();
+			public Adapter caseIssueType(IssueType object) {
+				return createIssueTypeAdapter();
 			}
 			@Override
-			public Adapter caseBoard(Board object) {
-				return createBoardAdapter();
-			}
-			@Override
-			public Adapter casePlan(Plan object) {
-				return createPlanAdapter();
-			}
-			@Override
-			public Adapter caseProgram(Program object) {
-				return createProgramAdapter();
+			public <T> Adapter caseReference(Reference<T> object) {
+				return createReferenceAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -160,58 +234,114 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.User <em>User</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Jira <em>Jira</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.User
+	 * @see org.nasdanika.models.jira.Jira
 	 * @generated
 	 */
-	public Adapter createUserAdapter() {
+	public Adapter createJiraAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Project <em>Project</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.AddressableEntity <em>Addressable Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Project
+	 * @see org.nasdanika.models.jira.AddressableEntity
 	 * @generated
 	 */
-	public Adapter createProjectAdapter() {
+	public Adapter createAddressableEntityAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Role <em>Role</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.NamedEntity <em>Named Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Role
+	 * @see org.nasdanika.models.jira.NamedEntity
 	 * @generated
 	 */
-	public Adapter createRoleAdapter() {
+	public Adapter createNamedEntityAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.UserRole <em>User Role</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IdentifiableEntity <em>Identifiable Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.UserRole
+	 * @see org.nasdanika.models.jira.IdentifiableEntity
 	 * @generated
 	 */
-	public Adapter createUserRoleAdapter() {
+	public Adapter createIdentifiableEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.AdressableNamedEntity <em>Adressable Named Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.AdressableNamedEntity
+	 * @generated
+	 */
+	public Adapter createAdressableNamedEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.AdressableNamedIdentifiableEntity <em>Adressable Named Identifiable Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.AdressableNamedIdentifiableEntity
+	 * @generated
+	 */
+	public Adapter createAdressableNamedIdentifiableEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicIssue <em>Basic Issue</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.BasicIssue
+	 * @generated
+	 */
+	public Adapter createBasicIssueAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueReference <em>Issue Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.IssueReference
+	 * @generated
+	 */
+	public Adapter createIssueReferenceAdapter() {
 		return null;
 	}
 
@@ -230,58 +360,282 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Initiative <em>Initiative</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Version <em>Version</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Initiative
+	 * @see org.nasdanika.models.jira.Version
 	 * @generated
 	 */
-	public Adapter createInitiativeAdapter() {
+	public Adapter createVersionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Epic <em>Epic</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicUser <em>Basic User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Epic
+	 * @see org.nasdanika.models.jira.BasicUser
 	 * @generated
 	 */
-	public Adapter createEpicAdapter() {
+	public Adapter createBasicUserAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Story <em>Story</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.User <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Story
+	 * @see org.nasdanika.models.jira.User
 	 * @generated
 	 */
-	public Adapter createStoryAdapter() {
+	public Adapter createUserAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Task <em>Task</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Attachment <em>Attachment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Task
+	 * @see org.nasdanika.models.jira.Attachment
 	 * @generated
 	 */
-	public Adapter createTaskAdapter() {
+	public Adapter createAttachmentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.ChangelogGroup <em>Changelog Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.ChangelogGroup
+	 * @generated
+	 */
+	public Adapter createChangelogGroupAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.ChangelogItem <em>Changelog Item</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.ChangelogItem
+	 * @generated
+	 */
+	public Adapter createChangelogItemAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Comment <em>Comment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Comment
+	 * @generated
+	 */
+	public Adapter createCommentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Visibility <em>Visibility</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Visibility
+	 * @generated
+	 */
+	public Adapter createVisibilityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicComponent <em>Basic Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.BasicComponent
+	 * @generated
+	 */
+	public Adapter createBasicComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueField <em>Issue Field</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.IssueField
+	 * @generated
+	 */
+	public Adapter createIssueFieldAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueLink <em>Issue Link</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.IssueLink
+	 * @generated
+	 */
+	public Adapter createIssueLinkAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Operations <em>Operations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Operations
+	 * @generated
+	 */
+	public Adapter createOperationsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicPriority <em>Basic Priority</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.BasicPriority
+	 * @generated
+	 */
+	public Adapter createBasicPriorityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicProject <em>Basic Project</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.BasicProject
+	 * @generated
+	 */
+	public Adapter createBasicProjectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.ProjectReference <em>Project Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.ProjectReference
+	 * @generated
+	 */
+	public Adapter createProjectReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Project <em>Project</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Project
+	 * @generated
+	 */
+	public Adapter createProjectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicProjectRole <em>Basic Project Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.BasicProjectRole
+	 * @generated
+	 */
+	public Adapter createBasicProjectRoleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Resolution <em>Resolution</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Resolution
+	 * @generated
+	 */
+	public Adapter createResolutionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Status <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Status
+	 * @generated
+	 */
+	public Adapter createStatusAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.StatusCategory <em>Status Category</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.StatusCategory
+	 * @generated
+	 */
+	public Adapter createStatusCategoryAdapter() {
 		return null;
 	}
 
@@ -300,114 +654,86 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Category <em>Category</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.TimeTracking <em>Time Tracking</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Category
+	 * @see org.nasdanika.models.jira.TimeTracking
 	 * @generated
 	 */
-	public Adapter createCategoryAdapter() {
+	public Adapter createTimeTrackingAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Release <em>Release</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicVotes <em>Basic Votes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Release
+	 * @see org.nasdanika.models.jira.BasicVotes
 	 * @generated
 	 */
-	public Adapter createReleaseAdapter() {
+	public Adapter createBasicVotesAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueCollector <em>Issue Collector</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.BasicWatchers <em>Basic Watchers</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.IssueCollector
+	 * @see org.nasdanika.models.jira.BasicWatchers
 	 * @generated
 	 */
-	public Adapter createIssueCollectorAdapter() {
+	public Adapter createBasicWatchersAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueSource <em>Issue Source</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Worklog <em>Worklog</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.IssueSource
+	 * @see org.nasdanika.models.jira.Worklog
 	 * @generated
 	 */
-	public Adapter createIssueSourceAdapter() {
+	public Adapter createWorklogAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Filter <em>Filter</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.IssueType <em>Issue Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Filter
+	 * @see org.nasdanika.models.jira.IssueType
 	 * @generated
 	 */
-	public Adapter createFilterAdapter() {
+	public Adapter createIssueTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Board <em>Board</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.ncore.Reference <em>Reference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Board
+	 * @see org.nasdanika.ncore.Reference
 	 * @generated
 	 */
-	public Adapter createBoardAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Plan <em>Plan</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Plan
-	 * @generated
-	 */
-	public Adapter createPlanAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Program <em>Program</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.nasdanika.models.jira.Program
-	 * @generated
-	 */
-	public Adapter createProgramAdapter() {
+	public Adapter createReferenceAdapter() {
 		return null;
 	}
 

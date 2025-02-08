@@ -36,12 +36,12 @@ import org.nasdanika.graph.processor.NopEndpointProcessorConfigFactory;
 import org.nasdanika.graph.processor.ProcessorConfig;
 import org.nasdanika.graph.processor.ProcessorInfo;
 import org.nasdanika.graph.processor.emf.EObjectNodeProcessorReflectiveFactory;
-import org.nasdanika.html.model.app.Action;
-import org.nasdanika.html.model.app.Label;
-import org.nasdanika.html.model.app.Link;
-import org.nasdanika.html.model.app.gen.ActionSiteGenerator;
-import org.nasdanika.html.model.app.graph.WidgetFactory;
-import org.nasdanika.html.model.app.graph.emf.EObjectReflectiveProcessorFactoryProvider;
+import org.nasdanika.models.app.Action;
+import org.nasdanika.models.app.Label;
+import org.nasdanika.models.app.Link;
+import org.nasdanika.models.app.gen.AppSiteGenerator;
+import org.nasdanika.models.app.graph.WidgetFactory;
+import org.nasdanika.models.app.graph.emf.EObjectReflectiveProcessorFactoryProvider;
 import org.nasdanika.models.ecore.graph.EcoreGraphFactory;
 import org.nasdanika.models.ecore.graph.processors.EcoreNodeProcessorFactory;
 import org.nasdanika.models.jira.JiraPackage;
@@ -166,7 +166,7 @@ public class TestJiraModelDocGen {
 		URI pageTemplateURI = URI.createFileURI(new File(pageTemplateResource).getAbsolutePath());//.appendFragment("/");
 		
 		String siteMapDomain = "https://jira.models.nasdanika.org";		
-		ActionSiteGenerator actionSiteGenerator = new ActionSiteGenerator() {
+		AppSiteGenerator actionSiteGenerator = new AppSiteGenerator() {
 			
 			protected boolean isDeleteOutputPath(String path) {
 				return !"CNAME".equals(path);				
@@ -187,7 +187,7 @@ public class TestJiraModelDocGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 128) {
+		if (errors.size() != 0) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}		
 	}

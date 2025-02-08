@@ -1,67 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="jira" nsURI="ecore://nasdanika.org/models/jira" nsPrefix="org.nasdanika.models.jira">
-  <eClassifiers xsi:type="ecore:EClass" name="User"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Project" eSuperTypes="#//IssueSource">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
-        eType="#//Issue" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
-        eType="#//Category" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="releases" upperBound="-1"
-        eType="#//Release" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Jira">
     <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
-        eType="#//UserRole" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="issueCollectors" upperBound="-1"
-        eType="#//IssueCollector" containment="true"/>
+        eType="#//User" containment="true" eKeys="#//BasicUser/accountId"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" eType="#//Project"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Role"/>
-  <eClassifiers xsi:type="ecore:EClass" name="UserRole">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
-        eType="#//User"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="role" eType="#//Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AddressableEntity" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="self" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Issue" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
-        eType="#//Category" eOpposite="#//Category/issues"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedEntity" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IdentifiableEntity" abstract="true">
+    <eTypeParameters name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
+      <eGenericType eTypeParameter="#//IdentifiableEntity/T"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AdressableNamedEntity" abstract="true"
+      eSuperTypes="#//AddressableEntity #//NamedEntity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AdressableNamedIdentifiableEntity" abstract="true">
+    <eTypeParameters name="T"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedEntity"/>
+    <eGenericSuperTypes eClassifier="#//IdentifiableEntity">
+      <eTypeArguments eTypeParameter="#//AdressableNamedIdentifiableEntity/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicIssue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//AddressableEntity"/>
+    <eGenericSuperTypes eClassifier="#//IdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueReference">
+    <eGenericSuperTypes eClassifier="#//BasicIssue"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.nasdanika.ncore/model/ncore.ecore#//Reference">
+      <eTypeArguments eClassifier="#//Issue"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Issue" eSuperTypes="#//BasicIssue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="affectedVersions" upperBound="-1"
+        eType="#//Version"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignee" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachments" upperBound="-1"
+        eType="#//Attachment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="changelog" upperBound="-1"
+        eType="#//ChangelogGroup" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comments" upperBound="-1"
+        eType="#//Comment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="#//BasicComponent"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dueDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expandos" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fixVersions" upperBound="-1"
+        eType="#//Version"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueFields" upperBound="-1"
+        eType="#//IssueField" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueLinks" upperBound="-1"
+        eType="#//IssueLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueType" eType="#//IssueType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="labels" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operations" eType="#//Operations"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="priority" eType="#//BasicPriority"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="project" eType="#//BasicProject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reporter" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resolution" eType="#//Resolution"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//Status"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subtasks" upperBound="-1"
+        eType="#//Subtask" containment="true" eKeys="#//Subtask/issueKey"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="summary" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timeTracking" eType="#//TimeTracking"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transitionsUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="votes" eType="#//BasicVotes"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="watchers" eType="#//BasicWatchers"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="worklogs" upperBound="-1"
+        eType="#//Worklog" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Version" eSuperTypes="#//AdressableNamedEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isArchived" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isReleased" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="releaseDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicUser" eSuperTypes="#//AdressableNamedEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accountId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User" eSuperTypes="#//BasicUser">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="emailAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timezone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment" eSuperTypes="#//AddressableEntity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="thumbnailUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChangelogGroup">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="created" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="items" upperBound="-1"
+        eType="#//ChangelogItem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChangelogItem">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="field" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="custom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comment">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="self" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="updateAuthor" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="visibility" eType="#//Visibility"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Visibility">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicComponent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueField">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eGenericSuperTypes eClassifier="#//NamedEntity"/>
+    <eGenericSuperTypes eClassifier="#//IdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueLink">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inbound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetIssueKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetIssueUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operations"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicPriority">
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicProject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectReference">
+    <eGenericSuperTypes eClassifier="#//BasicProject"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.nasdanika.ncore/model/ncore.ecore#//Reference">
+      <eTypeArguments eClassifier="#//Project"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Project" eSuperTypes="#//BasicProject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="#//BasicComponent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expandos" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueTypes" upperBound="-1"
+        eType="#//IssueType" containment="true" eKeys="#//IdentifiableEntity/id"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lead" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projectRoles" upperBound="-1"
+        eType="#//BasicProjectRole" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="versions" upperBound="-1"
-        eType="#//Release" eOpposite="#//Release/issues"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="assignee" upperBound="-1"
-        eType="#//User"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Initiative" eSuperTypes="#//Issue">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="epics" upperBound="-1"
-        eType="#//Epic" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Epic" eSuperTypes="#//Issue">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="stories" upperBound="-1"
-        eType="#//Story" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Story" eSuperTypes="#//Issue">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subTasks" upperBound="-1"
-        eType="#//Subtask" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="#//Story"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Subtask" eSuperTypes="#//Issue"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Category">
+        eType="#//Version" containment="true" eKeys="#//Version/id"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
-        eType="#//Issue" eOpposite="#//Issue/categories"/>
+        eType="#//BasicIssue" containment="true" eKeys="#//BasicIssue/key"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statusCategories" upperBound="-1"
+        eType="#//StatusCategory" containment="true" eKeys="#//IdentifiableEntity/id"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Release">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="issues" upperBound="-1"
-        eType="#//Issue" eOpposite="#//Issue/versions"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicProjectRole" eSuperTypes="#//AdressableNamedEntity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Resolution">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="IssueCollector"/>
-  <eClassifiers xsi:type="ecore:EClass" name="IssueSource" abstract="true">
-    <eOperations name="getIssues" upperBound="-1" eType="#//Issue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Status">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iconUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//StatusCategory"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Filter" eSuperTypes="#//IssueSource"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Board" eSuperTypes="#//IssueSource"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Plan">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="issueSources" upperBound="-1"
-        eType="#//IssueSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StatusCategory">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Program">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="plans" upperBound="-1"
-        eType="#//Plan"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Subtask">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issueKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueType" eType="#//IssueType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issueUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//Status"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="summary" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimeTracking">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalEstimateMinutes"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="remainingEstimateMinutes"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeSpentMinutes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicVotes" eSuperTypes="#//AddressableEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasVoted" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="votes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicWatchers" eSuperTypes="#//AddressableEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isWatching" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numWatchers" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Worklog" eSuperTypes="#//AddressableEntity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issueUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minutesSpent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="updateAuthor" eType="#//BasicUser"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="visibility" eType="#//Visibility"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iconUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSubtask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eGenericSuperTypes eClassifier="#//AdressableNamedIdentifiableEntity">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </eGenericSuperTypes>
   </eClassifiers>
 </ecore:EPackage>

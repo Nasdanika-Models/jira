@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nasdanika.models.jira</groupId>
-		<version>2024.1.0</version>
+		<version>2025.2.0</version>
 		<artifactId>parent</artifactId>
 		<relativePath>..</relativePath>
 	</parent>
@@ -58,9 +58,41 @@
 
 	<dependencies>	
 		<dependency>
-		    <groupId>org.eclipse.emf</groupId>
-		    <artifactId>org.eclipse.emf.ecore</artifactId>
-		    <version>2.35.0</version>
-		</dependency> 		
+		    <groupId>org.nasdanika.core</groupId>
+		    <artifactId>ncore</artifactId>
+		    <version>${core.version}</version>
+		</dependency>
+		 		
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-rest-java-client-api</artifactId>
+            <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-rest-java-client-core</artifactId>
+            <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.atlassian.fugue</groupId>
+            <artifactId>fugue</artifactId>
+            <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.atlassian.util.concurrent</groupId>
+            <artifactId>atlassian-util-concurrent</artifactId>
+            <version>4.1.0</version>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
+
+    <repositories>
+        <repository>
+            <id>atlassian</id>
+            <url>https://packages.atlassian.com/mvn/maven-atlassian-external/</url>
+        </repository>
+    </repositories>
 </project>

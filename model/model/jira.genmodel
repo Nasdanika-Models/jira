@@ -3,57 +3,195 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.jira/src/main/java" creationIcons="false"
     editorDirectory="" modelPluginID="org.nasdanika.models.jira" modelName="Jira"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
-    featureDelegation="Dynamic" complianceLevel="17.0" suppressGenModelAnnotations="false"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
+    bundleManifest="false" featureDelegation="Dynamic" complianceLevel="17.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" usedGenPackages="../../org.nasdanika.ncore/model/ncore.genmodel#//ncore"
+    operationReflection="true" importOrganizing="true">
   <foreignModel>jira.ecore</foreignModel>
   <genPackages prefix="Jira" basePackage="org.nasdanika.models" disposableProviderFactory="true"
       ecorePackage="jira.ecore#/">
-    <genClasses ecoreClass="jira.ecore#//User"/>
-    <genClasses ecoreClass="jira.ecore#//Project">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/issues"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/categories"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/releases"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/users"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/issueCollectors"/>
+    <genClasses ecoreClass="jira.ecore#//Jira">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Jira/users"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Jira/projects"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Role"/>
-    <genClasses ecoreClass="jira.ecore#//UserRole">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//UserRole/users"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//UserRole/role"/>
+    <genClasses image="false" ecoreClass="jira.ecore#//AddressableEntity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//AddressableEntity/self"/>
     </genClasses>
+    <genClasses image="false" ecoreClass="jira.ecore#//NamedEntity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//NamedEntity/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="jira.ecore#//IdentifiableEntity">
+      <genTypeParameters ecoreTypeParameter="jira.ecore#//IdentifiableEntity/T"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IdentifiableEntity/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="jira.ecore#//AdressableNamedEntity"/>
+    <genClasses image="false" ecoreClass="jira.ecore#//AdressableNamedIdentifiableEntity">
+      <genTypeParameters ecoreTypeParameter="jira.ecore#//AdressableNamedIdentifiableEntity/T"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//BasicIssue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicIssue/key"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//IssueReference"/>
     <genClasses image="false" ecoreClass="jira.ecore#//Issue">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/categories"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/versions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/affectedVersions"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/assignee"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/attachments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/changelog"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/comments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/dueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/expandos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/fixVersions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/issueFields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/issueLinks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/issueType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/labels"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/operations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/priority"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/project"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/reporter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/resolution"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/status"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/subtasks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/summary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/timeTracking"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/transitionsUri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Issue/updateDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/votes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/watchers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Issue/worklogs"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Initiative">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Initiative/epics"/>
+    <genClasses ecoreClass="jira.ecore#//Version">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Version/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Version/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Version/isArchived"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Version/isReleased"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Version/releaseDate"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Epic">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Epic/stories"/>
+    <genClasses ecoreClass="jira.ecore#//BasicUser">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicUser/accountId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicUser/displayName"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Story">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Story/subTasks"/>
+    <genClasses ecoreClass="jira.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/active"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/emailAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/timezone"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Task"/>
-    <genClasses ecoreClass="jira.ecore#//Subtask"/>
-    <genClasses ecoreClass="jira.ecore#//Category">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Category/issues"/>
+    <genClasses ecoreClass="jira.ecore#//Attachment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Attachment/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/contentUri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/filename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/mimeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Attachment/thumbnailUri"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Release">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Release/issues"/>
+    <genClasses ecoreClass="jira.ecore#//ChangelogGroup">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//ChangelogGroup/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogGroup/created"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//ChangelogGroup/items"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//IssueCollector"/>
-    <genClasses image="false" ecoreClass="jira.ecore#//IssueSource">
-      <genOperations ecoreOperation="jira.ecore#//IssueSource/getIssues"/>
+    <genClasses ecoreClass="jira.ecore#//ChangelogItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/field"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/custom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/fromString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//ChangelogItem/toString"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Filter"/>
-    <genClasses ecoreClass="jira.ecore#//Board"/>
-    <genClasses ecoreClass="jira.ecore#//Plan">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Plan/issueSources"/>
+    <genClasses ecoreClass="jira.ecore#//Comment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Comment/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Comment/body"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Comment/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Comment/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Comment/self"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Comment/updateAuthor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Comment/updateDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Comment/visibility"/>
     </genClasses>
-    <genClasses ecoreClass="jira.ecore#//Program">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Program/plans"/>
+    <genClasses ecoreClass="jira.ecore#//Visibility">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Visibility/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Visibility/value"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//BasicComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicComponent/description"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//IssueField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueField/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//IssueField/value"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//IssueLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueLink/inbound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueLink/targetIssueKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueLink/targetIssueUri"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Operations"/>
+    <genClasses ecoreClass="jira.ecore#//BasicPriority"/>
+    <genClasses ecoreClass="jira.ecore#//BasicProject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicProject/key"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//ProjectReference"/>
+    <genClasses ecoreClass="jira.ecore#//Project">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Project/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Project/expandos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/issueTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Project/lead"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/projectRoles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Project/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/versions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/issues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Project/statusCategories"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//BasicProjectRole"/>
+    <genClasses ecoreClass="jira.ecore#//Resolution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Resolution/description"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Status">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Status/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Status/iconUrl"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Status/value"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//StatusCategory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//StatusCategory/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//StatusCategory/colorName"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Subtask">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Subtask/issueKey"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Subtask/issueType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Subtask/issueUri"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Subtask/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Subtask/summary"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//TimeTracking">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//TimeTracking/originalEstimateMinutes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//TimeTracking/remainingEstimateMinutes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//TimeTracking/timeSpentMinutes"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//BasicVotes">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicVotes/hasVoted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicVotes/votes"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//BasicWatchers">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicWatchers/isWatching"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicWatchers/numWatchers"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Worklog">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Worklog/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/issueUri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/minutesSpent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/startDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Worklog/updateAuthor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Worklog/updateDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Worklog/visibility"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//IssueType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueType/iconUri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueType/isSubtask"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

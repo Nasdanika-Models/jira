@@ -56,25 +56,105 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case JiraPackage.JIRA: return createJira();
+			case JiraPackage.BASIC_ISSUE: return createBasicIssue();
+			case JiraPackage.ISSUE_REFERENCE: return createIssueReference();
+			case JiraPackage.ISSUE: return createIssue();
+			case JiraPackage.VERSION: return createVersion();
+			case JiraPackage.BASIC_USER: return createBasicUser();
 			case JiraPackage.USER: return createUser();
+			case JiraPackage.ATTACHMENT: return createAttachment();
+			case JiraPackage.CHANGELOG_GROUP: return createChangelogGroup();
+			case JiraPackage.CHANGELOG_ITEM: return createChangelogItem();
+			case JiraPackage.COMMENT: return createComment();
+			case JiraPackage.VISIBILITY: return createVisibility();
+			case JiraPackage.BASIC_COMPONENT: return createBasicComponent();
+			case JiraPackage.ISSUE_FIELD: return createIssueField();
+			case JiraPackage.ISSUE_LINK: return createIssueLink();
+			case JiraPackage.OPERATIONS: return createOperations();
+			case JiraPackage.BASIC_PRIORITY: return createBasicPriority();
+			case JiraPackage.BASIC_PROJECT: return createBasicProject();
+			case JiraPackage.PROJECT_REFERENCE: return createProjectReference();
 			case JiraPackage.PROJECT: return createProject();
-			case JiraPackage.ROLE: return createRole();
-			case JiraPackage.USER_ROLE: return createUserRole();
-			case JiraPackage.INITIATIVE: return createInitiative();
-			case JiraPackage.EPIC: return createEpic();
-			case JiraPackage.STORY: return createStory();
-			case JiraPackage.TASK: return createTask();
+			case JiraPackage.BASIC_PROJECT_ROLE: return createBasicProjectRole();
+			case JiraPackage.RESOLUTION: return createResolution();
+			case JiraPackage.STATUS: return createStatus();
+			case JiraPackage.STATUS_CATEGORY: return createStatusCategory();
 			case JiraPackage.SUBTASK: return createSubtask();
-			case JiraPackage.CATEGORY: return createCategory();
-			case JiraPackage.RELEASE: return createRelease();
-			case JiraPackage.ISSUE_COLLECTOR: return createIssueCollector();
-			case JiraPackage.FILTER: return createFilter();
-			case JiraPackage.BOARD: return createBoard();
-			case JiraPackage.PLAN: return createPlan();
-			case JiraPackage.PROGRAM: return createProgram();
+			case JiraPackage.TIME_TRACKING: return createTimeTracking();
+			case JiraPackage.BASIC_VOTES: return createBasicVotes();
+			case JiraPackage.BASIC_WATCHERS: return createBasicWatchers();
+			case JiraPackage.WORKLOG: return createWorklog();
+			case JiraPackage.ISSUE_TYPE: return createIssueType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Jira createJira() {
+		JiraImpl jira = new JiraImpl();
+		return jira;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicIssue createBasicIssue() {
+		BasicIssueImpl basicIssue = new BasicIssueImpl();
+		return basicIssue;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IssueReference createIssueReference() {
+		IssueReferenceImpl issueReference = new IssueReferenceImpl();
+		return issueReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Issue createIssue() {
+		IssueImpl issue = new IssueImpl();
+		return issue;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Version createVersion() {
+		VersionImpl version = new VersionImpl();
+		return version;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicUser createBasicUser() {
+		BasicUserImpl basicUser = new BasicUserImpl();
+		return basicUser;
 	}
 
 	/**
@@ -94,6 +174,138 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
+	public Attachment createAttachment() {
+		AttachmentImpl attachment = new AttachmentImpl();
+		return attachment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ChangelogGroup createChangelogGroup() {
+		ChangelogGroupImpl changelogGroup = new ChangelogGroupImpl();
+		return changelogGroup;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ChangelogItem createChangelogItem() {
+		ChangelogItemImpl changelogItem = new ChangelogItemImpl();
+		return changelogItem;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Comment createComment() {
+		CommentImpl comment = new CommentImpl();
+		return comment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Visibility createVisibility() {
+		VisibilityImpl visibility = new VisibilityImpl();
+		return visibility;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicComponent createBasicComponent() {
+		BasicComponentImpl basicComponent = new BasicComponentImpl();
+		return basicComponent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IssueField createIssueField() {
+		IssueFieldImpl issueField = new IssueFieldImpl();
+		return issueField;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IssueLink createIssueLink() {
+		IssueLinkImpl issueLink = new IssueLinkImpl();
+		return issueLink;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Operations createOperations() {
+		OperationsImpl operations = new OperationsImpl();
+		return operations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicPriority createBasicPriority() {
+		BasicPriorityImpl basicPriority = new BasicPriorityImpl();
+		return basicPriority;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicProject createBasicProject() {
+		BasicProjectImpl basicProject = new BasicProjectImpl();
+		return basicProject;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProjectReference createProjectReference() {
+		ProjectReferenceImpl projectReference = new ProjectReferenceImpl();
+		return projectReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Project createProject() {
 		ProjectImpl project = new ProjectImpl();
 		return project;
@@ -105,9 +317,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Role createRole() {
-		RoleImpl role = new RoleImpl();
-		return role;
+	public BasicProjectRole createBasicProjectRole() {
+		BasicProjectRoleImpl basicProjectRole = new BasicProjectRoleImpl();
+		return basicProjectRole;
 	}
 
 	/**
@@ -116,9 +328,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public UserRole createUserRole() {
-		UserRoleImpl userRole = new UserRoleImpl();
-		return userRole;
+	public Resolution createResolution() {
+		ResolutionImpl resolution = new ResolutionImpl();
+		return resolution;
 	}
 
 	/**
@@ -127,9 +339,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Initiative createInitiative() {
-		InitiativeImpl initiative = new InitiativeImpl();
-		return initiative;
+	public Status createStatus() {
+		StatusImpl status = new StatusImpl();
+		return status;
 	}
 
 	/**
@@ -138,31 +350,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Epic createEpic() {
-		EpicImpl epic = new EpicImpl();
-		return epic;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Story createStory() {
-		StoryImpl story = new StoryImpl();
-		return story;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Task createTask() {
-		TaskImpl task = new TaskImpl();
-		return task;
+	public StatusCategory createStatusCategory() {
+		StatusCategoryImpl statusCategory = new StatusCategoryImpl();
+		return statusCategory;
 	}
 
 	/**
@@ -182,9 +372,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Category createCategory() {
-		CategoryImpl category = new CategoryImpl();
-		return category;
+	public TimeTracking createTimeTracking() {
+		TimeTrackingImpl timeTracking = new TimeTrackingImpl();
+		return timeTracking;
 	}
 
 	/**
@@ -193,9 +383,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Release createRelease() {
-		ReleaseImpl release = new ReleaseImpl();
-		return release;
+	public BasicVotes createBasicVotes() {
+		BasicVotesImpl basicVotes = new BasicVotesImpl();
+		return basicVotes;
 	}
 
 	/**
@@ -204,9 +394,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public IssueCollector createIssueCollector() {
-		IssueCollectorImpl issueCollector = new IssueCollectorImpl();
-		return issueCollector;
+	public BasicWatchers createBasicWatchers() {
+		BasicWatchersImpl basicWatchers = new BasicWatchersImpl();
+		return basicWatchers;
 	}
 
 	/**
@@ -215,9 +405,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Filter createFilter() {
-		FilterImpl filter = new FilterImpl();
-		return filter;
+	public Worklog createWorklog() {
+		WorklogImpl worklog = new WorklogImpl();
+		return worklog;
 	}
 
 	/**
@@ -226,31 +416,9 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
-	public Board createBoard() {
-		BoardImpl board = new BoardImpl();
-		return board;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Plan createPlan() {
-		PlanImpl plan = new PlanImpl();
-		return plan;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Program createProgram() {
-		ProgramImpl program = new ProgramImpl();
-		return program;
+	public IssueType createIssueType() {
+		IssueTypeImpl issueType = new IssueTypeImpl();
+		return issueType;
 	}
 
 	/**
