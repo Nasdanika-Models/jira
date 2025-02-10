@@ -16,14 +16,11 @@ public class GeneratorTests {
 	private static final String[] COLLECTION_TYPES = {"Collection", "Iterable", "Set", "List"};
 
 	private static final String DECLARATIONS = """
-components : Collection<BasicComponent>
-description : String
-expandos : Iterable<String>
-issueTypes : OptionalIterable<IssueType>
-lead : BasicUser
-projectRoles : Collection<BasicProjectRole>
-uri : URI
-versions : Collection<Version>
+assignee : BasicUser
+assigneeType : AssigneeType
+isAssigneeTypeValid : boolean
+realAssignee : BasicUser
+realAssigneeType : AssigneeType
 			""";
 	
 	private static final String FEATURE_TEMPLATE = """

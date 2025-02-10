@@ -9,10 +9,18 @@
   <foreignModel>jira.ecore</foreignModel>
   <genPackages prefix="Jira" basePackage="org.nasdanika.models" disposableProviderFactory="true"
       ecorePackage="jira.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="jira.ecore#//AssigneeType">
+      <genEnumLiterals ecoreEnumLiteral="jira.ecore#//AssigneeType/PROJECT_DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="jira.ecore#//AssigneeType/COMPONENT_LEAD"/>
+      <genEnumLiterals ecoreEnumLiteral="jira.ecore#//AssigneeType/PROJECT_LEAD"/>
+      <genEnumLiterals ecoreEnumLiteral="jira.ecore#//AssigneeType/UNASSIGNED"/>
+    </genEnums>
     <genClasses ecoreClass="jira.ecore#//Jira">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jira.ecore#//Jira/users"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Jira/projects"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Jira/groups"/>
     </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Group"/>
     <genClasses image="false" ecoreClass="jira.ecore#//AddressableEntity">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//AddressableEntity/self"/>
     </genClasses>
@@ -77,6 +85,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/active"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/emailAddress"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//User/timezone"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//User/groups"/>
     </genClasses>
     <genClasses ecoreClass="jira.ecore#//Attachment">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Attachment/author"/>
@@ -116,6 +125,13 @@
     </genClasses>
     <genClasses ecoreClass="jira.ecore#//BasicComponent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//BasicComponent/description"/>
+    </genClasses>
+    <genClasses ecoreClass="jira.ecore#//Component">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Component/assignee"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Component/assigneeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Component/isAssigneeTypeValid"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference jira.ecore#//Component/realAssignee"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//Component/realAssigneeType"/>
     </genClasses>
     <genClasses ecoreClass="jira.ecore#//IssueField">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jira.ecore#//IssueField/type"/>

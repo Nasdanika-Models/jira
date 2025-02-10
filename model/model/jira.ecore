@@ -4,8 +4,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="Jira">
     <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
         eType="#//User" containment="true" eKeys="#//BasicUser/accountId"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" eType="#//Project"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" upperBound="-1"
+        eType="#//BasicProject" eKeys="#//BasicProject/key"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groups" upperBound="-1"
+        eType="#//Group" eKeys="#//NamedEntity/name"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//AdressableNamedEntity"/>
   <eClassifiers xsi:type="ecore:EClass" name="AddressableEntity" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="self" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
@@ -105,6 +109,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="emailAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timezone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groups" upperBound="-1"
+        eType="#//Group"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attachment" eSuperTypes="#//AddressableEntity">
     <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//BasicUser"/>
@@ -150,6 +156,19 @@
       <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
     </eGenericSuperTypes>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//BasicComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignee" eType="#//BasicUser" />
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assigneeType" eType="#//AssigneeType" />
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAssigneeTypeValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+    <eStructuralFeatures xsi:type="ecore:EReference" name="realAssignee" eType="#//BasicUser" />
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="realAssigneeType" eType="#//AssigneeType" />
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AssigneeType">
+    <eLiterals name="PROJECT_DEFAULT"/>
+    <eLiterals name="COMPONENT_LEAD" value="1"/>
+    <eLiterals name="PROJECT_LEAD" value="2"/>
+    <eLiterals name="UNASSIGNED" value="3"/>
+  </eClassifiers>  
   <eClassifiers xsi:type="ecore:EClass" name="IssueField">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>

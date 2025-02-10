@@ -4,6 +4,7 @@ package org.nasdanika.models.jira;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -76,7 +77,7 @@ public interface JiraPackage extends EPackage {
 	int JIRA__USERS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Projects</b></em>' reference.
+	 * The feature id for the '<em><b>Projects</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -85,13 +86,22 @@ public interface JiraPackage extends EPackage {
 	int JIRA__PROJECTS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Groups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JIRA__GROUPS = 2;
+
+	/**
 	 * The number of structural features of the '<em>Jira</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int JIRA_FEATURE_COUNT = 2;
+	int JIRA_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Jira</em>' class.
@@ -110,7 +120,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAddressableEntity()
 	 * @generated
 	 */
-	int ADDRESSABLE_ENTITY = 1;
+	int ADDRESSABLE_ENTITY = 2;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -147,34 +157,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getNamedEntity()
 	 * @generated
 	 */
-	int NAMED_ENTITY = 2;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ENTITY__NAME = 0;
-
-	/**
-	 * The number of structural features of the '<em>Named Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ENTITY_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Named Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ENTITY_OPERATION_COUNT = 0;
+	int NAMED_ENTITY = 3;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IdentifiableEntityImpl <em>Identifiable Entity</em>}' class.
@@ -184,34 +167,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIdentifiableEntity()
 	 * @generated
 	 */
-	int IDENTIFIABLE_ENTITY = 3;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDENTIFIABLE_ENTITY__ID = 0;
-
-	/**
-	 * The number of structural features of the '<em>Identifiable Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDENTIFIABLE_ENTITY_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Identifiable Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IDENTIFIABLE_ENTITY_OPERATION_COUNT = 0;
+	int IDENTIFIABLE_ENTITY = 4;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AdressableNamedEntityImpl <em>Adressable Named Entity</em>}' class.
@@ -221,7 +177,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAdressableNamedEntity()
 	 * @generated
 	 */
-	int ADRESSABLE_NAMED_ENTITY = 4;
+	int ADRESSABLE_NAMED_ENTITY = 5;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -260,6 +216,106 @@ public interface JiraPackage extends EPackage {
 	int ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.GroupImpl <em>Group</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.GroupImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getGroup()
+	 * @generated
+	 */
+	int GROUP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
+
+	/**
+	 * The number of structural features of the '<em>Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ENTITY__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Named Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ENTITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Named Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ENTITY_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDENTIFIABLE_ENTITY__ID = 0;
+
+	/**
+	 * The number of structural features of the '<em>Identifiable Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDENTIFIABLE_ENTITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Identifiable Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IDENTIFIABLE_ENTITY_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AdressableNamedIdentifiableEntityImpl <em>Adressable Named Identifiable Entity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -267,7 +323,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAdressableNamedIdentifiableEntity()
 	 * @generated
 	 */
-	int ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY = 5;
+	int ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY = 6;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -322,7 +378,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicIssue()
 	 * @generated
 	 */
-	int BASIC_ISSUE = 6;
+	int BASIC_ISSUE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -377,7 +433,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueReference()
 	 * @generated
 	 */
-	int ISSUE_REFERENCE = 7;
+	int ISSUE_REFERENCE = 8;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -441,7 +497,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssue()
 	 * @generated
 	 */
-	int ISSUE = 8;
+	int ISSUE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -757,7 +813,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVersion()
 	 * @generated
 	 */
-	int VERSION = 9;
+	int VERSION = 10;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -848,7 +904,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicUser()
 	 * @generated
 	 */
-	int BASIC_USER = 10;
+	int BASIC_USER = 11;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -912,7 +968,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getUser()
 	 * @generated
 	 */
-	int USER = 11;
+	int USER = 12;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -978,13 +1034,22 @@ public interface JiraPackage extends EPackage {
 	int USER__TIMEZONE = BASIC_USER_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Groups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__GROUPS = BASIC_USER_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>User</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_FEATURE_COUNT = BASIC_USER_FEATURE_COUNT + 3;
+	int USER_FEATURE_COUNT = BASIC_USER_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>User</em>' class.
@@ -1003,7 +1068,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAttachment()
 	 * @generated
 	 */
-	int ATTACHMENT = 12;
+	int ATTACHMENT = 13;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1103,7 +1168,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogGroup()
 	 * @generated
 	 */
-	int CHANGELOG_GROUP = 13;
+	int CHANGELOG_GROUP = 14;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' reference.
@@ -1158,7 +1223,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogItem()
 	 * @generated
 	 */
-	int CHANGELOG_ITEM = 14;
+	int CHANGELOG_ITEM = 15;
 
 	/**
 	 * The feature id for the '<em><b>Field</b></em>' attribute.
@@ -1240,7 +1305,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComment()
 	 * @generated
 	 */
-	int COMMENT = 15;
+	int COMMENT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' reference.
@@ -1340,7 +1405,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVisibility()
 	 * @generated
 	 */
-	int VISIBILITY = 16;
+	int VISIBILITY = 17;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -1386,7 +1451,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicComponent()
 	 * @generated
 	 */
-	int BASIC_COMPONENT = 17;
+	int BASIC_COMPONENT = 18;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1443,6 +1508,115 @@ public interface JiraPackage extends EPackage {
 	int BASIC_COMPONENT_OPERATION_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ComponentImpl <em>Component</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ComponentImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponent()
+	 * @generated
+	 */
+	int COMPONENT = 19;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__SELF = BASIC_COMPONENT__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__NAME = BASIC_COMPONENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__ID = BASIC_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__DESCRIPTION = BASIC_COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Assignee</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__ASSIGNEE = BASIC_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Assignee Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__ASSIGNEE_TYPE = BASIC_COMPONENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Is Assignee Type Valid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__IS_ASSIGNEE_TYPE_VALID = BASIC_COMPONENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Real Assignee</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__REAL_ASSIGNEE = BASIC_COMPONENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Real Assignee Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__REAL_ASSIGNEE_TYPE = BASIC_COMPONENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Component</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_FEATURE_COUNT = BASIC_COMPONENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Component</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_OPERATION_COUNT = BASIC_COMPONENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueFieldImpl <em>Issue Field</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1450,7 +1624,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueField()
 	 * @generated
 	 */
-	int ISSUE_FIELD = 18;
+	int ISSUE_FIELD = 20;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1514,7 +1688,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueLink()
 	 * @generated
 	 */
-	int ISSUE_LINK = 19;
+	int ISSUE_LINK = 21;
 
 	/**
 	 * The feature id for the '<em><b>Inbound</b></em>' attribute.
@@ -1569,7 +1743,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getOperations()
 	 * @generated
 	 */
-	int OPERATIONS = 20;
+	int OPERATIONS = 22;
 
 	/**
 	 * The number of structural features of the '<em>Operations</em>' class.
@@ -1597,7 +1771,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicPriority()
 	 * @generated
 	 */
-	int BASIC_PRIORITY = 21;
+	int BASIC_PRIORITY = 23;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1652,7 +1826,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProject()
 	 * @generated
 	 */
-	int BASIC_PROJECT = 22;
+	int BASIC_PROJECT = 24;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1716,7 +1890,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProjectReference()
 	 * @generated
 	 */
-	int PROJECT_REFERENCE = 23;
+	int PROJECT_REFERENCE = 25;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1789,7 +1963,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProject()
 	 * @generated
 	 */
-	int PROJECT = 24;
+	int PROJECT = 26;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1943,7 +2117,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProjectRole()
 	 * @generated
 	 */
-	int BASIC_PROJECT_ROLE = 25;
+	int BASIC_PROJECT_ROLE = 27;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1989,7 +2163,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getResolution()
 	 * @generated
 	 */
-	int RESOLUTION = 26;
+	int RESOLUTION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2053,7 +2227,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getStatus()
 	 * @generated
 	 */
-	int STATUS = 27;
+	int STATUS = 29;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2135,7 +2309,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getStatusCategory()
 	 * @generated
 	 */
-	int STATUS_CATEGORY = 28;
+	int STATUS_CATEGORY = 30;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2208,7 +2382,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getSubtask()
 	 * @generated
 	 */
-	int SUBTASK = 29;
+	int SUBTASK = 31;
 
 	/**
 	 * The feature id for the '<em><b>Issue Key</b></em>' attribute.
@@ -2281,7 +2455,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getTimeTracking()
 	 * @generated
 	 */
-	int TIME_TRACKING = 30;
+	int TIME_TRACKING = 32;
 
 	/**
 	 * The feature id for the '<em><b>Original Estimate Minutes</b></em>' attribute.
@@ -2336,7 +2510,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicVotes()
 	 * @generated
 	 */
-	int BASIC_VOTES = 31;
+	int BASIC_VOTES = 33;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2391,7 +2565,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicWatchers()
 	 * @generated
 	 */
-	int BASIC_WATCHERS = 32;
+	int BASIC_WATCHERS = 34;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2446,7 +2620,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getWorklog()
 	 * @generated
 	 */
-	int WORKLOG = 33;
+	int WORKLOG = 35;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2564,7 +2738,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueType()
 	 * @generated
 	 */
-	int ISSUE_TYPE = 34;
+	int ISSUE_TYPE = 36;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2640,6 +2814,17 @@ public interface JiraPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.AssigneeType <em>Assignee Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.AssigneeType
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAssigneeType()
+	 * @generated
+	 */
+	int ASSIGNEE_TYPE = 37;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Jira <em>Jira</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2661,15 +2846,36 @@ public interface JiraPackage extends EPackage {
 	EReference getJira_Users();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.jira.Jira#getProjects <em>Projects</em>}'.
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.jira.Jira#getProjects <em>Projects</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Projects</em>'.
+	 * @return the meta object for the reference list '<em>Projects</em>'.
 	 * @see org.nasdanika.models.jira.Jira#getProjects()
 	 * @see #getJira()
 	 * @generated
 	 */
 	EReference getJira_Projects();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.jira.Jira#getGroups <em>Groups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Groups</em>'.
+	 * @see org.nasdanika.models.jira.Jira#getGroups()
+	 * @see #getJira()
+	 * @generated
+	 */
+	EReference getJira_Groups();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Group <em>Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Group</em>'.
+	 * @see org.nasdanika.models.jira.Group
+	 * @generated
+	 */
+	EClass getGroup();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.AddressableEntity <em>Addressable Entity</em>}'.
@@ -3255,6 +3461,17 @@ public interface JiraPackage extends EPackage {
 	EAttribute getUser_Timezone();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.jira.User#getGroups <em>Groups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Groups</em>'.
+	 * @see org.nasdanika.models.jira.User#getGroups()
+	 * @see #getUser()
+	 * @generated
+	 */
+	EReference getUser_Groups();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Attachment <em>Attachment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3610,6 +3827,71 @@ public interface JiraPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getBasicComponent_Description();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Component <em>Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Component</em>'.
+	 * @see org.nasdanika.models.jira.Component
+	 * @generated
+	 */
+	EClass getComponent();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.jira.Component#getAssignee <em>Assignee</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Assignee</em>'.
+	 * @see org.nasdanika.models.jira.Component#getAssignee()
+	 * @see #getComponent()
+	 * @generated
+	 */
+	EReference getComponent_Assignee();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.Component#getAssigneeType <em>Assignee Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Assignee Type</em>'.
+	 * @see org.nasdanika.models.jira.Component#getAssigneeType()
+	 * @see #getComponent()
+	 * @generated
+	 */
+	EAttribute getComponent_AssigneeType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.Component#isIsAssigneeTypeValid <em>Is Assignee Type Valid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Assignee Type Valid</em>'.
+	 * @see org.nasdanika.models.jira.Component#isIsAssigneeTypeValid()
+	 * @see #getComponent()
+	 * @generated
+	 */
+	EAttribute getComponent_IsAssigneeTypeValid();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.jira.Component#getRealAssignee <em>Real Assignee</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Real Assignee</em>'.
+	 * @see org.nasdanika.models.jira.Component#getRealAssignee()
+	 * @see #getComponent()
+	 * @generated
+	 */
+	EReference getComponent_RealAssignee();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.Component#getRealAssigneeType <em>Real Assignee Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Real Assignee Type</em>'.
+	 * @see org.nasdanika.models.jira.Component#getRealAssigneeType()
+	 * @see #getComponent()
+	 * @generated
+	 */
+	EAttribute getComponent_RealAssigneeType();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.IssueField <em>Issue Field</em>}'.
@@ -4288,6 +4570,16 @@ public interface JiraPackage extends EPackage {
 	EAttribute getIssueType_IsSubtask();
 
 	/**
+	 * Returns the meta object for enum '{@link org.nasdanika.models.jira.AssigneeType <em>Assignee Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Assignee Type</em>'.
+	 * @see org.nasdanika.models.jira.AssigneeType
+	 * @generated
+	 */
+	EEnum getAssigneeType();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4329,12 +4621,30 @@ public interface JiraPackage extends EPackage {
 		EReference JIRA__USERS = eINSTANCE.getJira_Users();
 
 		/**
-		 * The meta object literal for the '<em><b>Projects</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Projects</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference JIRA__PROJECTS = eINSTANCE.getJira_Projects();
+
+		/**
+		 * The meta object literal for the '<em><b>Groups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JIRA__GROUPS = eINSTANCE.getJira_Groups();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.GroupImpl <em>Group</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.GroupImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getGroup()
+		 * @generated
+		 */
+		EClass GROUP = eINSTANCE.getGroup();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.AddressableEntityImpl <em>Addressable Entity</em>}' class.
@@ -4791,6 +5101,14 @@ public interface JiraPackage extends EPackage {
 		EAttribute USER__TIMEZONE = eINSTANCE.getUser_Timezone();
 
 		/**
+		 * The meta object literal for the '<em><b>Groups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER__GROUPS = eINSTANCE.getUser_Groups();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.AttachmentImpl <em>Attachment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5065,6 +5383,56 @@ public interface JiraPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BASIC_COMPONENT__DESCRIPTION = eINSTANCE.getBasicComponent_Description();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.ComponentImpl <em>Component</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.ComponentImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponent()
+		 * @generated
+		 */
+		EClass COMPONENT = eINSTANCE.getComponent();
+
+		/**
+		 * The meta object literal for the '<em><b>Assignee</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COMPONENT__ASSIGNEE = eINSTANCE.getComponent_Assignee();
+
+		/**
+		 * The meta object literal for the '<em><b>Assignee Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMPONENT__ASSIGNEE_TYPE = eINSTANCE.getComponent_AssigneeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Assignee Type Valid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMPONENT__IS_ASSIGNEE_TYPE_VALID = eINSTANCE.getComponent_IsAssigneeTypeValid();
+
+		/**
+		 * The meta object literal for the '<em><b>Real Assignee</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COMPONENT__REAL_ASSIGNEE = eINSTANCE.getComponent_RealAssignee();
+
+		/**
+		 * The meta object literal for the '<em><b>Real Assignee Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMPONENT__REAL_ASSIGNEE_TYPE = eINSTANCE.getComponent_RealAssigneeType();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.IssueFieldImpl <em>Issue Field</em>}' class.
@@ -5603,6 +5971,16 @@ public interface JiraPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ISSUE_TYPE__IS_SUBTASK = eINSTANCE.getIssueType_IsSubtask();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.AssigneeType <em>Assignee Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.AssigneeType
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAssigneeType()
+		 * @generated
+		 */
+		EEnum ASSIGNEE_TYPE = eINSTANCE.getAssigneeType();
 
 	}
 

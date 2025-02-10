@@ -2,6 +2,8 @@
  */
 package org.nasdanika.models.jira;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -15,6 +17,7 @@ package org.nasdanika.models.jira;
  *   <li>{@link org.nasdanika.models.jira.User#isActive <em>Active</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.User#getEmailAddress <em>Email Address</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.User#getTimezone <em>Timezone</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.User#getGroups <em>Groups</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.jira.JiraPackage#getUser()
@@ -87,5 +90,17 @@ public interface User extends BasicUser {
 	 * @generated
 	 */
 	void setTimezone(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Groups</b></em>' reference list.
+	 * The list contents are of type {@link org.nasdanika.models.jira.Group}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Groups</em>' reference list.
+	 * @see org.nasdanika.models.jira.JiraPackage#getUser_Groups()
+	 * @model
+	 * @generated
+	 */
+	EList<Group> getGroups();
 
 } // User

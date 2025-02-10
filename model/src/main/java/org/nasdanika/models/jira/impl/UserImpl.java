@@ -2,8 +2,11 @@
  */
 package org.nasdanika.models.jira.impl;
 
+import java.util.Collection;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.nasdanika.models.jira.Group;
 import org.nasdanika.models.jira.JiraPackage;
 import org.nasdanika.models.jira.User;
 
@@ -18,6 +21,7 @@ import org.nasdanika.models.jira.User;
  *   <li>{@link org.nasdanika.models.jira.impl.UserImpl#isActive <em>Active</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.impl.UserImpl#getEmailAddress <em>Email Address</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.impl.UserImpl#getTimezone <em>Timezone</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.impl.UserImpl#getGroups <em>Groups</em>}</li>
  * </ul>
  *
  * @generated
@@ -137,6 +141,17 @@ public class UserImpl extends BasicUserImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public EList<Group> getGroups() {
+		return (EList<Group>)eDynamicGet(JiraPackage.USER__GROUPS, JiraPackage.Literals.USER__GROUPS, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -146,6 +161,8 @@ public class UserImpl extends BasicUserImpl implements User {
 				return getEmailAddress();
 			case JiraPackage.USER__TIMEZONE:
 				return getTimezone();
+			case JiraPackage.USER__GROUPS:
+				return getGroups();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -155,6 +172,7 @@ public class UserImpl extends BasicUserImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -166,6 +184,10 @@ public class UserImpl extends BasicUserImpl implements User {
 				return;
 			case JiraPackage.USER__TIMEZONE:
 				setTimezone((String)newValue);
+				return;
+			case JiraPackage.USER__GROUPS:
+				getGroups().clear();
+				getGroups().addAll((Collection<? extends Group>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -188,6 +210,9 @@ public class UserImpl extends BasicUserImpl implements User {
 			case JiraPackage.USER__TIMEZONE:
 				setTimezone(TIMEZONE_EDEFAULT);
 				return;
+			case JiraPackage.USER__GROUPS:
+				getGroups().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -206,6 +231,8 @@ public class UserImpl extends BasicUserImpl implements User {
 				return EMAIL_ADDRESS_EDEFAULT == null ? getEmailAddress() != null : !EMAIL_ADDRESS_EDEFAULT.equals(getEmailAddress());
 			case JiraPackage.USER__TIMEZONE:
 				return TIMEZONE_EDEFAULT == null ? getTimezone() != null : !TIMEZONE_EDEFAULT.equals(getTimezone());
+			case JiraPackage.USER__GROUPS:
+				return !getGroups().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

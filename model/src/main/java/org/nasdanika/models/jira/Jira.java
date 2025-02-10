@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link org.nasdanika.models.jira.Jira#getUsers <em>Users</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.Jira#getProjects <em>Projects</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.Jira#getGroups <em>Groups</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.jira.JiraPackage#getJira()
@@ -37,25 +38,27 @@ public interface Jira extends EObject {
 	EList<User> getUsers();
 
 	/**
-	 * Returns the value of the '<em><b>Projects</b></em>' reference.
+	 * Returns the value of the '<em><b>Projects</b></em>' reference list.
+	 * The list contents are of type {@link org.nasdanika.models.jira.BasicProject}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Projects</em>' reference.
-	 * @see #setProjects(Project)
+	 * @return the value of the '<em>Projects</em>' reference list.
 	 * @see org.nasdanika.models.jira.JiraPackage#getJira_Projects()
-	 * @model
+	 * @model keys="key"
 	 * @generated
 	 */
-	Project getProjects();
+	EList<BasicProject> getProjects();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.jira.Jira#getProjects <em>Projects</em>}' reference.
+	 * Returns the value of the '<em><b>Groups</b></em>' reference list.
+	 * The list contents are of type {@link org.nasdanika.models.jira.Group}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Projects</em>' reference.
-	 * @see #getProjects()
+	 * @return the value of the '<em>Groups</em>' reference list.
+	 * @see org.nasdanika.models.jira.JiraPackage#getJira_Groups()
+	 * @model keys="name"
 	 * @generated
 	 */
-	void setProjects(Project value);
+	EList<Group> getGroups();
 
 } // Jira

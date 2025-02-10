@@ -74,6 +74,15 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case JiraPackage.GROUP: {
+				Group group = (Group)theEObject;
+				T1 result = caseGroup(group);
+				if (result == null) result = caseAdressableNamedEntity(group);
+				if (result == null) result = caseAddressableEntity(group);
+				if (result == null) result = caseNamedEntity(group);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case JiraPackage.ADDRESSABLE_ENTITY: {
 				AddressableEntity addressableEntity = (AddressableEntity)theEObject;
 				T1 result = caseAddressableEntity(addressableEntity);
@@ -204,6 +213,18 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = caseIdentifiableEntity(basicComponent);
 				if (result == null) result = caseAddressableEntity(basicComponent);
 				if (result == null) result = caseNamedEntity(basicComponent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.COMPONENT: {
+				Component component = (Component)theEObject;
+				T1 result = caseComponent(component);
+				if (result == null) result = caseBasicComponent(component);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(component);
+				if (result == null) result = caseAdressableNamedEntity(component);
+				if (result == null) result = caseIdentifiableEntity(component);
+				if (result == null) result = caseAddressableEntity(component);
+				if (result == null) result = caseNamedEntity(component);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -376,6 +397,21 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	 * @generated
 	 */
 	public T1 caseJira(Jira object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Group</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseGroup(Group object) {
 		return null;
 	}
 
@@ -631,6 +667,21 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	 * @generated
 	 */
 	public T1 caseBasicComponent(BasicComponent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseComponent(Component object) {
 		return null;
 	}
 

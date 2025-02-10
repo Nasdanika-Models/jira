@@ -74,6 +74,10 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 				return createJiraAdapter();
 			}
 			@Override
+			public Adapter caseGroup(Group object) {
+				return createGroupAdapter();
+			}
+			@Override
 			public Adapter caseAddressableEntity(AddressableEntity object) {
 				return createAddressableEntityAdapter();
 			}
@@ -140,6 +144,10 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseBasicComponent(BasicComponent object) {
 				return createBasicComponentAdapter();
+			}
+			@Override
+			public Adapter caseComponent(Component object) {
+				return createComponentAdapter();
 			}
 			@Override
 			public Adapter caseIssueField(IssueField object) {
@@ -244,6 +252,20 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createJiraAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Group <em>Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Group
+	 * @generated
+	 */
+	public Adapter createGroupAdapter() {
 		return null;
 	}
 
@@ -482,6 +504,20 @@ public class JiraAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBasicComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.jira.Component <em>Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.jira.Component
+	 * @generated
+	 */
+	public Adapter createComponentAdapter() {
 		return null;
 	}
 

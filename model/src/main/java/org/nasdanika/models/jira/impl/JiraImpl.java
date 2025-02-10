@@ -15,9 +15,10 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.nasdanika.models.jira.BasicProject;
+import org.nasdanika.models.jira.Group;
 import org.nasdanika.models.jira.Jira;
 import org.nasdanika.models.jira.JiraPackage;
-import org.nasdanika.models.jira.Project;
 import org.nasdanika.models.jira.User;
 
 /**
@@ -30,6 +31,7 @@ import org.nasdanika.models.jira.User;
  * <ul>
  *   <li>{@link org.nasdanika.models.jira.impl.JiraImpl#getUsers <em>Users</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.impl.JiraImpl#getProjects <em>Projects</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.impl.JiraImpl#getGroups <em>Groups</em>}</li>
  * </ul>
  *
  * @generated
@@ -80,9 +82,10 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
-	public Project getProjects() {
-		return (Project)eDynamicGet(JiraPackage.JIRA__PROJECTS, JiraPackage.Literals.JIRA__PROJECTS, true, true);
+	public EList<BasicProject> getProjects() {
+		return (EList<BasicProject>)eDynamicGet(JiraPackage.JIRA__PROJECTS, JiraPackage.Literals.JIRA__PROJECTS, true, true);
 	}
 
 	/**
@@ -90,18 +93,10 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Project basicGetProjects() {
-		return (Project)eDynamicGet(JiraPackage.JIRA__PROJECTS, JiraPackage.Literals.JIRA__PROJECTS, false, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	@SuppressWarnings("unchecked")
 	@Override
-	public void setProjects(Project newProjects) {
-		eDynamicSet(JiraPackage.JIRA__PROJECTS, JiraPackage.Literals.JIRA__PROJECTS, newProjects);
+	public EList<Group> getGroups() {
+		return (EList<Group>)eDynamicGet(JiraPackage.JIRA__GROUPS, JiraPackage.Literals.JIRA__GROUPS, true, true);
 	}
 
 	/**
@@ -129,8 +124,9 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 			case JiraPackage.JIRA__USERS:
 				return getUsers();
 			case JiraPackage.JIRA__PROJECTS:
-				if (resolve) return getProjects();
-				return basicGetProjects();
+				return getProjects();
+			case JiraPackage.JIRA__GROUPS:
+				return getGroups();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -149,7 +145,12 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 				getUsers().addAll((Collection<? extends User>)newValue);
 				return;
 			case JiraPackage.JIRA__PROJECTS:
-				setProjects((Project)newValue);
+				getProjects().clear();
+				getProjects().addAll((Collection<? extends BasicProject>)newValue);
+				return;
+			case JiraPackage.JIRA__GROUPS:
+				getGroups().clear();
+				getGroups().addAll((Collection<? extends Group>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -167,7 +168,10 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 				getUsers().clear();
 				return;
 			case JiraPackage.JIRA__PROJECTS:
-				setProjects((Project)null);
+				getProjects().clear();
+				return;
+			case JiraPackage.JIRA__GROUPS:
+				getGroups().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -184,7 +188,9 @@ public class JiraImpl extends MinimalEObjectImpl.Container implements Jira {
 			case JiraPackage.JIRA__USERS:
 				return !getUsers().isEmpty();
 			case JiraPackage.JIRA__PROJECTS:
-				return basicGetProjects() != null;
+				return !getProjects().isEmpty();
+			case JiraPackage.JIRA__GROUPS:
+				return !getGroups().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

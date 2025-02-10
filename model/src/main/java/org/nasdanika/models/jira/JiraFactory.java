@@ -31,6 +31,15 @@ public interface JiraFactory extends EFactory {
 	Jira createJira();
 
 	/**
+	 * Returns a new object of class '<em>Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Group</em>'.
+	 * @generated
+	 */
+	Group createGroup();
+
+	/**
 	 * Returns a new object of class '<em>Basic Issue</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,6 +146,15 @@ public interface JiraFactory extends EFactory {
 	 * @generated
 	 */
 	BasicComponent createBasicComponent();
+
+	/**
+	 * Returns a new object of class '<em>Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component</em>'.
+	 * @generated
+	 */
+	Component createComponent();
 
 	/**
 	 * Returns a new object of class '<em>Issue Field</em>'.

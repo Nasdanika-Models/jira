@@ -3,6 +3,7 @@
 package org.nasdanika.models.jira.impl;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -57,6 +58,7 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case JiraPackage.JIRA: return createJira();
+			case JiraPackage.GROUP: return createGroup();
 			case JiraPackage.BASIC_ISSUE: return createBasicIssue();
 			case JiraPackage.ISSUE_REFERENCE: return createIssueReference();
 			case JiraPackage.ISSUE: return createIssue();
@@ -69,6 +71,7 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 			case JiraPackage.COMMENT: return createComment();
 			case JiraPackage.VISIBILITY: return createVisibility();
 			case JiraPackage.BASIC_COMPONENT: return createBasicComponent();
+			case JiraPackage.COMPONENT: return createComponent();
 			case JiraPackage.ISSUE_FIELD: return createIssueField();
 			case JiraPackage.ISSUE_LINK: return createIssueLink();
 			case JiraPackage.OPERATIONS: return createOperations();
@@ -97,9 +100,50 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case JiraPackage.ASSIGNEE_TYPE:
+				return createAssigneeTypeFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case JiraPackage.ASSIGNEE_TYPE:
+				return convertAssigneeTypeToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Jira createJira() {
 		JiraImpl jira = new JiraImpl();
 		return jira;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Group createGroup() {
+		GroupImpl group = new GroupImpl();
+		return group;
 	}
 
 	/**
@@ -232,6 +276,17 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public BasicComponent createBasicComponent() {
 		BasicComponentImpl basicComponent = new BasicComponentImpl();
 		return basicComponent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Component createComponent() {
+		ComponentImpl component = new ComponentImpl();
+		return component;
 	}
 
 	/**
@@ -419,6 +474,26 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public IssueType createIssueType() {
 		IssueTypeImpl issueType = new IssueTypeImpl();
 		return issueType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssigneeType createAssigneeTypeFromString(EDataType eDataType, String initialValue) {
+		AssigneeType result = AssigneeType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAssigneeTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

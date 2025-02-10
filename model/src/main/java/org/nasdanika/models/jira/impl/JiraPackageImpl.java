@@ -4,6 +4,7 @@ package org.nasdanika.models.jira.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -14,6 +15,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.nasdanika.models.jira.AddressableEntity;
 import org.nasdanika.models.jira.AdressableNamedEntity;
 import org.nasdanika.models.jira.AdressableNamedIdentifiableEntity;
+import org.nasdanika.models.jira.AssigneeType;
 import org.nasdanika.models.jira.Attachment;
 import org.nasdanika.models.jira.BasicComponent;
 import org.nasdanika.models.jira.BasicIssue;
@@ -26,6 +28,8 @@ import org.nasdanika.models.jira.BasicWatchers;
 import org.nasdanika.models.jira.ChangelogGroup;
 import org.nasdanika.models.jira.ChangelogItem;
 import org.nasdanika.models.jira.Comment;
+import org.nasdanika.models.jira.Component;
+import org.nasdanika.models.jira.Group;
 import org.nasdanika.models.jira.IdentifiableEntity;
 import org.nasdanika.models.jira.Issue;
 import org.nasdanika.models.jira.IssueField;
@@ -64,6 +68,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	private EClass jiraEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass groupEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,6 +200,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass componentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass issueFieldEClass = null;
 
 	/**
@@ -304,6 +322,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	private EClass issueTypeEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum assigneeTypeEEnum = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -394,6 +419,26 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	@Override
 	public EReference getJira_Projects() {
 		return (EReference)jiraEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getJira_Groups() {
+		return (EReference)jiraEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getGroup() {
+		return groupEClass;
 	}
 
 	/**
@@ -942,6 +987,16 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getUser_Groups() {
+		return (EReference)userEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAttachment() {
 		return attachmentEClass;
 	}
@@ -1264,6 +1319,66 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	@Override
 	public EAttribute getBasicComponent_Description() {
 		return (EAttribute)basicComponentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getComponent() {
+		return componentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getComponent_Assignee() {
+		return (EReference)componentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getComponent_AssigneeType() {
+		return (EAttribute)componentEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getComponent_IsAssigneeTypeValid() {
+		return (EAttribute)componentEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getComponent_RealAssignee() {
+		return (EReference)componentEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getComponent_RealAssigneeType() {
+		return (EAttribute)componentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1902,6 +2017,16 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	@Override
+	public EEnum getAssigneeType() {
+		return assigneeTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public JiraFactory getJiraFactory() {
 		return (JiraFactory)getEFactoryInstance();
 	}
@@ -1928,6 +2053,9 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		jiraEClass = createEClass(JIRA);
 		createEReference(jiraEClass, JIRA__USERS);
 		createEReference(jiraEClass, JIRA__PROJECTS);
+		createEReference(jiraEClass, JIRA__GROUPS);
+
+		groupEClass = createEClass(GROUP);
 
 		addressableEntityEClass = createEClass(ADDRESSABLE_ENTITY);
 		createEAttribute(addressableEntityEClass, ADDRESSABLE_ENTITY__SELF);
@@ -1993,6 +2121,7 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		createEAttribute(userEClass, USER__ACTIVE);
 		createEAttribute(userEClass, USER__EMAIL_ADDRESS);
 		createEAttribute(userEClass, USER__TIMEZONE);
+		createEReference(userEClass, USER__GROUPS);
 
 		attachmentEClass = createEClass(ATTACHMENT);
 		createEReference(attachmentEClass, ATTACHMENT__AUTHOR);
@@ -2032,6 +2161,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 
 		basicComponentEClass = createEClass(BASIC_COMPONENT);
 		createEAttribute(basicComponentEClass, BASIC_COMPONENT__DESCRIPTION);
+
+		componentEClass = createEClass(COMPONENT);
+		createEReference(componentEClass, COMPONENT__ASSIGNEE);
+		createEAttribute(componentEClass, COMPONENT__ASSIGNEE_TYPE);
+		createEAttribute(componentEClass, COMPONENT__IS_ASSIGNEE_TYPE_VALID);
+		createEReference(componentEClass, COMPONENT__REAL_ASSIGNEE);
+		createEAttribute(componentEClass, COMPONENT__REAL_ASSIGNEE_TYPE);
 
 		issueFieldEClass = createEClass(ISSUE_FIELD);
 		createEAttribute(issueFieldEClass, ISSUE_FIELD__TYPE);
@@ -2112,6 +2248,9 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		createEAttribute(issueTypeEClass, ISSUE_TYPE__DESCRIPTION);
 		createEAttribute(issueTypeEClass, ISSUE_TYPE__ICON_URI);
 		createEAttribute(issueTypeEClass, ISSUE_TYPE__IS_SUBTASK);
+
+		// Create enums
+		assigneeTypeEEnum = createEEnum(ASSIGNEE_TYPE);
 	}
 
 	/**
@@ -2147,6 +2286,7 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		groupEClass.getESuperTypes().add(this.getAdressableNamedEntity());
 		adressableNamedEntityEClass.getESuperTypes().add(this.getAddressableEntity());
 		adressableNamedEntityEClass.getESuperTypes().add(this.getNamedEntity());
 		EGenericType g1 = createEGenericType(this.getAdressableNamedEntity());
@@ -2176,6 +2316,7 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		g2 = createEGenericType(ecorePackage.getELongObject());
 		g1.getETypeArguments().add(g2);
 		basicComponentEClass.getEGenericSuperTypes().add(g1);
+		componentEClass.getESuperTypes().add(this.getBasicComponent());
 		g1 = createEGenericType(this.getNamedEntity());
 		issueFieldEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(this.getIdentifiableEntity());
@@ -2222,7 +2363,12 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEClass(jiraEClass, Jira.class, "Jira", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getJira_Users(), this.getUser(), null, "users", null, 0, -1, Jira.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getJira_Users().getEKeys().add(this.getBasicUser_AccountId());
-		initEReference(getJira_Projects(), this.getProject(), null, "projects", null, 0, 1, Jira.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getJira_Projects(), this.getBasicProject(), null, "projects", null, 0, -1, Jira.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJira_Projects().getEKeys().add(this.getBasicProject_Key());
+		initEReference(getJira_Groups(), this.getGroup(), null, "groups", null, 0, -1, Jira.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJira_Groups().getEKeys().add(this.getNamedEntity_Name());
+
+		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(addressableEntityEClass, AddressableEntity.class, "AddressableEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAddressableEntity_Self(), ecorePackage.getEString(), "self", null, 0, 1, AddressableEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2290,6 +2436,7 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEAttribute(getUser_Active(), ecorePackage.getEBoolean(), "active", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUser_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUser_Timezone(), ecorePackage.getEString(), "timezone", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUser_Groups(), this.getGroup(), null, "groups", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachmentEClass, Attachment.class, "Attachment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttachment_Author(), this.getBasicUser(), null, "author", null, 0, 1, Attachment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2329,6 +2476,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 
 		initEClass(basicComponentEClass, BasicComponent.class, "BasicComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBasicComponent_Description(), ecorePackage.getEString(), "description", null, 0, 1, BasicComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getComponent_Assignee(), this.getBasicUser(), null, "assignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_AssigneeType(), this.getAssigneeType(), "assigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_IsAssigneeTypeValid(), ecorePackage.getEBoolean(), "isAssigneeTypeValid", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getComponent_RealAssignee(), this.getBasicUser(), null, "realAssignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_RealAssigneeType(), this.getAssigneeType(), "realAssigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(issueFieldEClass, IssueField.class, "IssueField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIssueField_Type(), ecorePackage.getEString(), "type", null, 0, 1, IssueField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2413,6 +2567,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEAttribute(getIssueType_Description(), ecorePackage.getEString(), "description", null, 0, 1, IssueType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIssueType_IconUri(), ecorePackage.getEString(), "iconUri", null, 0, 1, IssueType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIssueType_IsSubtask(), ecorePackage.getEBoolean(), "isSubtask", null, 0, 1, IssueType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(assigneeTypeEEnum, AssigneeType.class, "AssigneeType");
+		addEEnumLiteral(assigneeTypeEEnum, AssigneeType.PROJECT_DEFAULT);
+		addEEnumLiteral(assigneeTypeEEnum, AssigneeType.COMPONENT_LEAD);
+		addEEnumLiteral(assigneeTypeEEnum, AssigneeType.PROJECT_LEAD);
+		addEEnumLiteral(assigneeTypeEEnum, AssigneeType.UNASSIGNED);
 
 		// Create resource
 		createResource(eNS_URI);
