@@ -74,15 +74,6 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case JiraPackage.GROUP: {
-				Group group = (Group)theEObject;
-				T1 result = caseGroup(group);
-				if (result == null) result = caseAdressableNamedEntity(group);
-				if (result == null) result = caseAddressableEntity(group);
-				if (result == null) result = caseNamedEntity(group);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case JiraPackage.ADDRESSABLE_ENTITY: {
 				AddressableEntity addressableEntity = (AddressableEntity)theEObject;
 				T1 result = caseAddressableEntity(addressableEntity);
@@ -119,39 +110,9 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case JiraPackage.BASIC_ISSUE: {
-				BasicIssue basicIssue = (BasicIssue)theEObject;
-				T1 result = caseBasicIssue(basicIssue);
-				if (result == null) result = caseAddressableEntity(basicIssue);
-				if (result == null) result = caseIdentifiableEntity(basicIssue);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.ISSUE_REFERENCE: {
-				IssueReference issueReference = (IssueReference)theEObject;
-				T1 result = caseIssueReference(issueReference);
-				if (result == null) result = caseBasicIssue(issueReference);
-				if (result == null) result = caseReference(issueReference);
-				if (result == null) result = caseAddressableEntity(issueReference);
-				if (result == null) result = caseIdentifiableEntity(issueReference);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.ISSUE: {
-				Issue issue = (Issue)theEObject;
-				T1 result = caseIssue(issue);
-				if (result == null) result = caseBasicIssue(issue);
-				if (result == null) result = caseAddressableEntity(issue);
-				if (result == null) result = caseIdentifiableEntity(issue);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.VERSION: {
-				Version version = (Version)theEObject;
-				T1 result = caseVersion(version);
-				if (result == null) result = caseAdressableNamedEntity(version);
-				if (result == null) result = caseAddressableEntity(version);
-				if (result == null) result = caseNamedEntity(version);
+			case JiraPackage.ACTOR: {
+				Actor actor = (Actor)theEObject;
+				T1 result = caseActor(actor);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -168,9 +129,168 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				User user = (User)theEObject;
 				T1 result = caseUser(user);
 				if (result == null) result = caseBasicUser(user);
+				if (result == null) result = caseActor(user);
 				if (result == null) result = caseAdressableNamedEntity(user);
 				if (result == null) result = caseAddressableEntity(user);
 				if (result == null) result = caseNamedEntity(user);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.USER_REFERENCE: {
+				UserReference userReference = (UserReference)theEObject;
+				T1 result = caseUserReference(userReference);
+				if (result == null) result = caseBasicUser(userReference);
+				if (result == null) result = caseReference(userReference);
+				if (result == null) result = caseAdressableNamedEntity(userReference);
+				if (result == null) result = caseAddressableEntity(userReference);
+				if (result == null) result = caseNamedEntity(userReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.GROUP: {
+				Group group = (Group)theEObject;
+				T1 result = caseGroup(group);
+				if (result == null) result = caseAdressableNamedEntity(group);
+				if (result == null) result = caseActor(group);
+				if (result == null) result = caseAddressableEntity(group);
+				if (result == null) result = caseNamedEntity(group);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.BASIC_PROJECT: {
+				BasicProject basicProject = (BasicProject)theEObject;
+				T1 result = caseBasicProject(basicProject);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(basicProject);
+				if (result == null) result = caseAdressableNamedEntity(basicProject);
+				if (result == null) result = caseIdentifiableEntity(basicProject);
+				if (result == null) result = caseAddressableEntity(basicProject);
+				if (result == null) result = caseNamedEntity(basicProject);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.PROJECT: {
+				Project project = (Project)theEObject;
+				T1 result = caseProject(project);
+				if (result == null) result = caseBasicProject(project);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(project);
+				if (result == null) result = caseAdressableNamedEntity(project);
+				if (result == null) result = caseIdentifiableEntity(project);
+				if (result == null) result = caseAddressableEntity(project);
+				if (result == null) result = caseNamedEntity(project);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.PROJECT_REFERENCE: {
+				ProjectReference projectReference = (ProjectReference)theEObject;
+				T1 result = caseProjectReference(projectReference);
+				if (result == null) result = caseBasicProject(projectReference);
+				if (result == null) result = caseReference(projectReference);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(projectReference);
+				if (result == null) result = caseAdressableNamedEntity(projectReference);
+				if (result == null) result = caseIdentifiableEntity(projectReference);
+				if (result == null) result = caseAddressableEntity(projectReference);
+				if (result == null) result = caseNamedEntity(projectReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.BASIC_ISSUE: {
+				BasicIssue basicIssue = (BasicIssue)theEObject;
+				T1 result = caseBasicIssue(basicIssue);
+				if (result == null) result = caseAddressableEntity(basicIssue);
+				if (result == null) result = caseIdentifiableEntity(basicIssue);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.ISSUE: {
+				Issue issue = (Issue)theEObject;
+				T1 result = caseIssue(issue);
+				if (result == null) result = caseBasicIssue(issue);
+				if (result == null) result = caseAddressableEntity(issue);
+				if (result == null) result = caseIdentifiableEntity(issue);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.ISSUE_REFERENCE: {
+				IssueReference issueReference = (IssueReference)theEObject;
+				T1 result = caseIssueReference(issueReference);
+				if (result == null) result = caseBasicIssue(issueReference);
+				if (result == null) result = caseReference(issueReference);
+				if (result == null) result = caseAddressableEntity(issueReference);
+				if (result == null) result = caseIdentifiableEntity(issueReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.BASIC_COMPONENT: {
+				BasicComponent basicComponent = (BasicComponent)theEObject;
+				T1 result = caseBasicComponent(basicComponent);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(basicComponent);
+				if (result == null) result = caseAdressableNamedEntity(basicComponent);
+				if (result == null) result = caseIdentifiableEntity(basicComponent);
+				if (result == null) result = caseAddressableEntity(basicComponent);
+				if (result == null) result = caseNamedEntity(basicComponent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.COMPONENT: {
+				Component component = (Component)theEObject;
+				T1 result = caseComponent(component);
+				if (result == null) result = caseBasicComponent(component);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(component);
+				if (result == null) result = caseAdressableNamedEntity(component);
+				if (result == null) result = caseIdentifiableEntity(component);
+				if (result == null) result = caseAddressableEntity(component);
+				if (result == null) result = caseNamedEntity(component);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.COMPONENT_REFERENCE: {
+				ComponentReference componentReference = (ComponentReference)theEObject;
+				T1 result = caseComponentReference(componentReference);
+				if (result == null) result = caseBasicComponent(componentReference);
+				if (result == null) result = caseReference(componentReference);
+				if (result == null) result = caseAdressableNamedIdentifiableEntity(componentReference);
+				if (result == null) result = caseAdressableNamedEntity(componentReference);
+				if (result == null) result = caseIdentifiableEntity(componentReference);
+				if (result == null) result = caseAddressableEntity(componentReference);
+				if (result == null) result = caseNamedEntity(componentReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.BASIC_PROJECT_ROLE: {
+				BasicProjectRole basicProjectRole = (BasicProjectRole)theEObject;
+				T1 result = caseBasicProjectRole(basicProjectRole);
+				if (result == null) result = caseAdressableNamedEntity(basicProjectRole);
+				if (result == null) result = caseAddressableEntity(basicProjectRole);
+				if (result == null) result = caseNamedEntity(basicProjectRole);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.ROLE_ACTOR: {
+				RoleActor roleActor = (RoleActor)theEObject;
+				T1 result = caseRoleActor(roleActor);
+				if (result == null) result = caseNamedEntity(roleActor);
+				if (result == null) result = caseIdentifiableEntity(roleActor);
+				if (result == null) result = caseReference(roleActor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.PROJECT_ROLE: {
+				ProjectRole projectRole = (ProjectRole)theEObject;
+				T1 result = caseProjectRole(projectRole);
+				if (result == null) result = caseBasicProjectRole(projectRole);
+				if (result == null) result = caseIdentifiableEntity(projectRole);
+				if (result == null) result = caseAdressableNamedEntity(projectRole);
+				if (result == null) result = caseAddressableEntity(projectRole);
+				if (result == null) result = caseNamedEntity(projectRole);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JiraPackage.VERSION: {
+				Version version = (Version)theEObject;
+				T1 result = caseVersion(version);
+				if (result == null) result = caseAdressableNamedEntity(version);
+				if (result == null) result = caseAddressableEntity(version);
+				if (result == null) result = caseNamedEntity(version);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -205,29 +325,6 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case JiraPackage.BASIC_COMPONENT: {
-				BasicComponent basicComponent = (BasicComponent)theEObject;
-				T1 result = caseBasicComponent(basicComponent);
-				if (result == null) result = caseAdressableNamedIdentifiableEntity(basicComponent);
-				if (result == null) result = caseAdressableNamedEntity(basicComponent);
-				if (result == null) result = caseIdentifiableEntity(basicComponent);
-				if (result == null) result = caseAddressableEntity(basicComponent);
-				if (result == null) result = caseNamedEntity(basicComponent);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.COMPONENT: {
-				Component component = (Component)theEObject;
-				T1 result = caseComponent(component);
-				if (result == null) result = caseBasicComponent(component);
-				if (result == null) result = caseAdressableNamedIdentifiableEntity(component);
-				if (result == null) result = caseAdressableNamedEntity(component);
-				if (result == null) result = caseIdentifiableEntity(component);
-				if (result == null) result = caseAddressableEntity(component);
-				if (result == null) result = caseNamedEntity(component);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case JiraPackage.ISSUE_FIELD: {
 				IssueField issueField = (IssueField)theEObject;
 				T1 result = caseIssueField(issueField);
@@ -256,51 +353,6 @@ public class JiraSwitch<T1> extends Switch<T1> {
 				if (result == null) result = caseIdentifiableEntity(basicPriority);
 				if (result == null) result = caseAddressableEntity(basicPriority);
 				if (result == null) result = caseNamedEntity(basicPriority);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.BASIC_PROJECT: {
-				BasicProject basicProject = (BasicProject)theEObject;
-				T1 result = caseBasicProject(basicProject);
-				if (result == null) result = caseAdressableNamedIdentifiableEntity(basicProject);
-				if (result == null) result = caseAdressableNamedEntity(basicProject);
-				if (result == null) result = caseIdentifiableEntity(basicProject);
-				if (result == null) result = caseAddressableEntity(basicProject);
-				if (result == null) result = caseNamedEntity(basicProject);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.PROJECT_REFERENCE: {
-				ProjectReference projectReference = (ProjectReference)theEObject;
-				T1 result = caseProjectReference(projectReference);
-				if (result == null) result = caseBasicProject(projectReference);
-				if (result == null) result = caseReference(projectReference);
-				if (result == null) result = caseAdressableNamedIdentifiableEntity(projectReference);
-				if (result == null) result = caseAdressableNamedEntity(projectReference);
-				if (result == null) result = caseIdentifiableEntity(projectReference);
-				if (result == null) result = caseAddressableEntity(projectReference);
-				if (result == null) result = caseNamedEntity(projectReference);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.PROJECT: {
-				Project project = (Project)theEObject;
-				T1 result = caseProject(project);
-				if (result == null) result = caseBasicProject(project);
-				if (result == null) result = caseAdressableNamedIdentifiableEntity(project);
-				if (result == null) result = caseAdressableNamedEntity(project);
-				if (result == null) result = caseIdentifiableEntity(project);
-				if (result == null) result = caseAddressableEntity(project);
-				if (result == null) result = caseNamedEntity(project);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case JiraPackage.BASIC_PROJECT_ROLE: {
-				BasicProjectRole basicProjectRole = (BasicProjectRole)theEObject;
-				T1 result = caseBasicProjectRole(basicProjectRole);
-				if (result == null) result = caseAdressableNamedEntity(basicProjectRole);
-				if (result == null) result = caseAddressableEntity(basicProjectRole);
-				if (result == null) result = caseNamedEntity(basicProjectRole);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -491,6 +543,21 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Actor</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Actor</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseActor(Actor object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Basic Issue</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -577,6 +644,21 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	 * @generated
 	 */
 	public T1 caseUser(User object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseUserReference(UserReference object) {
 		return null;
 	}
 
@@ -682,6 +764,21 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	 * @generated
 	 */
 	public T1 caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Component Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Component Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseComponentReference(ComponentReference object) {
 		return null;
 	}
 
@@ -802,6 +899,36 @@ public class JiraSwitch<T1> extends Switch<T1> {
 	 * @generated
 	 */
 	public T1 caseBasicProjectRole(BasicProjectRole object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Role Actor</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Role Actor</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseRoleActor(RoleActor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Project Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Project Role</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseProjectRole(ProjectRole object) {
 		return null;
 	}
 

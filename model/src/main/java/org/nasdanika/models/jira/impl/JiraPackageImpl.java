@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.ETypeParameter;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.nasdanika.models.jira.Actor;
 import org.nasdanika.models.jira.AddressableEntity;
 import org.nasdanika.models.jira.AdressableNamedEntity;
 import org.nasdanika.models.jira.AdressableNamedIdentifiableEntity;
@@ -29,6 +30,7 @@ import org.nasdanika.models.jira.ChangelogGroup;
 import org.nasdanika.models.jira.ChangelogItem;
 import org.nasdanika.models.jira.Comment;
 import org.nasdanika.models.jira.Component;
+import org.nasdanika.models.jira.ComponentReference;
 import org.nasdanika.models.jira.Group;
 import org.nasdanika.models.jira.IdentifiableEntity;
 import org.nasdanika.models.jira.Issue;
@@ -43,12 +45,15 @@ import org.nasdanika.models.jira.NamedEntity;
 import org.nasdanika.models.jira.Operations;
 import org.nasdanika.models.jira.Project;
 import org.nasdanika.models.jira.ProjectReference;
+import org.nasdanika.models.jira.ProjectRole;
 import org.nasdanika.models.jira.Resolution;
+import org.nasdanika.models.jira.RoleActor;
 import org.nasdanika.models.jira.Status;
 import org.nasdanika.models.jira.StatusCategory;
 import org.nasdanika.models.jira.Subtask;
 import org.nasdanika.models.jira.TimeTracking;
 import org.nasdanika.models.jira.User;
+import org.nasdanika.models.jira.UserReference;
 import org.nasdanika.models.jira.Version;
 import org.nasdanika.models.jira.Visibility;
 import org.nasdanika.models.jira.Worklog;
@@ -116,6 +121,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass actorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass basicIssueEClass = null;
 
 	/**
@@ -152,6 +164,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	private EClass userEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userReferenceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,6 +220,13 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	private EClass componentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass componentReferenceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,6 +283,20 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	private EClass basicProjectRoleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass roleActorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass projectRoleEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -519,6 +559,16 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	@Override
 	public EClass getAdressableNamedIdentifiableEntity() {
 		return adressableNamedIdentifiableEntityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getActor() {
+		return actorEClass;
 	}
 
 	/**
@@ -997,6 +1047,16 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getUserReference() {
+		return userReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAttachment() {
 		return attachmentEClass;
 	}
@@ -1387,6 +1447,16 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getComponentReference() {
+		return componentReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getIssueField() {
 		return issueFieldEClass;
 	}
@@ -1617,8 +1687,88 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getProject_Roles() {
+		return (EReference)projectEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getBasicProjectRole() {
 		return basicProjectRoleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRoleActor() {
+		return roleActorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoleActor_AvatarUrl() {
+		return (EAttribute)roleActorEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoleActor_DisplayName() {
+		return (EAttribute)roleActorEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoleActor_Type() {
+		return (EAttribute)roleActorEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getProjectRole() {
+		return projectRoleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProjectRole_Description() {
+		return (EAttribute)projectRoleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProjectRole_Actors() {
+		return (EReference)projectRoleEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2055,8 +2205,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		createEReference(jiraEClass, JIRA__PROJECTS);
 		createEReference(jiraEClass, JIRA__GROUPS);
 
-		groupEClass = createEClass(GROUP);
-
 		addressableEntityEClass = createEClass(ADDRESSABLE_ENTITY);
 		createEAttribute(addressableEntityEClass, ADDRESSABLE_ENTITY__SELF);
 
@@ -2070,10 +2218,42 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 
 		adressableNamedIdentifiableEntityEClass = createEClass(ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY);
 
+		actorEClass = createEClass(ACTOR);
+
+		basicUserEClass = createEClass(BASIC_USER);
+		createEAttribute(basicUserEClass, BASIC_USER__ACCOUNT_ID);
+		createEAttribute(basicUserEClass, BASIC_USER__DISPLAY_NAME);
+
+		userEClass = createEClass(USER);
+		createEAttribute(userEClass, USER__ACTIVE);
+		createEAttribute(userEClass, USER__EMAIL_ADDRESS);
+		createEAttribute(userEClass, USER__TIMEZONE);
+		createEReference(userEClass, USER__GROUPS);
+
+		userReferenceEClass = createEClass(USER_REFERENCE);
+
+		groupEClass = createEClass(GROUP);
+
+		basicProjectEClass = createEClass(BASIC_PROJECT);
+		createEAttribute(basicProjectEClass, BASIC_PROJECT__KEY);
+
+		projectEClass = createEClass(PROJECT);
+		createEReference(projectEClass, PROJECT__COMPONENTS);
+		createEAttribute(projectEClass, PROJECT__DESCRIPTION);
+		createEAttribute(projectEClass, PROJECT__EXPANDOS);
+		createEReference(projectEClass, PROJECT__ISSUE_TYPES);
+		createEReference(projectEClass, PROJECT__LEAD);
+		createEReference(projectEClass, PROJECT__PROJECT_ROLES);
+		createEAttribute(projectEClass, PROJECT__URI);
+		createEReference(projectEClass, PROJECT__VERSIONS);
+		createEReference(projectEClass, PROJECT__ISSUES);
+		createEReference(projectEClass, PROJECT__STATUS_CATEGORIES);
+		createEReference(projectEClass, PROJECT__ROLES);
+
+		projectReferenceEClass = createEClass(PROJECT_REFERENCE);
+
 		basicIssueEClass = createEClass(BASIC_ISSUE);
 		createEAttribute(basicIssueEClass, BASIC_ISSUE__KEY);
-
-		issueReferenceEClass = createEClass(ISSUE_REFERENCE);
 
 		issueEClass = createEClass(ISSUE);
 		createEReference(issueEClass, ISSUE__AFFECTED_VERSIONS);
@@ -2106,22 +2286,37 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		createEReference(issueEClass, ISSUE__WATCHERS);
 		createEReference(issueEClass, ISSUE__WORKLOGS);
 
+		issueReferenceEClass = createEClass(ISSUE_REFERENCE);
+
+		basicComponentEClass = createEClass(BASIC_COMPONENT);
+		createEAttribute(basicComponentEClass, BASIC_COMPONENT__DESCRIPTION);
+
+		componentEClass = createEClass(COMPONENT);
+		createEReference(componentEClass, COMPONENT__ASSIGNEE);
+		createEAttribute(componentEClass, COMPONENT__ASSIGNEE_TYPE);
+		createEAttribute(componentEClass, COMPONENT__IS_ASSIGNEE_TYPE_VALID);
+		createEReference(componentEClass, COMPONENT__REAL_ASSIGNEE);
+		createEAttribute(componentEClass, COMPONENT__REAL_ASSIGNEE_TYPE);
+
+		componentReferenceEClass = createEClass(COMPONENT_REFERENCE);
+
+		basicProjectRoleEClass = createEClass(BASIC_PROJECT_ROLE);
+
+		roleActorEClass = createEClass(ROLE_ACTOR);
+		createEAttribute(roleActorEClass, ROLE_ACTOR__AVATAR_URL);
+		createEAttribute(roleActorEClass, ROLE_ACTOR__DISPLAY_NAME);
+		createEAttribute(roleActorEClass, ROLE_ACTOR__TYPE);
+
+		projectRoleEClass = createEClass(PROJECT_ROLE);
+		createEAttribute(projectRoleEClass, PROJECT_ROLE__DESCRIPTION);
+		createEReference(projectRoleEClass, PROJECT_ROLE__ACTORS);
+
 		versionEClass = createEClass(VERSION);
 		createEAttribute(versionEClass, VERSION__DESCRIPTION);
 		createEAttribute(versionEClass, VERSION__ID);
 		createEAttribute(versionEClass, VERSION__IS_ARCHIVED);
 		createEAttribute(versionEClass, VERSION__IS_RELEASED);
 		createEAttribute(versionEClass, VERSION__RELEASE_DATE);
-
-		basicUserEClass = createEClass(BASIC_USER);
-		createEAttribute(basicUserEClass, BASIC_USER__ACCOUNT_ID);
-		createEAttribute(basicUserEClass, BASIC_USER__DISPLAY_NAME);
-
-		userEClass = createEClass(USER);
-		createEAttribute(userEClass, USER__ACTIVE);
-		createEAttribute(userEClass, USER__EMAIL_ADDRESS);
-		createEAttribute(userEClass, USER__TIMEZONE);
-		createEReference(userEClass, USER__GROUPS);
 
 		attachmentEClass = createEClass(ATTACHMENT);
 		createEReference(attachmentEClass, ATTACHMENT__AUTHOR);
@@ -2159,16 +2354,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		createEAttribute(visibilityEClass, VISIBILITY__GROUP);
 		createEAttribute(visibilityEClass, VISIBILITY__VALUE);
 
-		basicComponentEClass = createEClass(BASIC_COMPONENT);
-		createEAttribute(basicComponentEClass, BASIC_COMPONENT__DESCRIPTION);
-
-		componentEClass = createEClass(COMPONENT);
-		createEReference(componentEClass, COMPONENT__ASSIGNEE);
-		createEAttribute(componentEClass, COMPONENT__ASSIGNEE_TYPE);
-		createEAttribute(componentEClass, COMPONENT__IS_ASSIGNEE_TYPE_VALID);
-		createEReference(componentEClass, COMPONENT__REAL_ASSIGNEE);
-		createEAttribute(componentEClass, COMPONENT__REAL_ASSIGNEE_TYPE);
-
 		issueFieldEClass = createEClass(ISSUE_FIELD);
 		createEAttribute(issueFieldEClass, ISSUE_FIELD__TYPE);
 		createEReference(issueFieldEClass, ISSUE_FIELD__VALUE);
@@ -2181,25 +2366,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		operationsEClass = createEClass(OPERATIONS);
 
 		basicPriorityEClass = createEClass(BASIC_PRIORITY);
-
-		basicProjectEClass = createEClass(BASIC_PROJECT);
-		createEAttribute(basicProjectEClass, BASIC_PROJECT__KEY);
-
-		projectReferenceEClass = createEClass(PROJECT_REFERENCE);
-
-		projectEClass = createEClass(PROJECT);
-		createEReference(projectEClass, PROJECT__COMPONENTS);
-		createEAttribute(projectEClass, PROJECT__DESCRIPTION);
-		createEAttribute(projectEClass, PROJECT__EXPANDOS);
-		createEReference(projectEClass, PROJECT__ISSUE_TYPES);
-		createEReference(projectEClass, PROJECT__LEAD);
-		createEReference(projectEClass, PROJECT__PROJECT_ROLES);
-		createEAttribute(projectEClass, PROJECT__URI);
-		createEReference(projectEClass, PROJECT__VERSIONS);
-		createEReference(projectEClass, PROJECT__ISSUES);
-		createEReference(projectEClass, PROJECT__STATUS_CATEGORIES);
-
-		basicProjectRoleEClass = createEClass(BASIC_PROJECT_ROLE);
 
 		resolutionEClass = createEClass(RESOLUTION);
 		createEAttribute(resolutionEClass, RESOLUTION__DESCRIPTION);
@@ -2286,7 +2452,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		groupEClass.getESuperTypes().add(this.getAdressableNamedEntity());
 		adressableNamedEntityEClass.getESuperTypes().add(this.getAddressableEntity());
 		adressableNamedEntityEClass.getESuperTypes().add(this.getNamedEntity());
 		EGenericType g1 = createEGenericType(this.getAdressableNamedEntity());
@@ -2295,28 +2460,71 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		EGenericType g2 = createEGenericType(adressableNamedIdentifiableEntityEClass_T);
 		g1.getETypeArguments().add(g2);
 		adressableNamedIdentifiableEntityEClass.getEGenericSuperTypes().add(g1);
+		basicUserEClass.getESuperTypes().add(this.getAdressableNamedEntity());
+		userEClass.getESuperTypes().add(this.getBasicUser());
+		userEClass.getESuperTypes().add(this.getActor());
+		g1 = createEGenericType(this.getBasicUser());
+		userReferenceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theNcorePackage.getReference());
+		g2 = createEGenericType(this.getUser());
+		g1.getETypeArguments().add(g2);
+		userReferenceEClass.getEGenericSuperTypes().add(g1);
+		groupEClass.getESuperTypes().add(this.getAdressableNamedEntity());
+		groupEClass.getESuperTypes().add(this.getActor());
+		g1 = createEGenericType(this.getAdressableNamedIdentifiableEntity());
+		g2 = createEGenericType(ecorePackage.getELongObject());
+		g1.getETypeArguments().add(g2);
+		basicProjectEClass.getEGenericSuperTypes().add(g1);
+		projectEClass.getESuperTypes().add(this.getBasicProject());
+		g1 = createEGenericType(this.getBasicProject());
+		projectReferenceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theNcorePackage.getReference());
+		g2 = createEGenericType(this.getProject());
+		g1.getETypeArguments().add(g2);
+		projectReferenceEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(this.getAddressableEntity());
 		basicIssueEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(this.getIdentifiableEntity());
 		g2 = createEGenericType(ecorePackage.getELongObject());
 		g1.getETypeArguments().add(g2);
 		basicIssueEClass.getEGenericSuperTypes().add(g1);
+		issueEClass.getESuperTypes().add(this.getBasicIssue());
 		g1 = createEGenericType(this.getBasicIssue());
 		issueReferenceEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theNcorePackage.getReference());
 		g2 = createEGenericType(this.getIssue());
 		g1.getETypeArguments().add(g2);
 		issueReferenceEClass.getEGenericSuperTypes().add(g1);
-		issueEClass.getESuperTypes().add(this.getBasicIssue());
-		versionEClass.getESuperTypes().add(this.getAdressableNamedEntity());
-		basicUserEClass.getESuperTypes().add(this.getAdressableNamedEntity());
-		userEClass.getESuperTypes().add(this.getBasicUser());
-		attachmentEClass.getESuperTypes().add(this.getAddressableEntity());
 		g1 = createEGenericType(this.getAdressableNamedIdentifiableEntity());
 		g2 = createEGenericType(ecorePackage.getELongObject());
 		g1.getETypeArguments().add(g2);
 		basicComponentEClass.getEGenericSuperTypes().add(g1);
 		componentEClass.getESuperTypes().add(this.getBasicComponent());
+		g1 = createEGenericType(this.getBasicComponent());
+		componentReferenceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theNcorePackage.getReference());
+		g2 = createEGenericType(this.getComponent());
+		g1.getETypeArguments().add(g2);
+		componentReferenceEClass.getEGenericSuperTypes().add(g1);
+		basicProjectRoleEClass.getESuperTypes().add(this.getAdressableNamedEntity());
+		g1 = createEGenericType(this.getNamedEntity());
+		roleActorEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(this.getIdentifiableEntity());
+		g2 = createEGenericType(ecorePackage.getELongObject());
+		g1.getETypeArguments().add(g2);
+		roleActorEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theNcorePackage.getReference());
+		g2 = createEGenericType(this.getActor());
+		g1.getETypeArguments().add(g2);
+		roleActorEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(this.getBasicProjectRole());
+		projectRoleEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(this.getIdentifiableEntity());
+		g2 = createEGenericType(ecorePackage.getELongObject());
+		g1.getETypeArguments().add(g2);
+		projectRoleEClass.getEGenericSuperTypes().add(g1);
+		versionEClass.getESuperTypes().add(this.getAdressableNamedEntity());
+		attachmentEClass.getESuperTypes().add(this.getAddressableEntity());
 		g1 = createEGenericType(this.getNamedEntity());
 		issueFieldEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(this.getIdentifiableEntity());
@@ -2327,18 +2535,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		g2 = createEGenericType(ecorePackage.getELongObject());
 		g1.getETypeArguments().add(g2);
 		basicPriorityEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(this.getAdressableNamedIdentifiableEntity());
-		g2 = createEGenericType(ecorePackage.getELongObject());
-		g1.getETypeArguments().add(g2);
-		basicProjectEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(this.getBasicProject());
-		projectReferenceEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theNcorePackage.getReference());
-		g2 = createEGenericType(this.getProject());
-		g1.getETypeArguments().add(g2);
-		projectReferenceEClass.getEGenericSuperTypes().add(g1);
-		projectEClass.getESuperTypes().add(this.getBasicProject());
-		basicProjectRoleEClass.getESuperTypes().add(this.getAdressableNamedEntity());
 		g1 = createEGenericType(this.getAdressableNamedIdentifiableEntity());
 		g2 = createEGenericType(ecorePackage.getELongObject());
 		g1.getETypeArguments().add(g2);
@@ -2368,8 +2564,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEReference(getJira_Groups(), this.getGroup(), null, "groups", null, 0, -1, Jira.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getJira_Groups().getEKeys().add(this.getNamedEntity_Name());
 
-		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(addressableEntityEClass, AddressableEntity.class, "AddressableEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAddressableEntity_Self(), ecorePackage.getEString(), "self", null, 0, 1, AddressableEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2384,10 +2578,46 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 
 		initEClass(adressableNamedIdentifiableEntityEClass, AdressableNamedIdentifiableEntity.class, "AdressableNamedIdentifiableEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		initEClass(actorEClass, Actor.class, "Actor", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(basicUserEClass, BasicUser.class, "BasicUser", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBasicUser_AccountId(), ecorePackage.getEString(), "accountId", null, 0, 1, BasicUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBasicUser_DisplayName(), ecorePackage.getEString(), "displayName", null, 0, 1, BasicUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUser_Active(), ecorePackage.getEBoolean(), "active", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUser_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUser_Timezone(), ecorePackage.getEString(), "timezone", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUser_Groups(), this.getGroup(), null, "groups", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userReferenceEClass, UserReference.class, "UserReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(basicProjectEClass, BasicProject.class, "BasicProject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBasicProject_Key(), ecorePackage.getEString(), "key", null, 0, 1, BasicProject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(projectEClass, Project.class, "Project", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProject_Components(), this.getBasicComponent(), null, "components", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProject_Description(), ecorePackage.getEString(), "description", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProject_Expandos(), ecorePackage.getEString(), "expandos", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProject_IssueTypes(), this.getIssueType(), null, "issueTypes", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProject_IssueTypes().getEKeys().add(this.getIdentifiableEntity_Id());
+		initEReference(getProject_Lead(), this.getBasicUser(), null, "lead", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProject_ProjectRoles(), this.getBasicProjectRole(), null, "projectRoles", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProject_Uri(), ecorePackage.getEString(), "uri", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProject_Versions(), this.getVersion(), null, "versions", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProject_Versions().getEKeys().add(this.getVersion_Id());
+		initEReference(getProject_Issues(), this.getBasicIssue(), null, "issues", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProject_Issues().getEKeys().add(this.getBasicIssue_Key());
+		initEReference(getProject_StatusCategories(), this.getStatusCategory(), null, "statusCategories", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProject_StatusCategories().getEKeys().add(this.getIdentifiableEntity_Id());
+		initEReference(getProject_Roles(), this.getBasicProjectRole(), null, "roles", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(projectReferenceEClass, ProjectReference.class, "ProjectReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEClass(basicIssueEClass, BasicIssue.class, "BasicIssue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBasicIssue_Key(), ecorePackage.getEString(), "key", null, 0, 1, BasicIssue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(issueReferenceEClass, IssueReference.class, "IssueReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(issueEClass, Issue.class, "Issue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getIssue_AffectedVersions(), this.getVersion(), null, "affectedVersions", null, 0, -1, Issue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2421,22 +2651,37 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEReference(getIssue_Watchers(), this.getBasicWatchers(), null, "watchers", null, 0, 1, Issue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getIssue_Worklogs(), this.getWorklog(), null, "worklogs", null, 0, -1, Issue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(issueReferenceEClass, IssueReference.class, "IssueReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(basicComponentEClass, BasicComponent.class, "BasicComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBasicComponent_Description(), ecorePackage.getEString(), "description", null, 0, 1, BasicComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getComponent_Assignee(), this.getBasicUser(), null, "assignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_AssigneeType(), this.getAssigneeType(), "assigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_IsAssigneeTypeValid(), ecorePackage.getEBoolean(), "isAssigneeTypeValid", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getComponent_RealAssignee(), this.getBasicUser(), null, "realAssignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponent_RealAssigneeType(), this.getAssigneeType(), "realAssigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(componentReferenceEClass, ComponentReference.class, "ComponentReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(basicProjectRoleEClass, BasicProjectRole.class, "BasicProjectRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(roleActorEClass, RoleActor.class, "RoleActor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRoleActor_AvatarUrl(), ecorePackage.getEString(), "avatarUrl", null, 0, 1, RoleActor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoleActor_DisplayName(), ecorePackage.getEString(), "displayName", null, 0, 1, RoleActor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoleActor_Type(), ecorePackage.getEString(), "type", null, 0, 1, RoleActor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(projectRoleEClass, ProjectRole.class, "ProjectRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProjectRole_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProjectRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProjectRole_Actors(), this.getRoleActor(), null, "actors", null, 0, -1, ProjectRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(versionEClass, Version.class, "Version", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVersion_Description(), ecorePackage.getEString(), "description", null, 0, 1, Version.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVersion_Id(), ecorePackage.getELongObject(), "id", null, 0, 1, Version.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVersion_IsArchived(), ecorePackage.getEBoolean(), "isArchived", null, 0, 1, Version.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVersion_IsReleased(), ecorePackage.getEBoolean(), "isReleased", null, 0, 1, Version.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVersion_ReleaseDate(), ecorePackage.getEDate(), "releaseDate", null, 0, 1, Version.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(basicUserEClass, BasicUser.class, "BasicUser", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBasicUser_AccountId(), ecorePackage.getEString(), "accountId", null, 0, 1, BasicUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getBasicUser_DisplayName(), ecorePackage.getEString(), "displayName", null, 0, 1, BasicUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUser_Active(), ecorePackage.getEBoolean(), "active", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUser_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUser_Timezone(), ecorePackage.getEString(), "timezone", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUser_Groups(), this.getGroup(), null, "groups", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachmentEClass, Attachment.class, "Attachment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttachment_Author(), this.getBasicUser(), null, "author", null, 0, 1, Attachment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2474,16 +2719,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEAttribute(getVisibility_Group(), ecorePackage.getEBoolean(), "group", null, 0, 1, Visibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVisibility_Value(), ecorePackage.getEString(), "value", null, 0, 1, Visibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(basicComponentEClass, BasicComponent.class, "BasicComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBasicComponent_Description(), ecorePackage.getEString(), "description", null, 0, 1, BasicComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getComponent_Assignee(), this.getBasicUser(), null, "assignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getComponent_AssigneeType(), this.getAssigneeType(), "assigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getComponent_IsAssigneeTypeValid(), ecorePackage.getEBoolean(), "isAssigneeTypeValid", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getComponent_RealAssignee(), this.getBasicUser(), null, "realAssignee", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getComponent_RealAssigneeType(), this.getAssigneeType(), "realAssigneeType", null, 0, 1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(issueFieldEClass, IssueField.class, "IssueField", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIssueField_Type(), ecorePackage.getEString(), "type", null, 0, 1, IssueField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getIssueField_Value(), ecorePackage.getEObject(), null, "value", null, 0, 1, IssueField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2496,29 +2731,6 @@ public class JiraPackageImpl extends EPackageImpl implements JiraPackage {
 		initEClass(operationsEClass, Operations.class, "Operations", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(basicPriorityEClass, BasicPriority.class, "BasicPriority", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(basicProjectEClass, BasicProject.class, "BasicProject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBasicProject_Key(), ecorePackage.getEString(), "key", null, 0, 1, BasicProject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(projectReferenceEClass, ProjectReference.class, "ProjectReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(projectEClass, Project.class, "Project", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProject_Components(), this.getBasicComponent(), null, "components", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProject_Description(), ecorePackage.getEString(), "description", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProject_Expandos(), ecorePackage.getEString(), "expandos", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProject_IssueTypes(), this.getIssueType(), null, "issueTypes", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProject_IssueTypes().getEKeys().add(this.getIdentifiableEntity_Id());
-		initEReference(getProject_Lead(), this.getBasicUser(), null, "lead", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProject_ProjectRoles(), this.getBasicProjectRole(), null, "projectRoles", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProject_Uri(), ecorePackage.getEString(), "uri", null, 0, 1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProject_Versions(), this.getVersion(), null, "versions", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProject_Versions().getEKeys().add(this.getVersion_Id());
-		initEReference(getProject_Issues(), this.getBasicIssue(), null, "issues", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProject_Issues().getEKeys().add(this.getBasicIssue_Key());
-		initEReference(getProject_StatusCategories(), this.getStatusCategory(), null, "statusCategories", null, 0, -1, Project.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProject_StatusCategories().getEKeys().add(this.getIdentifiableEntity_Id());
-
-		initEClass(basicProjectRoleEClass, BasicProjectRole.class, "BasicProjectRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(resolutionEClass, Resolution.class, "Resolution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getResolution_Description(), ecorePackage.getEString(), "description", null, 0, 1, Resolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -58,28 +58,32 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case JiraPackage.JIRA: return createJira();
-			case JiraPackage.GROUP: return createGroup();
-			case JiraPackage.BASIC_ISSUE: return createBasicIssue();
-			case JiraPackage.ISSUE_REFERENCE: return createIssueReference();
-			case JiraPackage.ISSUE: return createIssue();
-			case JiraPackage.VERSION: return createVersion();
 			case JiraPackage.BASIC_USER: return createBasicUser();
 			case JiraPackage.USER: return createUser();
+			case JiraPackage.USER_REFERENCE: return createUserReference();
+			case JiraPackage.GROUP: return createGroup();
+			case JiraPackage.BASIC_PROJECT: return createBasicProject();
+			case JiraPackage.PROJECT: return createProject();
+			case JiraPackage.PROJECT_REFERENCE: return createProjectReference();
+			case JiraPackage.BASIC_ISSUE: return createBasicIssue();
+			case JiraPackage.ISSUE: return createIssue();
+			case JiraPackage.ISSUE_REFERENCE: return createIssueReference();
+			case JiraPackage.BASIC_COMPONENT: return createBasicComponent();
+			case JiraPackage.COMPONENT: return createComponent();
+			case JiraPackage.COMPONENT_REFERENCE: return createComponentReference();
+			case JiraPackage.BASIC_PROJECT_ROLE: return createBasicProjectRole();
+			case JiraPackage.ROLE_ACTOR: return createRoleActor();
+			case JiraPackage.PROJECT_ROLE: return createProjectRole();
+			case JiraPackage.VERSION: return createVersion();
 			case JiraPackage.ATTACHMENT: return createAttachment();
 			case JiraPackage.CHANGELOG_GROUP: return createChangelogGroup();
 			case JiraPackage.CHANGELOG_ITEM: return createChangelogItem();
 			case JiraPackage.COMMENT: return createComment();
 			case JiraPackage.VISIBILITY: return createVisibility();
-			case JiraPackage.BASIC_COMPONENT: return createBasicComponent();
-			case JiraPackage.COMPONENT: return createComponent();
 			case JiraPackage.ISSUE_FIELD: return createIssueField();
 			case JiraPackage.ISSUE_LINK: return createIssueLink();
 			case JiraPackage.OPERATIONS: return createOperations();
 			case JiraPackage.BASIC_PRIORITY: return createBasicPriority();
-			case JiraPackage.BASIC_PROJECT: return createBasicProject();
-			case JiraPackage.PROJECT_REFERENCE: return createProjectReference();
-			case JiraPackage.PROJECT: return createProject();
-			case JiraPackage.BASIC_PROJECT_ROLE: return createBasicProjectRole();
 			case JiraPackage.RESOLUTION: return createResolution();
 			case JiraPackage.STATUS: return createStatus();
 			case JiraPackage.STATUS_CATEGORY: return createStatusCategory();
@@ -218,6 +222,17 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	 * @generated
 	 */
 	@Override
+	public UserReference createUserReference() {
+		UserReferenceImpl userReference = new UserReferenceImpl();
+		return userReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Attachment createAttachment() {
 		AttachmentImpl attachment = new AttachmentImpl();
 		return attachment;
@@ -287,6 +302,17 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public Component createComponent() {
 		ComponentImpl component = new ComponentImpl();
 		return component;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ComponentReference createComponentReference() {
+		ComponentReferenceImpl componentReference = new ComponentReferenceImpl();
+		return componentReference;
 	}
 
 	/**
@@ -375,6 +401,28 @@ public class JiraFactoryImpl extends EFactoryImpl implements JiraFactory {
 	public BasicProjectRole createBasicProjectRole() {
 		BasicProjectRoleImpl basicProjectRole = new BasicProjectRoleImpl();
 		return basicProjectRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleActor createRoleActor() {
+		RoleActorImpl roleActor = new RoleActorImpl();
+		return roleActor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProjectRole createProjectRole() {
+		ProjectRoleImpl projectRole = new ProjectRoleImpl();
+		return projectRole;
 	}
 
 	/**

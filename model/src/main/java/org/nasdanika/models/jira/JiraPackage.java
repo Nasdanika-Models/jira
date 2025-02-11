@@ -120,7 +120,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAddressableEntity()
 	 * @generated
 	 */
-	int ADDRESSABLE_ENTITY = 2;
+	int ADDRESSABLE_ENTITY = 1;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -157,7 +157,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getNamedEntity()
 	 * @generated
 	 */
-	int NAMED_ENTITY = 3;
+	int NAMED_ENTITY = 2;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IdentifiableEntityImpl <em>Identifiable Entity</em>}' class.
@@ -167,7 +167,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIdentifiableEntity()
 	 * @generated
 	 */
-	int IDENTIFIABLE_ENTITY = 4;
+	int IDENTIFIABLE_ENTITY = 3;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AdressableNamedEntityImpl <em>Adressable Named Entity</em>}' class.
@@ -177,43 +177,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAdressableNamedEntity()
 	 * @generated
 	 */
-	int ADRESSABLE_NAMED_ENTITY = 5;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADRESSABLE_NAMED_ENTITY__SELF = ADDRESSABLE_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADRESSABLE_NAMED_ENTITY__NAME = ADDRESSABLE_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Adressable Named Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT = ADDRESSABLE_ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Adressable Named Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
+	int ADRESSABLE_NAMED_ENTITY = 4;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.GroupImpl <em>Group</em>}' class.
@@ -223,43 +187,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getGroup()
 	 * @generated
 	 */
-	int GROUP = 1;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
-
-	/**
-	 * The number of structural features of the '<em>Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+	int GROUP = 10;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -316,6 +244,42 @@ public interface JiraPackage extends EPackage {
 	int IDENTIFIABLE_ENTITY_OPERATION_COUNT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADRESSABLE_NAMED_ENTITY__SELF = ADDRESSABLE_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADRESSABLE_NAMED_ENTITY__NAME = ADDRESSABLE_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Adressable Named Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT = ADDRESSABLE_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Adressable Named Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AdressableNamedIdentifiableEntityImpl <em>Adressable Named Identifiable Entity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -323,7 +287,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAdressableNamedIdentifiableEntity()
 	 * @generated
 	 */
-	int ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY = 6;
+	int ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY = 5;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -371,6 +335,34 @@ public interface JiraPackage extends EPackage {
 	int ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.Actor <em>Actor</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.Actor
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getActor()
+	 * @generated
+	 */
+	int ACTOR = 6;
+
+	/**
+	 * The number of structural features of the '<em>Actor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTOR_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Actor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTOR_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicIssueImpl <em>Basic Issue</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -378,7 +370,730 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicIssue()
 	 * @generated
 	 */
-	int BASIC_ISSUE = 7;
+	int BASIC_ISSUE = 14;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueReferenceImpl <em>Issue Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.IssueReferenceImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueReference()
+	 * @generated
+	 */
+	int ISSUE_REFERENCE = 16;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueImpl <em>Issue</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.IssueImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssue()
+	 * @generated
+	 */
+	int ISSUE = 15;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.VersionImpl <em>Version</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.VersionImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVersion()
+	 * @generated
+	 */
+	int VERSION = 23;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicUserImpl <em>Basic User</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.BasicUserImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicUser()
+	 * @generated
+	 */
+	int BASIC_USER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Account Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER__ACCOUNT_ID = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER__DISPLAY_NAME = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Basic User</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Basic User</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_USER_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.UserImpl <em>User</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.UserImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getUser()
+	 * @generated
+	 */
+	int USER = 8;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__SELF = BASIC_USER__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__NAME = BASIC_USER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Account Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__ACCOUNT_ID = BASIC_USER__ACCOUNT_ID;
+
+	/**
+	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__DISPLAY_NAME = BASIC_USER__DISPLAY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Active</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__ACTIVE = BASIC_USER_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Email Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__EMAIL_ADDRESS = BASIC_USER_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Timezone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__TIMEZONE = BASIC_USER_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Groups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__GROUPS = BASIC_USER_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>User</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_FEATURE_COUNT = BASIC_USER_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of operations of the '<em>User</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_OPERATION_COUNT = BASIC_USER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.UserReferenceImpl <em>User Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.UserReferenceImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getUserReference()
+	 * @generated
+	 */
+	int USER_REFERENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE__SELF = BASIC_USER__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE__NAME = BASIC_USER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Account Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE__ACCOUNT_ID = BASIC_USER__ACCOUNT_ID;
+
+	/**
+	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE__DISPLAY_NAME = BASIC_USER__DISPLAY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE__TARGET = BASIC_USER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>User Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE_FEATURE_COUNT = BASIC_USER_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>User Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_REFERENCE_OPERATION_COUNT = BASIC_USER_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
+
+	/**
+	 * The number of structural features of the '<em>Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AttachmentImpl <em>Attachment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.AttachmentImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAttachment()
+	 * @generated
+	 */
+	int ATTACHMENT = 24;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ChangelogGroupImpl <em>Changelog Group</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ChangelogGroupImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogGroup()
+	 * @generated
+	 */
+	int CHANGELOG_GROUP = 25;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ChangelogItemImpl <em>Changelog Item</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ChangelogItemImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogItem()
+	 * @generated
+	 */
+	int CHANGELOG_ITEM = 26;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.CommentImpl <em>Comment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.CommentImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComment()
+	 * @generated
+	 */
+	int COMMENT = 27;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.VisibilityImpl <em>Visibility</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.VisibilityImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVisibility()
+	 * @generated
+	 */
+	int VISIBILITY = 28;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicComponentImpl <em>Basic Component</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.BasicComponentImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicComponent()
+	 * @generated
+	 */
+	int BASIC_COMPONENT = 17;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ComponentImpl <em>Component</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ComponentImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponent()
+	 * @generated
+	 */
+	int COMPONENT = 18;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ComponentReferenceImpl <em>Component Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ComponentReferenceImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponentReference()
+	 * @generated
+	 */
+	int COMPONENT_REFERENCE = 19;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueFieldImpl <em>Issue Field</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.IssueFieldImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueField()
+	 * @generated
+	 */
+	int ISSUE_FIELD = 29;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueLinkImpl <em>Issue Link</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.IssueLinkImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueLink()
+	 * @generated
+	 */
+	int ISSUE_LINK = 30;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.OperationsImpl <em>Operations</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.OperationsImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getOperations()
+	 * @generated
+	 */
+	int OPERATIONS = 31;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicPriorityImpl <em>Basic Priority</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.BasicPriorityImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicPriority()
+	 * @generated
+	 */
+	int BASIC_PRIORITY = 32;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicProjectImpl <em>Basic Project</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.BasicProjectImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProject()
+	 * @generated
+	 */
+	int BASIC_PROJECT = 11;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT__SELF = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT__NAME = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT__ID = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT__KEY = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Basic Project</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_FEATURE_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Basic Project</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_OPERATION_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ProjectReferenceImpl <em>Project Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ProjectReferenceImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProjectReference()
+	 * @generated
+	 */
+	int PROJECT_REFERENCE = 13;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ProjectImpl <em>Project</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ProjectImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProject()
+	 * @generated
+	 */
+	int PROJECT = 12;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__SELF = BASIC_PROJECT__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__NAME = BASIC_PROJECT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ID = BASIC_PROJECT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__KEY = BASIC_PROJECT__KEY;
+
+	/**
+	 * The feature id for the '<em><b>Components</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__COMPONENTS = BASIC_PROJECT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DESCRIPTION = BASIC_PROJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Expandos</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__EXPANDOS = BASIC_PROJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Issue Types</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ISSUE_TYPES = BASIC_PROJECT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Lead</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__LEAD = BASIC_PROJECT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Project Roles</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__PROJECT_ROLES = BASIC_PROJECT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__URI = BASIC_PROJECT_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Versions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__VERSIONS = BASIC_PROJECT_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Issues</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ISSUES = BASIC_PROJECT_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Status Categories</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__STATUS_CATEGORIES = BASIC_PROJECT_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Roles</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ROLES = BASIC_PROJECT_FEATURE_COUNT + 10;
+
+	/**
+	 * The number of structural features of the '<em>Project</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_FEATURE_COUNT = BASIC_PROJECT_FEATURE_COUNT + 11;
+
+	/**
+	 * The number of operations of the '<em>Project</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_OPERATION_COUNT = BASIC_PROJECT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE__SELF = BASIC_PROJECT__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE__NAME = BASIC_PROJECT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE__ID = BASIC_PROJECT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE__KEY = BASIC_PROJECT__KEY;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE__TARGET = BASIC_PROJECT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Project Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE_FEATURE_COUNT = BASIC_PROJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Project Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_REFERENCE_OPERATION_COUNT = BASIC_PROJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -424,80 +1139,6 @@ public interface JiraPackage extends EPackage {
 	 * @ordered
 	 */
 	int BASIC_ISSUE_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueReferenceImpl <em>Issue Reference</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.IssueReferenceImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueReference()
-	 * @generated
-	 */
-	int ISSUE_REFERENCE = 8;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE__SELF = BASIC_ISSUE__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE__ID = BASIC_ISSUE__ID;
-
-	/**
-	 * The feature id for the '<em><b>Key</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE__KEY = BASIC_ISSUE__KEY;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE__TARGET = BASIC_ISSUE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Issue Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE_FEATURE_COUNT = BASIC_ISSUE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Issue Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISSUE_REFERENCE_OPERATION_COUNT = BASIC_ISSUE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueImpl <em>Issue</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.IssueImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssue()
-	 * @generated
-	 */
-	int ISSUE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -806,41 +1447,13 @@ public interface JiraPackage extends EPackage {
 	int ISSUE_OPERATION_COUNT = BASIC_ISSUE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.VersionImpl <em>Version</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.VersionImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVersion()
-	 * @generated
-	 */
-	int VERSION = 10;
-
-	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSION__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSION__DESCRIPTION = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+	int ISSUE_REFERENCE__SELF = BASIC_ISSUE__SELF;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -849,609 +1462,43 @@ public interface JiraPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION__ID = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 1;
+	int ISSUE_REFERENCE__ID = BASIC_ISSUE__ID;
 
 	/**
-	 * The feature id for the '<em><b>Is Archived</b></em>' attribute.
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION__IS_ARCHIVED = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 2;
+	int ISSUE_REFERENCE__KEY = BASIC_ISSUE__KEY;
 
 	/**
-	 * The feature id for the '<em><b>Is Released</b></em>' attribute.
+	 * The feature id for the '<em><b>Target</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION__IS_RELEASED = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 3;
+	int ISSUE_REFERENCE__TARGET = BASIC_ISSUE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Release Date</b></em>' attribute.
+	 * The number of structural features of the '<em>Issue Reference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION__RELEASE_DATE = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 4;
+	int ISSUE_REFERENCE_FEATURE_COUNT = BASIC_ISSUE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Version</em>' class.
+	 * The number of operations of the '<em>Issue Reference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSION_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 5;
-
-	/**
-	 * The number of operations of the '<em>Version</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSION_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicUserImpl <em>Basic User</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.BasicUserImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicUser()
-	 * @generated
-	 */
-	int BASIC_USER = 11;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Account Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER__ACCOUNT_ID = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER__DISPLAY_NAME = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Basic User</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Basic User</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_USER_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.UserImpl <em>User</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.UserImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getUser()
-	 * @generated
-	 */
-	int USER = 12;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__SELF = BASIC_USER__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__NAME = BASIC_USER__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Account Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__ACCOUNT_ID = BASIC_USER__ACCOUNT_ID;
-
-	/**
-	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__DISPLAY_NAME = BASIC_USER__DISPLAY_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__ACTIVE = BASIC_USER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Email Address</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__EMAIL_ADDRESS = BASIC_USER_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Timezone</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__TIMEZONE = BASIC_USER_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Groups</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__GROUPS = BASIC_USER_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>User</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_FEATURE_COUNT = BASIC_USER_FEATURE_COUNT + 4;
-
-	/**
-	 * The number of operations of the '<em>User</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_OPERATION_COUNT = BASIC_USER_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.AttachmentImpl <em>Attachment</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.AttachmentImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAttachment()
-	 * @generated
-	 */
-	int ATTACHMENT = 13;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__SELF = ADDRESSABLE_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__AUTHOR = ADDRESSABLE_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Content Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__CONTENT_URI = ADDRESSABLE_ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Creation Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__CREATION_DATE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Filename</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__FILENAME = ADDRESSABLE_ENTITY_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Mime Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__MIME_TYPE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__SIZE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Thumbnail Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT__THUMBNAIL_URI = ADDRESSABLE_ENTITY_FEATURE_COUNT + 6;
-
-	/**
-	 * The number of structural features of the '<em>Attachment</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT_FEATURE_COUNT = ADDRESSABLE_ENTITY_FEATURE_COUNT + 7;
-
-	/**
-	 * The number of operations of the '<em>Attachment</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTACHMENT_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ChangelogGroupImpl <em>Changelog Group</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.ChangelogGroupImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogGroup()
-	 * @generated
-	 */
-	int CHANGELOG_GROUP = 14;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_GROUP__AUTHOR = 0;
-
-	/**
-	 * The feature id for the '<em><b>Created</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_GROUP__CREATED = 1;
-
-	/**
-	 * The feature id for the '<em><b>Items</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_GROUP__ITEMS = 2;
-
-	/**
-	 * The number of structural features of the '<em>Changelog Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_GROUP_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Changelog Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_GROUP_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ChangelogItemImpl <em>Changelog Item</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.ChangelogItemImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getChangelogItem()
-	 * @generated
-	 */
-	int CHANGELOG_ITEM = 15;
-
-	/**
-	 * The feature id for the '<em><b>Field</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__FIELD = 0;
-
-	/**
-	 * The feature id for the '<em><b>Custom</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__CUSTOM = 1;
-
-	/**
-	 * The feature id for the '<em><b>From</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__FROM = 2;
-
-	/**
-	 * The feature id for the '<em><b>From String</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__FROM_STRING = 3;
-
-	/**
-	 * The feature id for the '<em><b>To</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__TO = 4;
-
-	/**
-	 * The feature id for the '<em><b>To String</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM__TO_STRING = 5;
-
-	/**
-	 * The number of structural features of the '<em>Changelog Item</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM_FEATURE_COUNT = 6;
-
-	/**
-	 * The number of operations of the '<em>Changelog Item</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGELOG_ITEM_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.CommentImpl <em>Comment</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.CommentImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComment()
-	 * @generated
-	 */
-	int COMMENT = 16;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__AUTHOR = 0;
-
-	/**
-	 * The feature id for the '<em><b>Body</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__BODY = 1;
-
-	/**
-	 * The feature id for the '<em><b>Creation Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__CREATION_DATE = 2;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__ID = 3;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__SELF = 4;
-
-	/**
-	 * The feature id for the '<em><b>Update Author</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__UPDATE_AUTHOR = 5;
-
-	/**
-	 * The feature id for the '<em><b>Update Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__UPDATE_DATE = 6;
-
-	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT__VISIBILITY = 7;
-
-	/**
-	 * The number of structural features of the '<em>Comment</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT_FEATURE_COUNT = 8;
-
-	/**
-	 * The number of operations of the '<em>Comment</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMENT_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.VisibilityImpl <em>Visibility</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.VisibilityImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getVisibility()
-	 * @generated
-	 */
-	int VISIBILITY = 17;
-
-	/**
-	 * The feature id for the '<em><b>Group</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VISIBILITY__GROUP = 0;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VISIBILITY__VALUE = 1;
-
-	/**
-	 * The number of structural features of the '<em>Visibility</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VISIBILITY_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Visibility</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VISIBILITY_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicComponentImpl <em>Basic Component</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.BasicComponentImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicComponent()
-	 * @generated
-	 */
-	int BASIC_COMPONENT = 18;
+	int ISSUE_REFERENCE_OPERATION_COUNT = BASIC_ISSUE_OPERATION_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1506,16 +1553,6 @@ public interface JiraPackage extends EPackage {
 	 * @ordered
 	 */
 	int BASIC_COMPONENT_OPERATION_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ComponentImpl <em>Component</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.ComponentImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponent()
-	 * @generated
-	 */
-	int COMPONENT = 19;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1617,14 +1654,682 @@ public interface JiraPackage extends EPackage {
 	int COMPONENT_OPERATION_COUNT = BASIC_COMPONENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueFieldImpl <em>Issue Field</em>}' class.
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.IssueFieldImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueField()
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE__SELF = BASIC_COMPONENT__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE__NAME = BASIC_COMPONENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE__ID = BASIC_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE__DESCRIPTION = BASIC_COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE__TARGET = BASIC_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Component Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE_FEATURE_COUNT = BASIC_COMPONENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Component Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_REFERENCE_OPERATION_COUNT = BASIC_COMPONENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicProjectRoleImpl <em>Basic Project Role</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.BasicProjectRoleImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProjectRole()
 	 * @generated
 	 */
-	int ISSUE_FIELD = 20;
+	int BASIC_PROJECT_ROLE = 20;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_ROLE__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_ROLE__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
+
+	/**
+	 * The number of structural features of the '<em>Basic Project Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_ROLE_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Basic Project Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BASIC_PROJECT_ROLE_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.RoleActorImpl <em>Role Actor</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.RoleActorImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getRoleActor()
+	 * @generated
+	 */
+	int ROLE_ACTOR = 21;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__NAME = NAMED_ENTITY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__ID = NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__TARGET = NAMED_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Avatar Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__AVATAR_URL = NAMED_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Display Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__DISPLAY_NAME = NAMED_ENTITY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR__TYPE = NAMED_ENTITY_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Role Actor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR_FEATURE_COUNT = NAMED_ENTITY_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Role Actor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_ACTOR_OPERATION_COUNT = NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ProjectRoleImpl <em>Project Role</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.jira.impl.ProjectRoleImpl
+	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProjectRole()
+	 * @generated
+	 */
+	int PROJECT_ROLE = 22;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE__SELF = BASIC_PROJECT_ROLE__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE__NAME = BASIC_PROJECT_ROLE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE__ID = BASIC_PROJECT_ROLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE__DESCRIPTION = BASIC_PROJECT_ROLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Actors</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE__ACTORS = BASIC_PROJECT_ROLE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Project Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE_FEATURE_COUNT = BASIC_PROJECT_ROLE_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Project Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ROLE_OPERATION_COUNT = BASIC_PROJECT_ROLE_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__DESCRIPTION = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__ID = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Is Archived</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__IS_ARCHIVED = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Is Released</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__IS_RELEASED = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Release Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION__RELEASE_DATE = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Version</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Version</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__SELF = ADDRESSABLE_ENTITY__SELF;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__AUTHOR = ADDRESSABLE_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Content Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__CONTENT_URI = ADDRESSABLE_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Creation Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__CREATION_DATE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Filename</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__FILENAME = ADDRESSABLE_ENTITY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Mime Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__MIME_TYPE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__SIZE = ADDRESSABLE_ENTITY_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Thumbnail Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT__THUMBNAIL_URI = ADDRESSABLE_ENTITY_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>Attachment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_FEATURE_COUNT = ADDRESSABLE_ENTITY_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of operations of the '<em>Attachment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_OPERATION_COUNT = ADDRESSABLE_ENTITY_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_GROUP__AUTHOR = 0;
+
+	/**
+	 * The feature id for the '<em><b>Created</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_GROUP__CREATED = 1;
+
+	/**
+	 * The feature id for the '<em><b>Items</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_GROUP__ITEMS = 2;
+
+	/**
+	 * The number of structural features of the '<em>Changelog Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_GROUP_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Changelog Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_GROUP_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Field</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__FIELD = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__CUSTOM = 1;
+
+	/**
+	 * The feature id for the '<em><b>From</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__FROM = 2;
+
+	/**
+	 * The feature id for the '<em><b>From String</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__FROM_STRING = 3;
+
+	/**
+	 * The feature id for the '<em><b>To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__TO = 4;
+
+	/**
+	 * The feature id for the '<em><b>To String</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM__TO_STRING = 5;
+
+	/**
+	 * The number of structural features of the '<em>Changelog Item</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Changelog Item</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGELOG_ITEM_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__AUTHOR = 0;
+
+	/**
+	 * The feature id for the '<em><b>Body</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__BODY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Creation Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__CREATION_DATE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__ID = 3;
+
+	/**
+	 * The feature id for the '<em><b>Self</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__SELF = 4;
+
+	/**
+	 * The feature id for the '<em><b>Update Author</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__UPDATE_AUTHOR = 5;
+
+	/**
+	 * The feature id for the '<em><b>Update Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__UPDATE_DATE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT__VISIBILITY = 7;
+
+	/**
+	 * The number of structural features of the '<em>Comment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>Comment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Group</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VISIBILITY__GROUP = 0;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VISIBILITY__VALUE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Visibility</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VISIBILITY_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Visibility</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VISIBILITY_OPERATION_COUNT = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1681,16 +2386,6 @@ public interface JiraPackage extends EPackage {
 	int ISSUE_FIELD_OPERATION_COUNT = NAMED_ENTITY_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.IssueLinkImpl <em>Issue Link</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.IssueLinkImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueLink()
-	 * @generated
-	 */
-	int ISSUE_LINK = 21;
-
-	/**
 	 * The feature id for the '<em><b>Inbound</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1736,16 +2431,6 @@ public interface JiraPackage extends EPackage {
 	int ISSUE_LINK_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.OperationsImpl <em>Operations</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.OperationsImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getOperations()
-	 * @generated
-	 */
-	int OPERATIONS = 22;
-
-	/**
 	 * The number of structural features of the '<em>Operations</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1762,16 +2447,6 @@ public interface JiraPackage extends EPackage {
 	 * @ordered
 	 */
 	int OPERATIONS_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicPriorityImpl <em>Basic Priority</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.BasicPriorityImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicPriority()
-	 * @generated
-	 */
-	int BASIC_PRIORITY = 23;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -1819,343 +2494,6 @@ public interface JiraPackage extends EPackage {
 	int BASIC_PRIORITY_OPERATION_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicProjectImpl <em>Basic Project</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.BasicProjectImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProject()
-	 * @generated
-	 */
-	int BASIC_PROJECT = 24;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT__SELF = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT__NAME = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT__ID = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY__ID;
-
-	/**
-	 * The feature id for the '<em><b>Key</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT__KEY = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Basic Project</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_FEATURE_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Basic Project</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_OPERATION_COUNT = ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ProjectReferenceImpl <em>Project Reference</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.ProjectReferenceImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProjectReference()
-	 * @generated
-	 */
-	int PROJECT_REFERENCE = 25;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE__SELF = BASIC_PROJECT__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE__NAME = BASIC_PROJECT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE__ID = BASIC_PROJECT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Key</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE__KEY = BASIC_PROJECT__KEY;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE__TARGET = BASIC_PROJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Project Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE_FEATURE_COUNT = BASIC_PROJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Project Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_REFERENCE_OPERATION_COUNT = BASIC_PROJECT_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ProjectImpl <em>Project</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.ProjectImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProject()
-	 * @generated
-	 */
-	int PROJECT = 26;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__SELF = BASIC_PROJECT__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__NAME = BASIC_PROJECT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__ID = BASIC_PROJECT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Key</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__KEY = BASIC_PROJECT__KEY;
-
-	/**
-	 * The feature id for the '<em><b>Components</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__COMPONENTS = BASIC_PROJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__DESCRIPTION = BASIC_PROJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Expandos</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__EXPANDOS = BASIC_PROJECT_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Issue Types</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__ISSUE_TYPES = BASIC_PROJECT_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Lead</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__LEAD = BASIC_PROJECT_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Project Roles</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__PROJECT_ROLES = BASIC_PROJECT_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__URI = BASIC_PROJECT_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Versions</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__VERSIONS = BASIC_PROJECT_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Issues</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__ISSUES = BASIC_PROJECT_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Status Categories</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__STATUS_CATEGORIES = BASIC_PROJECT_FEATURE_COUNT + 9;
-
-	/**
-	 * The number of structural features of the '<em>Project</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_FEATURE_COUNT = BASIC_PROJECT_FEATURE_COUNT + 10;
-
-	/**
-	 * The number of operations of the '<em>Project</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_OPERATION_COUNT = BASIC_PROJECT_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.BasicProjectRoleImpl <em>Basic Project Role</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.jira.impl.BasicProjectRoleImpl
-	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicProjectRole()
-	 * @generated
-	 */
-	int BASIC_PROJECT_ROLE = 27;
-
-	/**
-	 * The feature id for the '<em><b>Self</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_ROLE__SELF = ADRESSABLE_NAMED_ENTITY__SELF;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_ROLE__NAME = ADRESSABLE_NAMED_ENTITY__NAME;
-
-	/**
-	 * The number of structural features of the '<em>Basic Project Role</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_ROLE_FEATURE_COUNT = ADRESSABLE_NAMED_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Basic Project Role</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASIC_PROJECT_ROLE_OPERATION_COUNT = ADRESSABLE_NAMED_ENTITY_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.nasdanika.models.jira.impl.ResolutionImpl <em>Resolution</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2163,7 +2501,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getResolution()
 	 * @generated
 	 */
-	int RESOLUTION = 28;
+	int RESOLUTION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2227,7 +2565,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getStatus()
 	 * @generated
 	 */
-	int STATUS = 29;
+	int STATUS = 34;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2309,7 +2647,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getStatusCategory()
 	 * @generated
 	 */
-	int STATUS_CATEGORY = 30;
+	int STATUS_CATEGORY = 35;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2382,7 +2720,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getSubtask()
 	 * @generated
 	 */
-	int SUBTASK = 31;
+	int SUBTASK = 36;
 
 	/**
 	 * The feature id for the '<em><b>Issue Key</b></em>' attribute.
@@ -2455,7 +2793,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getTimeTracking()
 	 * @generated
 	 */
-	int TIME_TRACKING = 32;
+	int TIME_TRACKING = 37;
 
 	/**
 	 * The feature id for the '<em><b>Original Estimate Minutes</b></em>' attribute.
@@ -2510,7 +2848,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicVotes()
 	 * @generated
 	 */
-	int BASIC_VOTES = 33;
+	int BASIC_VOTES = 38;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2565,7 +2903,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getBasicWatchers()
 	 * @generated
 	 */
-	int BASIC_WATCHERS = 34;
+	int BASIC_WATCHERS = 39;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2620,7 +2958,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getWorklog()
 	 * @generated
 	 */
-	int WORKLOG = 35;
+	int WORKLOG = 40;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2738,7 +3076,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getIssueType()
 	 * @generated
 	 */
-	int ISSUE_TYPE = 36;
+	int ISSUE_TYPE = 41;
 
 	/**
 	 * The feature id for the '<em><b>Self</b></em>' attribute.
@@ -2821,7 +3159,7 @@ public interface JiraPackage extends EPackage {
 	 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getAssigneeType()
 	 * @generated
 	 */
-	int ASSIGNEE_TYPE = 37;
+	int ASSIGNEE_TYPE = 42;
 
 
 	/**
@@ -2959,6 +3297,16 @@ public interface JiraPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdressableNamedIdentifiableEntity();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Actor <em>Actor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Actor</em>'.
+	 * @see org.nasdanika.models.jira.Actor
+	 * @generated
+	 */
+	EClass getActor();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.BasicIssue <em>Basic Issue</em>}'.
@@ -3472,6 +3820,16 @@ public interface JiraPackage extends EPackage {
 	EReference getUser_Groups();
 
 	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.UserReference <em>User Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Reference</em>'.
+	 * @see org.nasdanika.models.jira.UserReference
+	 * @generated
+	 */
+	EClass getUserReference();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Attachment <em>Attachment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3894,6 +4252,16 @@ public interface JiraPackage extends EPackage {
 	EAttribute getComponent_RealAssigneeType();
 
 	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.ComponentReference <em>Component Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Component Reference</em>'.
+	 * @see org.nasdanika.models.jira.ComponentReference
+	 * @generated
+	 */
+	EClass getComponentReference();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.IssueField <em>Issue Field</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4140,6 +4508,17 @@ public interface JiraPackage extends EPackage {
 	EReference getProject_StatusCategories();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.jira.Project#getRoles <em>Roles</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Roles</em>'.
+	 * @see org.nasdanika.models.jira.Project#getRoles()
+	 * @see #getProject()
+	 * @generated
+	 */
+	EReference getProject_Roles();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.BasicProjectRole <em>Basic Project Role</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4148,6 +4527,81 @@ public interface JiraPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getBasicProjectRole();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.RoleActor <em>Role Actor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Role Actor</em>'.
+	 * @see org.nasdanika.models.jira.RoleActor
+	 * @generated
+	 */
+	EClass getRoleActor();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.RoleActor#getAvatarUrl <em>Avatar Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Avatar Url</em>'.
+	 * @see org.nasdanika.models.jira.RoleActor#getAvatarUrl()
+	 * @see #getRoleActor()
+	 * @generated
+	 */
+	EAttribute getRoleActor_AvatarUrl();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.RoleActor#getDisplayName <em>Display Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Display Name</em>'.
+	 * @see org.nasdanika.models.jira.RoleActor#getDisplayName()
+	 * @see #getRoleActor()
+	 * @generated
+	 */
+	EAttribute getRoleActor_DisplayName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.RoleActor#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see org.nasdanika.models.jira.RoleActor#getType()
+	 * @see #getRoleActor()
+	 * @generated
+	 */
+	EAttribute getRoleActor_Type();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.jira.ProjectRole <em>Project Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Project Role</em>'.
+	 * @see org.nasdanika.models.jira.ProjectRole
+	 * @generated
+	 */
+	EClass getProjectRole();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.jira.ProjectRole#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see org.nasdanika.models.jira.ProjectRole#getDescription()
+	 * @see #getProjectRole()
+	 * @generated
+	 */
+	EAttribute getProjectRole_Description();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.jira.ProjectRole#getActors <em>Actors</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Actors</em>'.
+	 * @see org.nasdanika.models.jira.ProjectRole#getActors()
+	 * @see #getProjectRole()
+	 * @generated
+	 */
+	EReference getProjectRole_Actors();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.jira.Resolution <em>Resolution</em>}'.
@@ -4721,6 +5175,16 @@ public interface JiraPackage extends EPackage {
 		EClass ADRESSABLE_NAMED_IDENTIFIABLE_ENTITY = eINSTANCE.getAdressableNamedIdentifiableEntity();
 
 		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.Actor <em>Actor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.Actor
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getActor()
+		 * @generated
+		 */
+		EClass ACTOR = eINSTANCE.getActor();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.BasicIssueImpl <em>Basic Issue</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5109,6 +5573,16 @@ public interface JiraPackage extends EPackage {
 		EReference USER__GROUPS = eINSTANCE.getUser_Groups();
 
 		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.UserReferenceImpl <em>User Reference</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.UserReferenceImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getUserReference()
+		 * @generated
+		 */
+		EClass USER_REFERENCE = eINSTANCE.getUserReference();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.AttachmentImpl <em>Attachment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5435,6 +5909,16 @@ public interface JiraPackage extends EPackage {
 		EAttribute COMPONENT__REAL_ASSIGNEE_TYPE = eINSTANCE.getComponent_RealAssigneeType();
 
 		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.ComponentReferenceImpl <em>Component Reference</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.ComponentReferenceImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getComponentReference()
+		 * @generated
+		 */
+		EClass COMPONENT_REFERENCE = eINSTANCE.getComponentReference();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.IssueFieldImpl <em>Issue Field</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5633,6 +6117,14 @@ public interface JiraPackage extends EPackage {
 		EReference PROJECT__STATUS_CATEGORIES = eINSTANCE.getProject_StatusCategories();
 
 		/**
+		 * The meta object literal for the '<em><b>Roles</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROJECT__ROLES = eINSTANCE.getProject_Roles();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.BasicProjectRoleImpl <em>Basic Project Role</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5641,6 +6133,66 @@ public interface JiraPackage extends EPackage {
 		 * @generated
 		 */
 		EClass BASIC_PROJECT_ROLE = eINSTANCE.getBasicProjectRole();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.RoleActorImpl <em>Role Actor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.RoleActorImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getRoleActor()
+		 * @generated
+		 */
+		EClass ROLE_ACTOR = eINSTANCE.getRoleActor();
+
+		/**
+		 * The meta object literal for the '<em><b>Avatar Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE_ACTOR__AVATAR_URL = eINSTANCE.getRoleActor_AvatarUrl();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE_ACTOR__DISPLAY_NAME = eINSTANCE.getRoleActor_DisplayName();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE_ACTOR__TYPE = eINSTANCE.getRoleActor_Type();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.ProjectRoleImpl <em>Project Role</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.jira.impl.ProjectRoleImpl
+		 * @see org.nasdanika.models.jira.impl.JiraPackageImpl#getProjectRole()
+		 * @generated
+		 */
+		EClass PROJECT_ROLE = eINSTANCE.getProjectRole();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROJECT_ROLE__DESCRIPTION = eINSTANCE.getProjectRole_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Actors</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROJECT_ROLE__ACTORS = eINSTANCE.getProjectRole_Actors();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.jira.impl.ResolutionImpl <em>Resolution</em>}' class.

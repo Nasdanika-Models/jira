@@ -23,6 +23,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.nasdanika.models.jira.Project#getVersions <em>Versions</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.Project#getIssues <em>Issues</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.Project#getStatusCategories <em>Status Categories</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.Project#getRoles <em>Roles</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.jira.JiraPackage#getProject()
@@ -179,5 +180,17 @@ public interface Project extends BasicProject {
 	 * @generated
 	 */
 	EList<StatusCategory> getStatusCategories();
+
+	/**
+	 * Returns the value of the '<em><b>Roles</b></em>' containment reference list.
+	 * The list contents are of type {@link org.nasdanika.models.jira.BasicProjectRole}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Roles</em>' containment reference list.
+	 * @see org.nasdanika.models.jira.JiraPackage#getProject_Roles()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<BasicProjectRole> getRoles();
 
 } // Project

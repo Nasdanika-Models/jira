@@ -13,5 +13,5 @@ package org.nasdanika.models.jira;
  * @model
  * @generated
  */
-public interface Group extends AdressableNamedEntity {
+public interface Group extends AdressableNamedEntity, Actor {
 } // Group

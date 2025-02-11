@@ -61,38 +61,6 @@
 		    <groupId>org.nasdanika.core</groupId>
 		    <artifactId>ncore</artifactId>
 		    <version>${core.version}</version>
-		</dependency>
-		 		
-        <dependency>
-            <groupId>com.atlassian.jira</groupId>
-            <artifactId>jira-rest-java-client-api</artifactId>
-            <version>6.0.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.atlassian.jira</groupId>
-            <artifactId>jira-rest-java-client-core</artifactId>
-            <version>6.0.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.atlassian.fugue</groupId>
-            <artifactId>fugue</artifactId>
-            <version>6.0.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.atlassian.util.concurrent</groupId>
-            <artifactId>atlassian-util-concurrent</artifactId>
-            <version>4.1.0</version>
-            <scope>test</scope>
-        </dependency>
+		</dependency>		 		
 	</dependencies>
-
-    <repositories>
-        <repository>
-            <id>atlassian</id>
-            <url>https://packages.atlassian.com/mvn/maven-atlassian-external/</url>
-        </repository>
-    </repositories>
 </project>

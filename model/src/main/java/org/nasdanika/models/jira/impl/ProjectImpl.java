@@ -41,6 +41,7 @@ import org.nasdanika.models.jira.Version;
  *   <li>{@link org.nasdanika.models.jira.impl.ProjectImpl#getVersions <em>Versions</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.impl.ProjectImpl#getIssues <em>Issues</em>}</li>
  *   <li>{@link org.nasdanika.models.jira.impl.ProjectImpl#getStatusCategories <em>Status Categories</em>}</li>
+ *   <li>{@link org.nasdanika.models.jira.impl.ProjectImpl#getRoles <em>Roles</em>}</li>
  * </ul>
  *
  * @generated
@@ -236,6 +237,17 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public EList<BasicProjectRole> getRoles() {
+		return (EList<BasicProjectRole>)eDynamicGet(JiraPackage.PROJECT__ROLES, JiraPackage.Literals.PROJECT__ROLES, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -251,6 +263,8 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 				return ((InternalEList<?>)getIssues()).basicRemove(otherEnd, msgs);
 			case JiraPackage.PROJECT__STATUS_CATEGORIES:
 				return ((InternalEList<?>)getStatusCategories()).basicRemove(otherEnd, msgs);
+			case JiraPackage.PROJECT__ROLES:
+				return ((InternalEList<?>)getRoles()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -284,6 +298,8 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 				return getIssues();
 			case JiraPackage.PROJECT__STATUS_CATEGORIES:
 				return getStatusCategories();
+			case JiraPackage.PROJECT__ROLES:
+				return getRoles();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -334,6 +350,10 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 				getStatusCategories().clear();
 				getStatusCategories().addAll((Collection<? extends StatusCategory>)newValue);
 				return;
+			case JiraPackage.PROJECT__ROLES:
+				getRoles().clear();
+				getRoles().addAll((Collection<? extends BasicProjectRole>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -376,6 +396,9 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 			case JiraPackage.PROJECT__STATUS_CATEGORIES:
 				getStatusCategories().clear();
 				return;
+			case JiraPackage.PROJECT__ROLES:
+				getRoles().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -408,6 +431,8 @@ public class ProjectImpl extends BasicProjectImpl implements Project {
 				return !getIssues().isEmpty();
 			case JiraPackage.PROJECT__STATUS_CATEGORIES:
 				return !getStatusCategories().isEmpty();
+			case JiraPackage.PROJECT__ROLES:
+				return !getRoles().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

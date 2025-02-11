@@ -94,6 +94,15 @@ public interface JiraFactory extends EFactory {
 	User createUser();
 
 	/**
+	 * Returns a new object of class '<em>User Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Reference</em>'.
+	 * @generated
+	 */
+	UserReference createUserReference();
+
+	/**
 	 * Returns a new object of class '<em>Attachment</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -155,6 +164,15 @@ public interface JiraFactory extends EFactory {
 	 * @generated
 	 */
 	Component createComponent();
+
+	/**
+	 * Returns a new object of class '<em>Component Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Component Reference</em>'.
+	 * @generated
+	 */
+	ComponentReference createComponentReference();
 
 	/**
 	 * Returns a new object of class '<em>Issue Field</em>'.
@@ -227,6 +245,24 @@ public interface JiraFactory extends EFactory {
 	 * @generated
 	 */
 	BasicProjectRole createBasicProjectRole();
+
+	/**
+	 * Returns a new object of class '<em>Role Actor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Role Actor</em>'.
+	 * @generated
+	 */
+	RoleActor createRoleActor();
+
+	/**
+	 * Returns a new object of class '<em>Project Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Project Role</em>'.
+	 * @generated
+	 */
+	ProjectRole createProjectRole();
 
 	/**
 	 * Returns a new object of class '<em>Resolution</em>'.
