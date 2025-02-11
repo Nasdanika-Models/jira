@@ -47,7 +47,7 @@ public class EcoreGenJiraProcessorsFactory {
 				jira.drawio
 				```				
 												
-				## Using Jira Java API
+				## Using client
 				
 				### pom.xml
 				
@@ -58,33 +58,13 @@ public class EcoreGenJiraProcessorsFactory {
 					<dependencies>
 						<dependency>
 							<groupId>org.nasdanika.models.jira</groupId>
-							<artifactId>model</artifactId>
+							<artifactId>client</artifactId>
 							<version>2025.2.0</version>
 						</dependency>
-				        <dependency>
-				            <groupId>com.atlassian.jira</groupId>
-				            <artifactId>jira-rest-java-client-api</artifactId>
-				            <version>6.0.1</version>
-				        </dependency>
-				        <dependency>
-				            <groupId>com.atlassian.jira</groupId>
-				            <artifactId>jira-rest-java-client-core</artifactId>
-				            <version>6.0.1</version>
-				        </dependency>
-				        <dependency>
-				            <groupId>io.atlassian.util.concurrent</groupId>
-				            <artifactId>atlassian-util-concurrent</artifactId>
-				            <version>4.1.0</version>
-				        </dependency>
-				        <dependency>
-				            <groupId>io.atlassian.fugue</groupId>
-				            <artifactId>fugue</artifactId>
-				            <version>6.0.1</version>
-				        </dependency>
-
 						...
 					</dependencies>
 					
+					<!-- Maybe not needed - TBD -->
 				    <repositories>
 				        <repository>
 				            <id>atlassian</id>
@@ -99,19 +79,15 @@ public class EcoreGenJiraProcessorsFactory {
 				```java
 				module <module name> {
 				
-					requires jira.rest.java.client.core;
-					requires atlassian.util.concurrent;
-					requires jira.rest.java.client.api;
-					
-					requires org.nasdanika.models.jira;
+					requires org.nasdanika.models.jira.client;
 					
 				}				
 				```
 				
-				### Java code
+				### Atlassian client
 								
 				```java
-				AsynchronousJiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();
+				JiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();
 				URI jirURI = new URI("<instance uri>");
 				try (JiraRestClient client = factory.createWithBasicHttpAuthentication(
 						jirURI, 
@@ -120,6 +96,58 @@ public class EcoreGenJiraProcessorsFactory {
 					
 					IssueRestClient issueClient = client.getIssueClient();
 					Promise<Issue> issuePromise = issueClient.getIssue("<issue key>");
+					Issue issue = issuePromise.claim();
+					System.out.println(issue);
+				}				
+				```
+				
+				### Interception
+				
+				```java
+				JiraRestClientFactory factory = new AsynchronousInterceptingJiraRestClientFactory() {
+					
+					@Override
+					protected void onRequest(Request request) {
+						System.out.println("Request: " + request);
+					}
+					
+					@Override
+					protected void onSuccess(Request request, Response response) {
+						System.out.println("Success: " + response);
+						for (Entry<String, String> he: response.getHeaders().entrySet()) {
+							System.out.println("\t" + he.getKey() + ": " + he.getValue());
+						}
+					}
+					
+				};
+				
+				URI jirURI = new URI("https://nasdanika.atlassian.net");
+				try (JiraRestClient client = factory.createWithBasicHttpAuthentication(
+						jirURI, 
+						System.getenv("JIRA_USER"), 
+						System.getenv("JIRA_API_TOKEN"))) {
+					
+					IssueRestClient issueClient = client.getIssueClient();
+					Promise<Issue> issuePromise = issueClient.getIssue("NSD-164");
+					Issue issue = issuePromise.claim();
+					System.out.println(issue);
+				}
+				
+				```				
+				
+				### Rate limiting
+				
+				```java
+				JiraRestClientFactory factory = new AsynchronousRateLimitingJiraRestClientFactory(5);
+				
+				URI jirURI = new URI("https://nasdanika.atlassian.net");
+				try (JiraRestClient client = factory.createWithBasicHttpAuthentication(
+						jirURI, 
+						System.getenv("JIRA_USER"), 
+						System.getenv("JIRA_API_TOKEN"))) {
+					
+					IssueRestClient issueClient = client.getIssueClient();
+					Promise<Issue> issuePromise = issueClient.getIssue("NSD-164");
 					Issue issue = issuePromise.claim();
 					System.out.println(issue);
 				}				

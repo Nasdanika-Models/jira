@@ -1,0 +1,1 @@
+package org.nasdanika.models.jira.client;
