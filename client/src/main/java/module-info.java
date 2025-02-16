@@ -1,6 +1,3 @@
-import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.jira.util.JiraEPackageResourceSetCapabilityFactory;
-
 module org.nasdanika.models.jira.client {
 	
 	exports org.nasdanika.models.jira.client;
