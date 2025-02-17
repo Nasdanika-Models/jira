@@ -35,7 +35,7 @@ public class EcoreGenJiraProcessorsFactory {
 	 */
 	@EPackageNodeProcessorFactory(
 			label = "Jira",
-			icon = "https://img.icons8.com/officel/30/family--v2.png",
+			icon = "https://docs.nasdanika.org/images/jira.svg",
 			description = "A model of Jira objects",
 			documentation =  """				
 				
