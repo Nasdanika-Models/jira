@@ -1,991 +1,1156 @@
 {
   "references/eClassifiers/Issue/references/eStructuralFeatures/status/index.html": {
     "path": "Issue/References/status",
-    "link-uuid": "868aa96b-b8d6-456d-b639-21d3133d511b",
+    "link-uuid": "956f689e-4160-4c78-9a0e-e959a096025a",
     "title": "status",
-    "content": "Type Status Multiplicity 0..1"
+    "content": "Type Status Multiplicity 0..1",
+    "timestamp": 1746534120121
   },
   "references/eClassifiers/IssueField/inheritance.html": {
     "path": "IssueField/Inheritance",
-    "link-uuid": "46786da3-14d3-4c3f-9cc2-a0624bc8bf59",
+    "link-uuid": "5d3ff157-d7e0-4c61-95e9-112d6a423055",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120151
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/votes/index.html": {
     "path": "Issue/References/votes",
-    "link-uuid": "f8a8377c-6af9-467f-a9b8-a65e79b2d2f4",
+    "link-uuid": "a827980c-b8eb-4c42-ada5-69eee77ef1c6",
     "title": "votes",
-    "content": "Type BasicVotes Multiplicity 0..1"
+    "content": "Type BasicVotes Multiplicity 0..1",
+    "timestamp": 1746534120130
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/issues/index.html": {
     "path": "Project/References/issues",
-    "link-uuid": "f8cdc21e-f08b-4dd0-9862-f70ace65e4d0",
+    "link-uuid": "05888cb3-f69b-4fe3-ab16-53e6da94a69c",
     "title": "issues",
-    "content": "Type BasicIssue Multiplicity 0..*"
+    "content": "Type BasicIssue Multiplicity 0..*",
+    "timestamp": 1746534120283
   },
   "references/eClassifiers/Subtask/references/eStructuralFeatures/summary/index.html": {
     "path": "Subtask/Attributes/summary",
-    "link-uuid": "38e3c7b1-eda2-4c72-b941-db09e92261d6",
+    "link-uuid": "542ffce7-1322-4e57-9b12-d770179b47be",
     "title": "summary",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120435
   },
   "references/eClassifiers/Visibility/references/eStructuralFeatures/value/index.html": {
     "path": "Visibility/Attributes/value",
-    "link-uuid": "130f5f31-2465-4868-bfe4-af0e2da88f1a",
+    "link-uuid": "48758aa2-b8c3-4230-97be-617e81d84f84",
     "title": "value",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120538
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/expandos/index.html": {
     "path": "Issue/Attributes/expandos",
-    "link-uuid": "070e9c0c-5283-413e-928c-0278b65b09e2",
+    "link-uuid": "8ac59ac9-693a-48e3-958c-8bc36711ab82",
     "title": "expandos",
-    "content": "Type EString Multiplicity 0..*"
+    "content": "Type EString Multiplicity 0..*",
+    "timestamp": 1746534120100
   },
   "references/eClassifiers/RoleActor/references/eStructuralFeatures/type/index.html": {
     "path": "RoleActor/Attributes/type",
-    "link-uuid": "2f7c4ce3-066b-4b6e-9165-31393daeab48",
+    "link-uuid": "0d7efe01-9cad-4b15-80e8-bbc91c730ce3",
     "title": "type",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120368
   },
   "references/eClassifiers/Status/references/eStructuralFeatures/iconUrl/index.html": {
     "path": "Status/Attributes/iconUrl",
-    "link-uuid": "cb4de56d-4e32-4545-ba87-69ab2b73feca",
+    "link-uuid": "f0a5709d-555b-417d-988a-b023804eb309",
     "title": "iconUrl",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120391
   },
   "references/eClassifiers/Issue/inheritance.html": {
     "path": "Issue/Inheritance",
-    "link-uuid": "0b99d001-c76b-4697-91a4-49a9805aed5d",
+    "link-uuid": "e12f2e54-d637-43ff-a81d-6a210760aa51",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120081
   },
   "references/eClassifiers/RoleActor/references/eStructuralFeatures/avatarUrl/index.html": {
     "path": "RoleActor/Attributes/avatarUrl",
-    "link-uuid": "3ebd3e4d-c586-4526-8c60-72698c562fb7",
+    "link-uuid": "aec4b3ea-e8b9-4cb1-962a-9d57717172f4",
     "title": "avatarUrl",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120364
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/creationDate/index.html": {
     "path": "Comment/Attributes/creationDate",
-    "link-uuid": "31ceb42a-6ef2-4203-b323-92e726cc1010",
+    "link-uuid": "a0f82ba0-d2a2-4900-a61c-cef4ba265006",
     "title": "creationDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534119974
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/roles/index.html": {
     "path": "Project/References/roles",
-    "link-uuid": "c992662f-52e5-4514-b112-913632cd36da",
+    "link-uuid": "53ddb213-cb8d-42a2-928e-4cfc188562fd",
     "title": "roles",
-    "content": "Type BasicProjectRole Multiplicity 0..*"
+    "content": "Type BasicProjectRole Multiplicity 0..*",
+    "timestamp": 1746534120289
   },
   "references/eClassifiers/BasicUser/references/eStructuralFeatures/accountId/index.html": {
     "path": "BasicUser/Attributes/accountId",
-    "link-uuid": "f47adcc2-1b76-46ed-9477-453c6ba19642",
+    "link-uuid": "7bfc98de-2287-45ab-ac65-ce6d1bcd87f9",
     "title": "accountId",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119861
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/updateDate/index.html": {
     "path": "Comment/Attributes/updateDate",
-    "link-uuid": "b0321a96-bd63-4bb3-809a-f2bdeb5f090a",
+    "link-uuid": "4938543a-a7d1-4fa3-91ec-b508d693779d",
     "title": "updateDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534119979
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/visibility/index.html": {
     "path": "Comment/References/visibility",
-    "link-uuid": "dde312bc-10f4-4d2a-a1fd-0c4c94b2864d",
+    "link-uuid": "1ff019d6-3664-4eb9-8ef8-9298612975a4",
     "title": "visibility",
-    "content": "Type Visibility Multiplicity 0..1"
+    "content": "Type Visibility Multiplicity 0..1",
+    "timestamp": 1746534119981
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/updateAuthor/index.html": {
     "path": "Worklog/References/updateAuthor",
-    "link-uuid": "3176ea95-886a-41ea-94a5-de8fe8a80209",
+    "link-uuid": "a5ad8916-355d-468c-bd78-9ce147783138",
     "title": "updateAuthor",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534120567
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/description/index.html": {
     "path": "Issue/Attributes/description",
-    "link-uuid": "96dd8b33-2f9a-474b-a7cc-ad775d94e264",
+    "link-uuid": "412c9002-4945-43ef-9fc8-e8dd4c5ff1df",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120097
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/labels/index.html": {
     "path": "Issue/Attributes/labels",
-    "link-uuid": "e603be06-04a9-4eaf-aa91-f603065e852c",
+    "link-uuid": "39f036bc-18a9-4b8d-829e-132ea514facf",
     "title": "labels",
-    "content": "Type EString Multiplicity 0..*"
+    "content": "Type EString Multiplicity 0..*",
+    "timestamp": 1746534120108
   },
   "references/eClassifiers/ProjectReference/inheritance.html": {
     "path": "ProjectReference/Inheritance",
-    "link-uuid": "f160d989-0716-4fdc-a180-19adc5719d9c",
+    "link-uuid": "53441983-bfc8-4001-91f5-866ac33d500b",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120309
   },
   "references/eClassifiers/Visibility/references/eStructuralFeatures/group/index.html": {
     "path": "Visibility/Attributes/group",
-    "link-uuid": "fdaf071a-a4b4-44fd-8944-98dfb3184a7b",
+    "link-uuid": "6064eb7f-ba7f-47a3-a423-f58b80f57eda",
     "title": "group",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120537
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/minutesSpent/index.html": {
     "path": "Worklog/Attributes/minutesSpent",
-    "link-uuid": "7b882a62-ea3d-41fa-864a-e9321c98c4ae",
+    "link-uuid": "16e5a681-993f-4c13-b2b6-61887f16828b",
     "title": "minutesSpent",
-    "content": "Type EInt Multiplicity 0..1"
+    "content": "Type EInt Multiplicity 0..1",
+    "timestamp": 1746534120564
   },
   "references/eClassifiers/IssueType/inheritance.html": {
     "path": "IssueType/Inheritance",
-    "link-uuid": "1f8e363f-a8b7-4061-b7a7-ce9f7a62dc1b",
+    "link-uuid": "6295fec3-e55d-4326-b49e-646b8dfd4dac",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120207
   },
   "references/eClassifiers/AddressableEntity/inheritance.html": {
     "path": "AddressableEntity/Inheritance",
-    "link-uuid": "0ef53708-781c-480a-b134-393651945276",
+    "link-uuid": "4e3ec442-c4c3-42ca-a956-af0e55e3eb8b",
     "title": "Inheritance",
-    "content": "Subtypes "
+    "content": "Subtypes ",
+    "timestamp": 1746534119684
   },
   "references/eClassifiers/Version/references/eStructuralFeatures/id/index.html": {
     "path": "Version/Attributes/id",
-    "link-uuid": "e8aaf012-1f83-40ed-a9ae-1cf8ce1a9138",
+    "link-uuid": "178e5fc1-341c-4c9b-bd96-f98f7655cff4",
     "title": "id",
-    "content": "Type ELongObject Multiplicity 0..1"
+    "content": "Type ELongObject Multiplicity 0..1",
+    "timestamp": 1746534120515
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/issueLinks/index.html": {
     "path": "Issue/References/issueLinks",
-    "link-uuid": "df917a8f-bdbb-4c64-a312-cc40731b2ae0",
+    "link-uuid": "bafeccf5-3e92-4c4b-9cbb-e2bbfa6b6056",
     "title": "issueLinks",
-    "content": "Type IssueLink Multiplicity 0..*"
+    "content": "Type IssueLink Multiplicity 0..*",
+    "timestamp": 1746534120105
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/updateDate/index.html": {
     "path": "Worklog/Attributes/updateDate",
-    "link-uuid": "a3107ac7-3017-4a45-abef-436cf9506424",
+    "link-uuid": "36927a98-91b0-405d-ac82-1ee4d944d693",
     "title": "updateDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120569
   },
   "references/eClassifiers/Version/references/eStructuralFeatures/isArchived/index.html": {
     "path": "Version/Attributes/isArchived",
-    "link-uuid": "4f0e4fca-dfe9-4b89-9e7d-d84536d73de1",
+    "link-uuid": "13e93043-7024-4893-8a3f-745b4572a849",
     "title": "isArchived",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120516
   },
   "references/eClassifiers/Subtask/references/eStructuralFeatures/issueKey/index.html": {
     "path": "Subtask/Attributes/issueKey",
-    "link-uuid": "2728f1a2-4e2d-4938-bca8-48a7342e4d31",
+    "link-uuid": "af0bdda4-36ee-4139-b5a5-a2a27cee1c18",
     "title": "issueKey",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120430
   },
   "references/eClassifiers/IssueField/references/eStructuralFeatures/value/index.html": {
     "path": "IssueField/References/value",
-    "link-uuid": "97055476-63b8-4dd2-8080-19dae59457eb",
+    "link-uuid": "22167189-637c-4752-bd02-039df879e4ca",
     "title": "value",
-    "content": "Type EObject Multiplicity 0..1"
+    "content": "Type EObject Multiplicity 0..1",
+    "timestamp": 1746534120155
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/versions/index.html": {
     "path": "Project/References/versions",
-    "link-uuid": "f917c7b6-787f-4703-b32e-07770d59ed68",
+    "link-uuid": "3911bf84-0b29-4bea-a75e-2f6f5b0a269e",
     "title": "versions",
-    "content": "Type Version Multiplicity 0..*"
+    "content": "Type Version Multiplicity 0..*",
+    "timestamp": 1746534120296
   },
   "references/eClassifiers/ProjectRole/inheritance.html": {
     "path": "ProjectRole/Inheritance",
-    "link-uuid": "074ea244-e460-48eb-a814-34a05160b621",
+    "link-uuid": "d38e33db-3b8e-49b1-8f39-c008dd0ac2a7",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120326
   },
   "references/eClassifiers/Version/references/eStructuralFeatures/isReleased/index.html": {
     "path": "Version/Attributes/isReleased",
-    "link-uuid": "d2170aea-2451-4fc5-a0d9-687bcc8400af",
+    "link-uuid": "99689467-6748-417e-ab43-6c05c966906b",
     "title": "isReleased",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120518
   },
   "references/eClassifiers/BasicProject/inheritance.html": {
     "path": "BasicProject/Inheritance",
-    "link-uuid": "713fc560-6ca5-47cc-9b1e-c4027f81cd9c",
+    "link-uuid": "770f4225-e994-4ee9-98e8-3a20b7b03eb5",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119823
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/transitionsUri/index.html": {
     "path": "Issue/Attributes/transitionsUri",
-    "link-uuid": "d85eb9a5-4fe2-47fa-83ca-d2410feeabb7",
+    "link-uuid": "9e98e9ea-b458-481a-b9de-f0e680671c3e",
     "title": "transitionsUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120127
   },
   "references/eClassifiers/BasicUser/inheritance.html": {
     "path": "BasicUser/Inheritance",
-    "link-uuid": "99b8f7a3-b191-4d6b-b252-13bd761cb06c",
+    "link-uuid": "ba2ff951-e008-495d-b8fd-cc04a0df766b",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119858
   },
   "references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/created/index.html": {
     "path": "ChangelogGroup/Attributes/created",
-    "link-uuid": "ac3b0306-2b0c-492a-8663-b9042a4aa362",
+    "link-uuid": "d786048d-a334-4e1f-b0a3-521acfcabb72",
     "title": "created",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534119929
   },
   "references/eClassifiers/Version/inheritance.html": {
     "path": "Version/Inheritance",
-    "link-uuid": "8849c75f-9b5b-4c47-adc6-aa4a79ddbfc8",
+    "link-uuid": "2686a0dc-5a8d-4aa7-9dc8-6694a15dd5b3",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120510
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/description/index.html": {
     "path": "Project/Attributes/description",
-    "link-uuid": "9dc35fb2-8d59-4dfa-96d0-8252a3684a29",
+    "link-uuid": "715a5352-9d95-4a42-986d-58e2b4abb53d",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120279
   },
   "references/eClassifiers/NamedEntity/references/eStructuralFeatures/name/index.html": {
     "path": "NamedEntity/Attributes/name",
-    "link-uuid": "cedfee93-9cb8-4909-97bf-b36fc4ffe8b8",
+    "link-uuid": "b8ad1774-05ca-45c0-847e-4a73b4e2674b",
     "title": "name",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120246
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/creationDate/index.html": {
     "path": "Attachment/Attributes/creationDate",
-    "link-uuid": "2dee6b89-261d-4710-829f-fbb7db97205f",
+    "link-uuid": "c203ace4-8d13-4d6c-8ede-8900f0b95d3b",
     "title": "creationDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534119740
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/priority/index.html": {
     "path": "Issue/References/priority",
-    "link-uuid": "dcab7804-5f81-4097-9642-438b6b5d589c",
+    "link-uuid": "313fda36-f0e0-46ff-b205-cb35b93feeb7",
     "title": "priority",
-    "content": "Type BasicPriority Multiplicity 0..1"
+    "content": "Type BasicPriority Multiplicity 0..1",
+    "timestamp": 1746534120112
   },
   "references/eClassifiers/IssueType/references/eStructuralFeatures/description/index.html": {
     "path": "IssueType/Attributes/description",
-    "link-uuid": "204389e6-5e8d-451a-8cd2-1feded7e2b00",
+    "link-uuid": "5ce64974-7041-4d52-8337-74f12f47f0d8",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120210
   },
   "references/eClassifiers/Version/references/eStructuralFeatures/releaseDate/index.html": {
     "path": "Version/Attributes/releaseDate",
-    "link-uuid": "316366cd-fa3e-44bb-aca3-e97d6c9ee908",
+    "link-uuid": "c808e082-f2ce-4c34-937c-fc4a1f362878",
     "title": "releaseDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120519
   },
   "references/eClassifiers/AdressableNamedIdentifiableEntity/inheritance.html": {
     "path": "AdressableNamedIdentifiableEntity/Inheritance",
-    "link-uuid": "d0ceba3f-fd89-417b-8afc-743045a80aa7",
+    "link-uuid": "c82d3ee6-cc80-433f-9521-eb31b056f635",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119715
   },
   "references/eClassifiers/IssueType/references/eStructuralFeatures/isSubtask/index.html": {
     "path": "IssueType/Attributes/isSubtask",
-    "link-uuid": "1188f339-84d6-4fed-9bef-c52b74001bcc",
+    "link-uuid": "50a6a06d-d00e-48b6-8625-0d31d159529e",
     "title": "isSubtask",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120213
   },
   "references/eClassifiers/IssueField/references/eStructuralFeatures/type/index.html": {
     "path": "IssueField/Attributes/type",
-    "link-uuid": "730d093b-d5ab-403b-9c78-18104f722ad5",
+    "link-uuid": "bfcbbc6a-593b-4142-afed-a563340d4e07",
     "title": "type",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120154
   },
   "references/eClassifiers/Project/inheritance.html": {
     "path": "Project/Inheritance",
-    "link-uuid": "0f83fc05-fdfd-4b6b-a0b0-39d39d0e21c0",
+    "link-uuid": "5bf86360-2af8-49ef-ba66-80599ff7e0c1",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120274
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/contentUri/index.html": {
     "path": "Attachment/Attributes/contentUri",
-    "link-uuid": "dfa77d59-48ab-4e16-a379-1466c3010b31",
+    "link-uuid": "3be5ec54-0536-4a15-95a7-f1494893ec13",
     "title": "contentUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119739
   },
   "references/eClassifiers/Resolution/references/eStructuralFeatures/description/index.html": {
     "path": "Resolution/Attributes/description",
-    "link-uuid": "991dd054-b437-4b66-8520-8a82eca2ba93",
+    "link-uuid": "86c1d8a0-3229-4104-b63a-29aa0fb78553",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120349
   },
   "references/eClassifiers/IssueLink/references/eStructuralFeatures/targetIssueKey/index.html": {
     "path": "IssueLink/Attributes/targetIssueKey",
-    "link-uuid": "1a9cb61b-1f50-4e3c-bd87-43db0c0ef738",
+    "link-uuid": "6482712c-bd86-4ebb-9893-37de98a9382a",
     "title": "targetIssueKey",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120174
   },
   "references/eClassifiers/RoleActor/references/eStructuralFeatures/displayName/index.html": {
     "path": "RoleActor/Attributes/displayName",
-    "link-uuid": "f8d29ec7-03ae-4418-aa87-961b3a586d70",
+    "link-uuid": "f65eba93-5610-40e7-9b7e-619f36b5dfdf",
     "title": "displayName",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120366
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/filename/index.html": {
     "path": "Attachment/Attributes/filename",
-    "link-uuid": "7c15e177-9478-4598-8cf6-5bf82c98721b",
+    "link-uuid": "3a769a0e-0933-4b07-8cfc-7c8a1783fda3",
     "title": "filename",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119742
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/changelog/index.html": {
     "path": "Issue/References/changelog",
-    "link-uuid": "14d9bfff-b19e-427f-a6b7-e291706c0954",
+    "link-uuid": "07bc55c3-af65-4c79-bbc8-ae12b75d2eb0",
     "title": "changelog",
-    "content": "Type ChangelogGroup Multiplicity 0..*"
+    "content": "Type ChangelogGroup Multiplicity 0..*",
+    "timestamp": 1746534120091
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/visibility/index.html": {
     "path": "Worklog/References/visibility",
-    "link-uuid": "9dd96cbb-b758-4bb0-813e-ffca34bf4365",
+    "link-uuid": "e9171e95-230e-4cff-8ab1-d3f7bc08d60c",
     "title": "visibility",
-    "content": "Type Visibility Multiplicity 0..1"
+    "content": "Type Visibility Multiplicity 0..1",
+    "timestamp": 1746534120570
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/issueUri/index.html": {
     "path": "Worklog/Attributes/issueUri",
-    "link-uuid": "a904bf6b-abc2-4a8c-bc5f-84e03da312d5",
+    "link-uuid": "293c7e19-4dd3-4f33-8942-dbd7db5623b1",
     "title": "issueUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120563
   },
   "references/eClassifiers/Component/references/eStructuralFeatures/isAssigneeTypeValid/index.html": {
     "path": "Component/Attributes/isAssigneeTypeValid",
-    "link-uuid": "272359b1-1fbe-49f8-a8f4-170ea445d1b0",
+    "link-uuid": "b0266499-dc75-428f-95d2-67462e5336fd",
     "title": "isAssigneeTypeValid",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120001
   },
   "references/eClassifiers/Subtask/references/eStructuralFeatures/issueUri/index.html": {
     "path": "Subtask/Attributes/issueUri",
-    "link-uuid": "8d617b82-5ed7-458a-996a-195f87e66941",
+    "link-uuid": "bd9d7bdc-0b7a-4e60-aae7-b68bf7e2c799",
     "title": "issueUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120433
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/comments/index.html": {
     "path": "Issue/References/comments",
-    "link-uuid": "8e1a8438-e3af-44bb-a1c8-4f55c64fc6c3",
+    "link-uuid": "48f79ecd-514a-40bd-b2ba-ba3d552ce79a",
     "title": "comments",
-    "content": "Type Comment Multiplicity 0..*"
+    "content": "Type Comment Multiplicity 0..*",
+    "timestamp": 1746534120092
   },
   "references/eClassifiers/User/inheritance.html": {
     "path": "User/Inheritance",
-    "link-uuid": "77449617-ca02-4d4e-bec7-22ada72b264c",
+    "link-uuid": "29fb7b1b-34de-47c4-8102-75b087fcf74a",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120471
   },
   "references/eClassifiers/Component/references/eStructuralFeatures/realAssigneeType/index.html": {
     "path": "Component/Attributes/realAssigneeType",
-    "link-uuid": "781146e6-7ef5-4e73-b808-52c085f33b54",
+    "link-uuid": "30147dbf-2fb7-48b1-85c2-68b3bbd29080",
     "title": "realAssigneeType",
-    "content": "Type AssigneeType Multiplicity 0..1"
+    "content": "Type AssigneeType Multiplicity 0..1",
+    "timestamp": 1746534120004
   },
   "references/eClassifiers/Status/references/eStructuralFeatures/value/index.html": {
     "path": "Status/References/value",
-    "link-uuid": "579430c4-493b-4fea-8836-2c1fb0e71c2f",
+    "link-uuid": "94cd0d5b-0217-4992-91b7-c367b62b5281",
     "title": "value",
-    "content": "Type StatusCategory Multiplicity 0..1"
+    "content": "Type StatusCategory Multiplicity 0..1",
+    "timestamp": 1746534120393
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/statusCategories/index.html": {
     "path": "Project/References/statusCategories",
-    "link-uuid": "1642959d-ad75-46ca-86b6-9abfb4f418f9",
+    "link-uuid": "9339e5d7-a6b6-4d2f-896b-72561bf4d230",
     "title": "statusCategories",
-    "content": "Type StatusCategory Multiplicity 0..*"
+    "content": "Type StatusCategory Multiplicity 0..*",
+    "timestamp": 1746534120291
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/worklogs/index.html": {
     "path": "Issue/References/worklogs",
-    "link-uuid": "ff9a99d3-fefa-4a31-b778-da79cb879ad5",
+    "link-uuid": "6f281913-fb00-4acf-816b-b20f447198a1",
     "title": "worklogs",
-    "content": "Type Worklog Multiplicity 0..*"
+    "content": "Type Worklog Multiplicity 0..*",
+    "timestamp": 1746534120133
   },
   "references/eClassifiers/BasicVotes/references/eStructuralFeatures/hasVoted/index.html": {
     "path": "BasicVotes/Attributes/hasVoted",
-    "link-uuid": "b5919133-c61d-4919-875c-09f56098deb1",
+    "link-uuid": "e496ef9f-801a-4561-ab5f-80ac46f5e9b0",
     "title": "hasVoted",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534119880
   },
   "references/eClassifiers/BasicUser/references/eStructuralFeatures/displayName/index.html": {
     "path": "BasicUser/Attributes/displayName",
-    "link-uuid": "8dcb6e65-a913-4e2c-9077-39b8fd65ef0a",
+    "link-uuid": "9c84d4ce-f278-45df-ac44-102d5a6cfad7",
     "title": "displayName",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119863
   },
   "references/eClassifiers/AdressableNamedEntity/inheritance.html": {
     "path": "AdressableNamedEntity/Inheritance",
-    "link-uuid": "734a3813-548b-4862-a739-a0df72961c4f",
+    "link-uuid": "bb09351e-7ac8-4aae-a2f8-5056969ea73d",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119699
   },
   "references/eClassifiers/ProjectRole/references/eStructuralFeatures/actors/index.html": {
     "path": "ProjectRole/References/actors",
-    "link-uuid": "de078f1c-9bf8-49fd-a5ea-ea41e3c479fd",
+    "link-uuid": "a4fc04ff-f574-4f0a-9f83-a608aca0da60",
     "title": "actors",
-    "content": "Type RoleActor Multiplicity 0..*"
+    "content": "Type RoleActor Multiplicity 0..*",
+    "timestamp": 1746534120329
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/operations/index.html": {
     "path": "Issue/References/operations",
-    "link-uuid": "fe9373f0-b772-406a-b770-3dbdb8992c43",
+    "link-uuid": "498b25d8-b34a-4018-9d64-9670776aa3d5",
     "title": "operations",
-    "content": "Type Operations Multiplicity 0..1"
+    "content": "Type Operations Multiplicity 0..1",
+    "timestamp": 1746534120110
   },
   "references/eClassifiers/BasicPriority/inheritance.html": {
     "path": "BasicPriority/Inheritance",
-    "link-uuid": "c55b3125-baad-454a-9aee-ee31bb454d10",
+    "link-uuid": "a103ff02-9eb4-4187-9dec-752bdb482015",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534119803
   },
   "references/eClassifiers/IssueLink/references/eStructuralFeatures/inbound/index.html": {
     "path": "IssueLink/Attributes/inbound",
-    "link-uuid": "336088d8-6a27-4bc3-bd44-7565eebc211f",
+    "link-uuid": "e113ee5c-1383-4991-bce4-f985bf7b22a8",
     "title": "inbound",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120172
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/watchers/index.html": {
     "path": "Issue/References/watchers",
-    "link-uuid": "093cc4b0-7ca8-47b0-998f-fa8394146e95",
+    "link-uuid": "aa913bfc-ea21-4304-b63f-3a4764e0fca3",
     "title": "watchers",
-    "content": "Type BasicWatchers Multiplicity 0..1"
+    "content": "Type BasicWatchers Multiplicity 0..1",
+    "timestamp": 1746534120131
   },
   "references/eClassifiers/StatusCategory/inheritance.html": {
     "path": "StatusCategory/Inheritance",
-    "link-uuid": "dfae2470-9e27-4d1d-9395-bf5253979255",
+    "link-uuid": "192a7b9e-8658-4be1-b2ac-2a936531a38a",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120408
   },
   "references/eClassifiers/Component/references/eStructuralFeatures/assignee/index.html": {
     "path": "Component/References/assignee",
-    "link-uuid": "2de1f1e7-0ab7-4ea0-87d3-4f4078df08ef",
+    "link-uuid": "befb7862-ff89-49fa-9159-ee69c4355ce2",
     "title": "assignee",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534119998
   },
   "references/eClassifiers/IdentifiableEntity/references/eStructuralFeatures/id/index.html": {
     "path": "IdentifiableEntity/Attributes/id",
-    "link-uuid": "8caa9b14-4caf-4f98-bb7e-7123a071a701",
+    "link-uuid": "5cf0ff8d-3189-451d-8687-64248c6ecafc",
     "title": "id",
-    "content": "Type T Multiplicity 0..1"
+    "content": "Type T Multiplicity 0..1",
+    "timestamp": 1746534120051
   },
   "references/eClassifiers/Resolution/inheritance.html": {
     "path": "Resolution/Inheritance",
-    "link-uuid": "406b6310-b03f-4e8f-913a-7ee93fe69ac2",
+    "link-uuid": "d850a9d5-277c-41c1-b2a0-270526bd8d96",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120346
   },
   "references/eClassifiers/BasicVotes/inheritance.html": {
     "path": "BasicVotes/Inheritance",
-    "link-uuid": "1de1f438-c2c3-421e-9f71-ce22e4d0ec16",
+    "link-uuid": "a68dee58-3f75-4131-91d8-56f6a5b3d037",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534119877
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/field/index.html": {
     "path": "ChangelogItem/Attributes/field",
-    "link-uuid": "64d92c43-e37c-460d-b0aa-e1fd09d13a06",
+    "link-uuid": "600f4ac5-f068-4c3a-8b6d-2f0d3081eced",
     "title": "field",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119947
   },
   "references/eClassifiers/ComponentReference/inheritance.html": {
     "path": "ComponentReference/Inheritance",
-    "link-uuid": "34984d35-36f6-450b-959d-c583485c5542",
+    "link-uuid": "66ef6b4a-90d3-4af5-9f1e-d712c2ca2c93",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120018
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/issueTypes/index.html": {
     "path": "Project/References/issueTypes",
-    "link-uuid": "41b22234-db9b-402f-ad22-bf9b44785f1d",
+    "link-uuid": "990cd6e5-1ebd-42e8-9e1c-fb5fc3454822",
     "title": "issueTypes",
-    "content": "Type IssueType Multiplicity 0..*"
+    "content": "Type IssueType Multiplicity 0..*",
+    "timestamp": 1746534120284
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/projectRoles/index.html": {
     "path": "Project/References/projectRoles",
-    "link-uuid": "7602ab3e-039a-4a46-ab7e-43120c9e6a48",
+    "link-uuid": "163d8892-4044-4f27-b193-f114c3421ae6",
     "title": "projectRoles",
-    "content": "Type BasicProjectRole Multiplicity 0..*"
+    "content": "Type BasicProjectRole Multiplicity 0..*",
+    "timestamp": 1746534120288
   },
   "references/eClassifiers/Subtask/references/eStructuralFeatures/status/index.html": {
     "path": "Subtask/References/status",
-    "link-uuid": "fbf65fe8-06b5-44de-8c06-a06bb7a19841",
+    "link-uuid": "f70b481e-3874-4de1-a337-2cde3fd279ab",
     "title": "status",
-    "content": "Type Status Multiplicity 0..1"
+    "content": "Type Status Multiplicity 0..1",
+    "timestamp": 1746534120434
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/author/index.html": {
     "path": "Comment/References/author",
-    "link-uuid": "07ae3de4-394a-4c31-9250-dd00f71709e1",
+    "link-uuid": "cda8b0f8-7fb1-4585-a937-cceb8ff8e046",
     "title": "author",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534119970
   },
   "references/eClassifiers/Actor/inheritance.html": {
     "path": "Actor/Inheritance",
-    "link-uuid": "6fe477ee-ead8-48a0-8672-cab71018b62f",
+    "link-uuid": "83f70098-9191-4d2b-98a3-8bb83c367be3",
     "title": "Inheritance",
-    "content": "Subtypes "
+    "content": "Subtypes ",
+    "timestamp": 1746534119669
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/affectedVersions/index.html": {
     "path": "Issue/References/affectedVersions",
-    "link-uuid": "43ef5f41-60be-45e2-99a9-ac60f70bfbf3",
+    "link-uuid": "4c9081f0-eee8-4056-a634-0f41a82279d3",
     "title": "affectedVersions",
-    "content": "Type Version Multiplicity 0..*"
+    "content": "Type Version Multiplicity 0..*",
+    "timestamp": 1746534120086
   },
   "references/eClassifiers/UserReference/inheritance.html": {
     "path": "UserReference/Inheritance",
-    "link-uuid": "558124b1-76b3-4006-b944-aa92fbbb9c01",
+    "link-uuid": "30963e21-8173-42d8-88cb-6fa0f9fb2c34",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120491
   },
   "references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/items/index.html": {
     "path": "ChangelogGroup/References/items",
-    "link-uuid": "07f4271e-a4b0-4037-8b18-98014061930e",
+    "link-uuid": "726b813f-31fc-4816-b47e-3cb38e306815",
     "title": "items",
-    "content": "Type ChangelogItem Multiplicity 0..*"
+    "content": "Type ChangelogItem Multiplicity 0..*",
+    "timestamp": 1746534119931
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/uri/index.html": {
     "path": "Project/Attributes/uri",
-    "link-uuid": "6e8e31c3-0aee-473d-a249-17fa46b27aec",
+    "link-uuid": "e4555193-325f-4525-a7d5-dca2d4196fe7",
     "title": "uri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120293
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/creationDate/index.html": {
     "path": "Worklog/Attributes/creationDate",
-    "link-uuid": "707dcc32-fa4f-42ff-8cc1-0ff38d2f4573",
+    "link-uuid": "ab47dea1-685b-4c9e-9768-08f734ce72d8",
     "title": "creationDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120561
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/author/index.html": {
     "path": "Attachment/References/author",
-    "link-uuid": "cf1f0fa6-a6c4-4584-a214-c6a9f52303ba",
+    "link-uuid": "42d07135-87bb-4fdc-afa9-f5cd87683e85",
     "title": "author",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534119737
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/attachments/index.html": {
     "path": "Issue/References/attachments",
-    "link-uuid": "8f2fb26d-eff4-400e-acca-2a6167993b4d",
+    "link-uuid": "a5dd9e9d-4ab2-4b79-8d4d-077bcc373f15",
     "title": "attachments",
-    "content": "Type Attachment Multiplicity 0..*"
+    "content": "Type Attachment Multiplicity 0..*",
+    "timestamp": 1746534120089
   },
   "references/eClassifiers/BasicVotes/references/eStructuralFeatures/votes/index.html": {
     "path": "BasicVotes/Attributes/votes",
-    "link-uuid": "de99579b-b560-48d7-b98a-5a38dd5902fb",
+    "link-uuid": "f1fbf3d7-433c-48eb-8c7a-c89b4a372789",
     "title": "votes",
-    "content": "Type EInt Multiplicity 0..1"
+    "content": "Type EInt Multiplicity 0..1",
+    "timestamp": 1746534119882
   },
   "references/eClassifiers/TimeTracking/references/eStructuralFeatures/originalEstimateMinutes/index.html": {
     "path": "TimeTracking/Attributes/originalEstimateMinutes",
-    "link-uuid": "ade5be5c-28ec-499e-88e7-b1b7dbe20dc9",
+    "link-uuid": "919a6d28-58f7-4dfc-a8df-ccbb462b815c",
     "title": "originalEstimateMinutes",
-    "content": "Type EIntegerObject Multiplicity 0..1"
+    "content": "Type EIntegerObject Multiplicity 0..1",
+    "timestamp": 1746534120452
   },
   "references/eClassifiers/AddressableEntity/references/eStructuralFeatures/self/index.html": {
     "path": "AddressableEntity/Attributes/self",
-    "link-uuid": "a873eb9a-c59c-438c-a0d1-7ac9dcea8119",
+    "link-uuid": "cba6a253-de62-4525-8735-f2459f8b6465",
     "title": "self",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119685
   },
   "references/eClassifiers/Jira/references/eStructuralFeatures/users/index.html": {
     "path": "Jira/References/users",
-    "link-uuid": "941637ed-f081-4c6e-9b19-7a7d87ea1fb7",
+    "link-uuid": "e83b7cbb-1155-4a71-be7e-7d552e4dc23c",
     "title": "users",
-    "content": "Type User Multiplicity 0..*"
+    "content": "Type User Multiplicity 0..*",
+    "timestamp": 1746534120229
   },
   "references/eClassifiers/NamedEntity/inheritance.html": {
     "path": "NamedEntity/Inheritance",
-    "link-uuid": "7446fb8f-0a10-4933-a757-cd64b5c9364d",
+    "link-uuid": "5e4d6993-61ce-4ac3-a135-62f487b499c8",
     "title": "Inheritance",
-    "content": "Subtypes "
+    "content": "Subtypes ",
+    "timestamp": 1746534120244
   },
   "index.html": {
-    "link-uuid": "1245911c-5c30-4729-8962-7f292a8dd604",
+    "link-uuid": "9137ddec-c7d3-40c0-a369-f0c2fa7b1204",
     "title": "Jira",
-    "content": "Conceptual model Using client pom.xml module-info.java Atlassian client Interception Rate limiting Working with the model Create and save to a file Load from a file createResourceSet() Resources Conceptual model Using client pom.xml &lt;project ...&gt;\n\t...\n\n\t&lt;dependencies&gt;\n\t\t&lt;dependency&gt;\n\t\t\t&lt;groupId&gt;org.nasdanika.models.jira&lt;/groupId&gt;\n\t\t\t&lt;artifactId&gt;client&lt;/artifactId&gt;\n\t\t\t&lt;version&gt;2025.2.0&lt;/version&gt;\n\t\t&lt;/dependency&gt;\n\t\t...\n\t&lt;/dependencies&gt;\n\n\t&lt;!-- Maybe not needed - TBD --&gt;\n    &lt;repositories&gt;\n        &lt;repository&gt;\n            &lt;id&gt;atlassian&lt;/id&gt;\n            &lt;url&gt;https://packages.atlassian.com/mvn/maven-atlassian-external/&lt;/url&gt;\n        &lt;/repository&gt;\n    &lt;/repositories&gt;\n&lt;/project&gt;\n module-info.java module &lt;module name&gt; {\n\n\trequires org.nasdanika.models.jira.client;\n\n}\n Atlassian client JiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();\nURI jirURI = new URI(&quot;&lt;instance uri&gt;&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;&lt;issue key&gt;&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n Interception JiraRestClientFactory factory = new AsynchronousInterceptingJiraRestClientFactory() {\n\n\t@Override\n\tprotected void onRequest(Request request) {\n\t\tSystem.out.println(&quot;Request: &quot; + request);\n\t}\n\n\t@Override\n\tprotected void onSuccess(Request request, Response response) {\n\t\tSystem.out.println(&quot;Success: &quot; + response);\n\t\tfor (Entry&lt;String, String&gt; he: response.getHeaders().entrySet()) {\n\t\t\tSystem.out.println(&quot;\t&quot; + he.getKey() + &quot;: &quot; + he.getValue());\n\t\t}\n\t}\n\n};\n\nURI jirURI = new URI(&quot;https://nasdanika.atlassian.net&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;NSD-164&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n\n Rate limiting JiraRestClientFactory factory = new AsynchronousRateLimitingJiraRestClientFactory(5);\n\nURI jirURI = new URI(&quot;https://nasdanika.atlassian.net&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;NSD-164&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n Working with the model Create and save to a file // Creating a model\nJiraFactory jiraFactory = JiraFactory.eINSTANCE;\n\norg.nasdanika.models.jira.Issue modelIssue = jiraFactory.createIssue();\nmodelIssue.setKey(&quot;DEMO-1&quot;);\nmodelIssue.setDescription(&quot;Some description&quot;);\n\n// Saving to a file\nResourceSet resourceSet = createResourceSet();\norg.eclipse.emf.common.util.URI resourceURI = org.eclipse.emf.common.util.URI.createFileURI(new File(JIRA_MODEL_PATH).getCanonicalPath());\nResource resource = resourceSet.createResource(resourceURI);\nresource.getContents().add(modelIssue);\nresource.save(null);\n Load from a file ResourceSet resourceSet = createResourceSet();\norg.eclipse.emf.common.util.URI resourceURI = org.eclipse.emf.common.util.URI.createFileURI(new File(JIRA_MODEL_PATH).getCanonicalPath());\n\nResource resource = resourceSet.getResource(resourceURI, true);\norg.nasdanika.models.jira.Issue modelIssue = (org.nasdanika.models.jira.Issue) resource.getContents().get(0);\n\nSystem.out.println(modelIssue.getKey() + &quot;: &quot; + modelIssue.getDescription());\n\n createResourceSet() private ResourceSet createResourceSet() {\n\tCapabilityLoader capabilityLoader = new CapabilityLoader();\n\tProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\n\tRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\n\treturn capabilityLoader.loadOne(requirement, progressMonitor);\n}\n\n Resources Jira demo - sources for the code snippets Jira Group User Project Issue Actor Version Component Role Role Actor Jira"
+    "content": "Conceptual model Class diagram Using client pom.xml module-info.java Atlassian client Interception Rate limiting Working with the model Create and save to a file Load from a file createResourceSet() Resources Conceptual model Class diagram Using client pom.xml &lt;project ...&gt;\n\t...\n\n\t&lt;dependencies&gt;\n\t\t&lt;dependency&gt;\n\t\t\t&lt;groupId&gt;org.nasdanika.models.jira&lt;/groupId&gt;\n\t\t\t&lt;artifactId&gt;client&lt;/artifactId&gt;\n\t\t\t&lt;version&gt;2025.2.0&lt;/version&gt;\n\t\t&lt;/dependency&gt;\n\t\t...\n\t&lt;/dependencies&gt;\n\n\t&lt;!-- Maybe not needed - TBD --&gt;\n    &lt;repositories&gt;\n        &lt;repository&gt;\n            &lt;id&gt;atlassian&lt;/id&gt;\n            &lt;url&gt;https://packages.atlassian.com/mvn/maven-atlassian-external/&lt;/url&gt;\n        &lt;/repository&gt;\n    &lt;/repositories&gt;\n&lt;/project&gt;\n module-info.java module &lt;module name&gt; {\n\n\trequires org.nasdanika.models.jira.client;\n\n}\n Atlassian client JiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();\nURI jirURI = new URI(&quot;&lt;instance uri&gt;&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;&lt;issue key&gt;&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n Interception JiraRestClientFactory factory = new AsynchronousInterceptingJiraRestClientFactory() {\n\n\t@Override\n\tprotected void onRequest(Request request) {\n\t\tSystem.out.println(&quot;Request: &quot; + request);\n\t}\n\n\t@Override\n\tprotected void onSuccess(Request request, Response response) {\n\t\tSystem.out.println(&quot;Success: &quot; + response);\n\t\tfor (Entry&lt;String, String&gt; he: response.getHeaders().entrySet()) {\n\t\t\tSystem.out.println(&quot;\t&quot; + he.getKey() + &quot;: &quot; + he.getValue());\n\t\t}\n\t}\n\n};\n\nURI jirURI = new URI(&quot;https://nasdanika.atlassian.net&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;NSD-164&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n\n Rate limiting JiraRestClientFactory factory = new AsynchronousRateLimitingJiraRestClientFactory(5);\n\nURI jirURI = new URI(&quot;https://nasdanika.atlassian.net&quot;);\ntry (JiraRestClient client = factory.createWithBasicHttpAuthentication(\n\t\tjirURI,\n\t\tSystem.getenv(&quot;JIRA_USER&quot;),\n\t\tSystem.getenv(&quot;JIRA_API_TOKEN&quot;))) {\n\n\tIssueRestClient issueClient = client.getIssueClient();\n\tPromise&lt;Issue&gt; issuePromise = issueClient.getIssue(&quot;NSD-164&quot;);\n\tIssue issue = issuePromise.claim();\n\tSystem.out.println(issue);\n}\n Working with the model Create and save to a file // Creating a model\nJiraFactory jiraFactory = JiraFactory.eINSTANCE;\n\norg.nasdanika.models.jira.Issue modelIssue = jiraFactory.createIssue();\nmodelIssue.setKey(&quot;DEMO-1&quot;);\nmodelIssue.setDescription(&quot;Some description&quot;);\n\n// Saving to a file\nResourceSet resourceSet = createResourceSet();\norg.eclipse.emf.common.util.URI resourceURI = org.eclipse.emf.common.util.URI.createFileURI(new File(JIRA_MODEL_PATH).getCanonicalPath());\nResource resource = resourceSet.createResource(resourceURI);\nresource.getContents().add(modelIssue);\nresource.save(null);\n Load from a file ResourceSet resourceSet = createResourceSet();\norg.eclipse.emf.common.util.URI resourceURI = org.eclipse.emf.common.util.URI.createFileURI(new File(JIRA_MODEL_PATH).getCanonicalPath());\n\nResource resource = resourceSet.getResource(resourceURI, true);\norg.nasdanika.models.jira.Issue modelIssue = (org.nasdanika.models.jira.Issue) resource.getContents().get(0);\n\nSystem.out.println(modelIssue.getKey() + &quot;: &quot; + modelIssue.getDescription());\n\n createResourceSet() private ResourceSet createResourceSet() {\n\tCapabilityLoader capabilityLoader = new CapabilityLoader();\n\tProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\n\tRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\n\treturn capabilityLoader.loadOne(requirement, progressMonitor);\n}\n\n Resources Jira demo - sources for the code snippets Jira Group User Project Issue Actor Version Component Role Role Actor Jira Version UserReference Attachment BasicProject AdressableNamedEntity Project versions Group Status AdressableNamedIdentifiableEntity BasicWatchers BasicIssue issues Issue status project affectedVersions fixVersions attachments watchers AssigneeType Comment comments Component Resolution resolution IssueReference Actor IssueType issueType issueTypes IssueField issueFields IssueLink issueLinks ComponentReference BasicComponent components components BasicUser assignee realAssignee author updateAuthor lead author IdentifiableEntity Jira projects groups User groups users assignee reporter ChangelogItem ChangelogGroup items author changelog RoleActor BasicProjectRole projectRoles roles Subtask status issueType subtasks Operations operations BasicPriority priority Worklog author updateAuthor worklogs AddressableEntity TimeTracking timeTracking ProjectRole actors BasicVotes votes StatusCategory value statusCategories Visibility visibility visibility ProjectReference NamedEntity Jira",
+    "timestamp": 1746534119657
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/issueType/index.html": {
     "path": "Issue/References/issueType",
-    "link-uuid": "45cd663e-6f39-4f58-bb1e-ad421a76f4e1",
+    "link-uuid": "f3591762-d6e8-41d1-b7a2-10a9195ff2c3",
     "title": "issueType",
-    "content": "Type IssueType Multiplicity 0..1"
+    "content": "Type IssueType Multiplicity 0..1",
+    "timestamp": 1746534120107
   },
   "references/eClassifiers/BasicIssue/inheritance.html": {
     "path": "BasicIssue/Inheritance",
-    "link-uuid": "b5b7b803-ef6a-43aa-80bb-a75000749c28",
+    "link-uuid": "08be89c7-b56f-4217-a7f5-0faf0734c347",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119785
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/custom/index.html": {
     "path": "ChangelogItem/Attributes/custom",
-    "link-uuid": "3b7d65b8-b2fd-408e-b6cb-87e2618c6ec7",
+    "link-uuid": "c390d3f1-2fe6-4bd1-b6db-80b44e687a1e",
     "title": "custom",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534119946
   },
   "references/eClassifiers/BasicProject/references/eStructuralFeatures/key/index.html": {
     "path": "BasicProject/Attributes/key",
-    "link-uuid": "1798af67-7711-44fc-a884-21178cc6f45c",
+    "link-uuid": "70ed920b-9823-40d2-a124-01ac88a2e19f",
     "title": "key",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119826
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/mimeType/index.html": {
     "path": "Attachment/Attributes/mimeType",
-    "link-uuid": "2af5b0fa-58e9-420b-911a-5d7c551e3626",
+    "link-uuid": "aaa78796-2149-4366-9e79-0486787aab5a",
     "title": "mimeType",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119743
   },
   "references/eClassifiers/StatusCategory/references/eStructuralFeatures/key/index.html": {
     "path": "StatusCategory/Attributes/key",
-    "link-uuid": "fa82bfe1-13a0-4f73-96c3-31fa94e15ff7",
+    "link-uuid": "fabe8c04-a745-4cd8-a0ab-4ea3c26c36c9",
     "title": "key",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120413
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/thumbnailUri/index.html": {
     "path": "Attachment/Attributes/thumbnailUri",
-    "link-uuid": "95cd667d-6dd1-4bfe-b170-8b6cbdded9b3",
+    "link-uuid": "4f3152b6-c491-4fca-a73c-cb40ee20f83e",
     "title": "thumbnailUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119746
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/fixVersions/index.html": {
     "path": "Issue/References/fixVersions",
-    "link-uuid": "8a80f2c9-e588-4c35-86e6-5561be9d0c36",
+    "link-uuid": "1de8d977-e099-4074-b386-21a83210550c",
     "title": "fixVersions",
-    "content": "Type Version Multiplicity 0..*"
+    "content": "Type Version Multiplicity 0..*",
+    "timestamp": 1746534120102
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/self/index.html": {
     "path": "Comment/Attributes/self",
-    "link-uuid": "7ce6618d-d243-409a-a9d0-3cf2ab3c412d",
+    "link-uuid": "02361e27-15ef-4587-a38a-891cd696bdcf",
     "title": "self",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119976
   },
   "references/eClassifiers/TimeTracking/references/eStructuralFeatures/timeSpentMinutes/index.html": {
     "path": "TimeTracking/Attributes/timeSpentMinutes",
-    "link-uuid": "de3bf073-f025-4a33-bcc3-5fa6d35aed6c",
+    "link-uuid": "84fc1c63-3af5-471c-bb0e-55ee7303d8d8",
     "title": "timeSpentMinutes",
-    "content": "Type EIntegerObject Multiplicity 0..1"
+    "content": "Type EIntegerObject Multiplicity 0..1",
+    "timestamp": 1746534120455
   },
   "references/eClassifiers/IssueLink/references/eStructuralFeatures/targetIssueUri/index.html": {
     "path": "IssueLink/Attributes/targetIssueUri",
-    "link-uuid": "1c9f4662-fdd1-40b3-b54c-e7af98b99e62",
+    "link-uuid": "60f5f541-09fe-4871-95d3-ab9662896d8d",
     "title": "targetIssueUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120175
   },
   "references/eClassifiers/User/references/eStructuralFeatures/active/index.html": {
     "path": "User/Attributes/active",
-    "link-uuid": "66a3e118-8b73-407f-8193-bde630fa6051",
+    "link-uuid": "26b0a139-1fe8-46c8-8db8-8474a4440410",
     "title": "active",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534120474
   },
   "references/eClassifiers/ProjectRole/references/eStructuralFeatures/description/index.html": {
     "path": "ProjectRole/Attributes/description",
-    "link-uuid": "af3fff9a-c02f-4919-9ef3-d29dfb46f290",
+    "link-uuid": "11f2a4ae-59ef-4d16-b2c2-3151ea414bc6",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120330
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/expandos/index.html": {
     "path": "Project/Attributes/expandos",
-    "link-uuid": "726a8bfd-6f03-4757-9bc6-d2e177844bc4",
+    "link-uuid": "31e61d10-ee17-4918-97db-7b2b76fd1c80",
     "title": "expandos",
-    "content": "Type EString Multiplicity 0..*"
+    "content": "Type EString Multiplicity 0..*",
+    "timestamp": 1746534120281
   },
   "references/eClassifiers/RoleActor/inheritance.html": {
     "path": "RoleActor/Inheritance",
-    "link-uuid": "60ebfda5-4913-4c1b-8380-09073cfa8136",
+    "link-uuid": "5e11a13b-e797-4251-b4ce-89f5bb50b4bf",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120361
   },
   "references/eClassifiers/Jira/references/eStructuralFeatures/groups/index.html": {
     "path": "Jira/References/groups",
-    "link-uuid": "901e6b0f-f269-4f1f-b6bc-88465dfe6bcb",
+    "link-uuid": "3c2d04ba-7e93-46ba-b488-38b003b98ce9",
     "title": "groups",
-    "content": "Type Group Multiplicity 0..*"
+    "content": "Type Group Multiplicity 0..*",
+    "timestamp": 1746534120226
   },
   "references/eClassifiers/BasicProjectRole/inheritance.html": {
     "path": "BasicProjectRole/Inheritance",
-    "link-uuid": "7b52ccd6-6e14-4651-a6f7-aec41f6875cd",
+    "link-uuid": "18d707ad-2861-48ef-bd45-9a54acc974a7",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119839
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/resolution/index.html": {
     "path": "Issue/References/resolution",
-    "link-uuid": "8b6c00c8-e9a8-4d66-9b14-fb6a67d62f44",
+    "link-uuid": "41559d78-3720-40d4-96a6-1dc09ed6990f",
     "title": "resolution",
-    "content": "Type Resolution Multiplicity 0..1"
+    "content": "Type Resolution Multiplicity 0..1",
+    "timestamp": 1746534120119
   },
   "references/eClassifiers/Component/references/eStructuralFeatures/realAssignee/index.html": {
     "path": "Component/References/realAssignee",
-    "link-uuid": "4a306076-6729-4ee9-ab1b-be1eb9bf5ae5",
+    "link-uuid": "46c3673a-2fc4-4a52-bcc6-829e59a4fcc2",
     "title": "realAssignee",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534120003
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/id/index.html": {
     "path": "Comment/Attributes/id",
-    "link-uuid": "78fd0db0-d0b8-41f0-bf7e-699840aedf02",
+    "link-uuid": "9cb075d6-bdd8-4b76-ad1b-179378791550",
     "title": "id",
-    "content": "Type ELongObject Multiplicity 0..1"
+    "content": "Type ELongObject Multiplicity 0..1",
+    "timestamp": 1746534119975
   },
   "references/eClassifiers/Component/references/eStructuralFeatures/assigneeType/index.html": {
     "path": "Component/Attributes/assigneeType",
-    "link-uuid": "732c9aa9-fe8b-40a8-b19f-354045953140",
+    "link-uuid": "d04703ba-e990-4a0c-9cee-007daf6dc88b",
     "title": "assigneeType",
-    "content": "Type AssigneeType Multiplicity 0..1"
+    "content": "Type AssigneeType Multiplicity 0..1",
+    "timestamp": 1746534119999
   },
   "references/eClassifiers/Jira/references/eStructuralFeatures/projects/index.html": {
     "path": "Jira/References/projects",
-    "link-uuid": "3a54ccd3-1927-4177-85b8-f5627e2c9aa0",
+    "link-uuid": "28084861-39b8-423f-8a7d-e265645401fa",
     "title": "projects",
-    "content": "Type BasicProject Multiplicity 0..*"
+    "content": "Type BasicProject Multiplicity 0..*",
+    "timestamp": 1746534120228
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/dueDate/index.html": {
     "path": "Issue/Attributes/dueDate",
-    "link-uuid": "b615594d-1e74-46ba-980d-fa4db0971bd6",
+    "link-uuid": "280a4d41-9085-4601-9d11-698ff390eff7",
     "title": "dueDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120099
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/issueFields/index.html": {
     "path": "Issue/References/issueFields",
-    "link-uuid": "483c7a18-e366-49ed-8019-12eb53223efc",
+    "link-uuid": "33a89941-7291-4a79-a279-6fc934c36645",
     "title": "issueFields",
-    "content": "Type IssueField Multiplicity 0..*"
+    "content": "Type IssueField Multiplicity 0..*",
+    "timestamp": 1746534120104
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/project/index.html": {
     "path": "Issue/References/project",
-    "link-uuid": "d1b82b1d-56ef-4b9f-ad26-bd1c030e3194",
+    "link-uuid": "74c21bd2-bce2-4998-9c87-26c0cf7316e4",
     "title": "project",
-    "content": "Type BasicProject Multiplicity 0..1"
+    "content": "Type BasicProject Multiplicity 0..1",
+    "timestamp": 1746534120113
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/subtasks/index.html": {
     "path": "Issue/References/subtasks",
-    "link-uuid": "899df8b6-bbf8-4707-ab37-8236429ba3a4",
+    "link-uuid": "c3ed8fde-1f65-42e3-9c66-cac6a99b4b18",
     "title": "subtasks",
-    "content": "Type Subtask Multiplicity 0..*"
+    "content": "Type Subtask Multiplicity 0..*",
+    "timestamp": 1746534120122
   },
   "references/eClassifiers/IssueType/references/eStructuralFeatures/iconUri/index.html": {
     "path": "IssueType/Attributes/iconUri",
-    "link-uuid": "827a42e8-73d1-48f4-91c0-dab0582c6c36",
+    "link-uuid": "a05fab94-7c53-45c1-8f32-b458519df818",
     "title": "iconUri",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120211
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/updateDate/index.html": {
     "path": "Issue/Attributes/updateDate",
-    "link-uuid": "8da50b54-10ac-44b9-84f0-0212822e18eb",
+    "link-uuid": "2d57a8e0-18ca-4862-a57b-692a635c36d9",
     "title": "updateDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120128
   },
   "references/eClassifiers/User/references/eStructuralFeatures/groups/index.html": {
     "path": "User/References/groups",
-    "link-uuid": "0eece1a6-d109-4706-98ce-c6c2c0e8bd83",
+    "link-uuid": "7c4739b7-8986-4308-a3d0-5c467d34d9f3",
     "title": "groups",
-    "content": "Type Group Multiplicity 0..*"
+    "content": "Type Group Multiplicity 0..*",
+    "timestamp": 1746534120477
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/summary/index.html": {
     "path": "Issue/Attributes/summary",
-    "link-uuid": "b616f6a6-c92d-434e-bfab-682cfe4f74ec",
+    "link-uuid": "72f56754-d6f9-473d-86e0-fdd22e2d227c",
     "title": "summary",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120124
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/body/index.html": {
     "path": "Comment/Attributes/body",
-    "link-uuid": "3ebc47e3-398e-4b1b-b991-395094102520",
+    "link-uuid": "fc9a5247-3a50-49c2-8c0a-e05ceae99473",
     "title": "body",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119972
   },
   "references/eClassifiers/IdentifiableEntity/inheritance.html": {
     "path": "IdentifiableEntity/Inheritance",
-    "link-uuid": "aa33a860-c10f-4f5f-afc4-c78904fc0bb0",
+    "link-uuid": "56850bbf-a04b-481d-bf7d-c765bbafa412",
     "title": "Inheritance",
-    "content": "Subtypes "
+    "content": "Subtypes ",
+    "timestamp": 1746534120049
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/timeTracking/index.html": {
     "path": "Issue/References/timeTracking",
-    "link-uuid": "9891093a-d6a4-4f14-bd42-e68771471887",
+    "link-uuid": "0590f07c-a24c-44ce-bd25-db236c0f2bd1",
     "title": "timeTracking",
-    "content": "Type TimeTracking Multiplicity 0..1"
+    "content": "Type TimeTracking Multiplicity 0..1",
+    "timestamp": 1746534120125
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/assignee/index.html": {
     "path": "Issue/References/assignee",
-    "link-uuid": "4c8a513a-6902-4d73-b651-7fe182fc736d",
+    "link-uuid": "2592e66b-4bb9-4696-9a9e-1e57ff8a78e1",
     "title": "assignee",
-    "content": "Type User Multiplicity 0..1"
+    "content": "Type User Multiplicity 0..1",
+    "timestamp": 1746534120087
   },
   "references/eClassifiers/Attachment/inheritance.html": {
     "path": "Attachment/Inheritance",
-    "link-uuid": "ddebcf49-05ed-4ac3-b2ce-abd155418d90",
+    "link-uuid": "85ca0f63-7087-4d2f-9c3a-ebac472ee309",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534119733
   },
   "references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/author/index.html": {
     "path": "ChangelogGroup/References/author",
-    "link-uuid": "92dcccd2-7965-4d46-835f-70797fef3587",
+    "link-uuid": "2239aa88-7ce9-498e-93fe-9a10535538dd",
     "title": "author",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534119928
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/comment/index.html": {
     "path": "Worklog/Attributes/comment",
-    "link-uuid": "6bc2a4f7-082a-4341-9c6a-bde6f2552b0d",
+    "link-uuid": "597152e7-7675-4873-9a62-a96d0dd0883e",
     "title": "comment",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120560
   },
   "references/eClassifiers/Status/inheritance.html": {
     "path": "Status/Inheritance",
-    "link-uuid": "45598b49-cb01-4568-a14d-4782df48d7ea",
+    "link-uuid": "b7f55e99-978f-4fb2-91c8-f8850ebbbd1f",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120386
   },
   "references/eClassifiers/Version/references/eStructuralFeatures/description/index.html": {
     "path": "Version/Attributes/description",
-    "link-uuid": "a9b7802b-a94b-45ea-a769-deec8a2aa7ca",
+    "link-uuid": "6dce8e68-dee8-479a-a465-bfcb2e906b5c",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120513
   },
   "references/eClassifiers/Component/inheritance.html": {
     "path": "Component/Inheritance",
-    "link-uuid": "c78b2aaf-4133-44f2-91ee-5a539fc59b41",
+    "link-uuid": "1710f4d1-399e-48a8-a92a-d28b4686db05",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534119995
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/creationDate/index.html": {
     "path": "Issue/Attributes/creationDate",
-    "link-uuid": "ae5d49fd-d911-4728-ae90-70f456248f4c",
+    "link-uuid": "976f8530-625c-4cef-89ac-bc808f0a17c1",
     "title": "creationDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120095
   },
   "references/eClassifiers/Status/references/eStructuralFeatures/description/index.html": {
     "path": "Status/Attributes/description",
-    "link-uuid": "0effbf02-483e-4151-b507-2e6b93117cb7",
+    "link-uuid": "25251515-3300-43fc-a328-9aeaf044997f",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120390
   },
   "references/eClassifiers/StatusCategory/references/eStructuralFeatures/colorName/index.html": {
     "path": "StatusCategory/Attributes/colorName",
-    "link-uuid": "14807c4f-749b-4f6e-8792-5da5a2786e03",
+    "link-uuid": "753a273b-f7b5-406a-9d69-f30c4afb767d",
     "title": "colorName",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120411
   },
   "references/eClassifiers/BasicWatchers/references/eStructuralFeatures/isWatching/index.html": {
     "path": "BasicWatchers/Attributes/isWatching",
-    "link-uuid": "d7f62200-e7bf-4b88-966f-b5104a6ab818",
+    "link-uuid": "6cd93f36-254a-4ec0-9f51-9ffb691af734",
     "title": "isWatching",
-    "content": "Type EBoolean Multiplicity 0..1"
+    "content": "Type EBoolean Multiplicity 0..1",
+    "timestamp": 1746534119907
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/to/index.html": {
     "path": "ChangelogItem/Attributes/to",
-    "link-uuid": "4fb73a95-859b-4e72-9b7e-2e3a476af2aa",
+    "link-uuid": "073bb425-2d6b-4cde-85d7-11ca8ebd233f",
     "title": "to",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119952
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/toString/index.html": {
     "path": "ChangelogItem/Attributes/toString",
-    "link-uuid": "462e4e57-3984-4a8e-93cd-37de4f04bfad",
+    "link-uuid": "45d21bad-b5a8-483a-962c-35c2e0039d15",
     "title": "toString",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119954
   },
   "references/eClassifiers/IssueReference/inheritance.html": {
     "path": "IssueReference/Inheritance",
-    "link-uuid": "3a48921a-8cf6-4649-8445-17936bd14cdd",
+    "link-uuid": "4f8d617f-acbd-42c0-ad23-b3f63e107751",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120187
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/author/index.html": {
     "path": "Worklog/References/author",
-    "link-uuid": "2652621d-8828-46c5-8793-064d5de46aa8",
+    "link-uuid": "7fb2da41-a25d-4edf-90b4-2ac8da1ff252",
     "title": "author",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534120558
   },
   "references/eClassifiers/BasicWatchers/inheritance.html": {
     "path": "BasicWatchers/Inheritance",
-    "link-uuid": "f99941f3-89f2-4a5f-a815-acb719d3ddf3",
+    "link-uuid": "3f753219-6e00-43ec-bd65-e9ad6a3ed53f",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534119899
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/components/index.html": {
     "path": "Project/References/components",
-    "link-uuid": "165091f0-2332-4d77-aa7a-bd90fe04de9e",
+    "link-uuid": "973e677e-5860-44d0-931d-28507aff1200",
     "title": "components",
-    "content": "Type BasicComponent Multiplicity 0..*"
+    "content": "Type BasicComponent Multiplicity 0..*",
+    "timestamp": 1746534120277
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/from/index.html": {
     "path": "ChangelogItem/Attributes/from",
-    "link-uuid": "eeb103a0-d4e2-4608-b50c-ca09df9671da",
+    "link-uuid": "3d58e1a5-3776-47dd-9cd6-20b4c9ef77b7",
     "title": "from",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119949
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/components/index.html": {
     "path": "Issue/References/components",
-    "link-uuid": "720df56e-5a91-4f94-8496-6df2250508dc",
+    "link-uuid": "2e88dab1-7c37-4520-a796-b14ebf195f01",
     "title": "components",
-    "content": "Type BasicComponent Multiplicity 0..*"
+    "content": "Type BasicComponent Multiplicity 0..*",
+    "timestamp": 1746534120094
   },
   "references/eClassifiers/Attachment/references/eStructuralFeatures/size/index.html": {
     "path": "Attachment/Attributes/size",
-    "link-uuid": "62b7c14b-5b11-485c-8ae2-a81b0a2d90ac",
+    "link-uuid": "f1fbf2d7-afa9-41d3-9a8a-52fa6bcc428a",
     "title": "size",
-    "content": "Type EInt Multiplicity 0..1"
+    "content": "Type EInt Multiplicity 0..1",
+    "timestamp": 1746534119744
   },
   "references/eClassifiers/BasicComponent/inheritance.html": {
     "path": "BasicComponent/Inheritance",
-    "link-uuid": "db9861c4-d035-4a06-a415-c6fb8b72486c",
+    "link-uuid": "18bf6067-a7f9-441f-b7c7-83ef9c493ea2",
     "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1746534119765
   },
   "references/eClassifiers/Issue/references/eStructuralFeatures/reporter/index.html": {
     "path": "Issue/References/reporter",
-    "link-uuid": "2fb8eaf4-4285-497d-8d12-1c061e92b7e4",
+    "link-uuid": "73e10a53-ca2c-4f12-9093-4ed643c8e5c9",
     "title": "reporter",
-    "content": "Type User Multiplicity 0..1"
+    "content": "Type User Multiplicity 0..1",
+    "timestamp": 1746534120115
   },
   "references/eClassifiers/Subtask/references/eStructuralFeatures/issueType/index.html": {
     "path": "Subtask/References/issueType",
-    "link-uuid": "069781ca-8128-4b0a-9b91-10835a638feb",
+    "link-uuid": "ad278546-935c-44f8-96ce-0ce4470d0d95",
     "title": "issueType",
-    "content": "Type IssueType Multiplicity 0..1"
+    "content": "Type IssueType Multiplicity 0..1",
+    "timestamp": 1746534120431
   },
   "references/eClassifiers/User/references/eStructuralFeatures/emailAddress/index.html": {
     "path": "User/Attributes/emailAddress",
-    "link-uuid": "8daaf9da-e6bd-4229-9e0a-5f73a20982e0",
+    "link-uuid": "9c2d0415-d77d-42a1-b64e-2f900f10075a",
     "title": "emailAddress",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120476
   },
   "references/eClassifiers/BasicIssue/references/eStructuralFeatures/key/index.html": {
     "path": "BasicIssue/Attributes/key",
-    "link-uuid": "bbe4eda6-8c3e-420d-b496-dc0e8620b748",
+    "link-uuid": "11bdfa37-bfb8-4a79-a3af-bc48ff13fd51",
     "title": "key",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119789
   },
   "references/eClassifiers/Worklog/inheritance.html": {
     "path": "Worklog/Inheritance",
-    "link-uuid": "fa25511a-6b6d-4003-80d7-68d457475799",
+    "link-uuid": "81a6ac21-af6b-4a9f-8c5a-30c79f4c60c3",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120555
   },
   "references/eClassifiers/BasicComponent/references/eStructuralFeatures/description/index.html": {
     "path": "BasicComponent/Attributes/description",
-    "link-uuid": "3817f929-5ea1-4d71-93c5-d61447265136",
+    "link-uuid": "4a9497a9-0318-455e-9003-70556808d265",
     "title": "description",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119769
   },
   "references/eClassifiers/Project/references/eStructuralFeatures/lead/index.html": {
     "path": "Project/References/lead",
-    "link-uuid": "b8b07fc1-738a-4866-b3a4-050166437674",
+    "link-uuid": "dbcb2d46-6bfa-4181-b33a-fabf96e0c1df",
     "title": "lead",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534120286
   },
   "references/eClassifiers/User/references/eStructuralFeatures/timezone/index.html": {
     "path": "User/Attributes/timezone",
-    "link-uuid": "8f72384a-063c-47ec-a464-5d678230e652",
+    "link-uuid": "d40db03c-45f8-4f5e-8e67-8a2555bb8880",
     "title": "timezone",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534120478
   },
   "references/eClassifiers/Worklog/references/eStructuralFeatures/startDate/index.html": {
     "path": "Worklog/Attributes/startDate",
-    "link-uuid": "c6a4bddb-a5c7-405d-8bc2-545d3ed0158f",
+    "link-uuid": "dfbc990f-de21-4c49-9cd0-8b90d48dd6b7",
     "title": "startDate",
-    "content": "Type EDate Multiplicity 0..1"
+    "content": "Type EDate Multiplicity 0..1",
+    "timestamp": 1746534120566
   },
   "references/eClassifiers/Comment/references/eStructuralFeatures/updateAuthor/index.html": {
     "path": "Comment/References/updateAuthor",
-    "link-uuid": "84e54b5f-b71d-450d-9180-4e5af710ce02",
+    "link-uuid": "11b8479a-43b1-4534-9641-1eb4c1556f5e",
     "title": "updateAuthor",
-    "content": "Type BasicUser Multiplicity 0..1"
+    "content": "Type BasicUser Multiplicity 0..1",
+    "timestamp": 1746534119978
   },
   "references/eClassifiers/BasicWatchers/references/eStructuralFeatures/numWatchers/index.html": {
     "path": "BasicWatchers/Attributes/numWatchers",
-    "link-uuid": "b272bc22-331e-4051-a41a-c41f92599c1d",
+    "link-uuid": "49bef6cb-7ceb-439d-bf12-b504ae34b2f3",
     "title": "numWatchers",
-    "content": "Type EInt Multiplicity 0..1"
+    "content": "Type EInt Multiplicity 0..1",
+    "timestamp": 1746534119909
   },
   "references/eClassifiers/TimeTracking/references/eStructuralFeatures/remainingEstimateMinutes/index.html": {
     "path": "TimeTracking/Attributes/remainingEstimateMinutes",
-    "link-uuid": "0ce5086e-b769-4e05-9648-f8c5e4da3c81",
+    "link-uuid": "6adc3d57-0de3-48c7-8f31-8165025fbdca",
     "title": "remainingEstimateMinutes",
-    "content": "Type EIntegerObject Multiplicity 0..1"
+    "content": "Type EIntegerObject Multiplicity 0..1",
+    "timestamp": 1746534120454
   },
   "references/eClassifiers/ChangelogItem/references/eStructuralFeatures/fromString/index.html": {
     "path": "ChangelogItem/Attributes/fromString",
-    "link-uuid": "9f9eaac0-4823-42f2-8397-39ae4aa45580",
+    "link-uuid": "3442a4ba-7513-4282-af0c-d06ad43b66ff",
     "title": "fromString",
-    "content": "Type EString Multiplicity 0..1"
+    "content": "Type EString Multiplicity 0..1",
+    "timestamp": 1746534119951
   },
   "references/eClassifiers/Group/inheritance.html": {
     "path": "Group/Inheritance",
-    "link-uuid": "753e7b89-4509-484c-9be7-404ab943ac80",
+    "link-uuid": "7840155d-9c5a-4bba-b855-2bfa9e93fd7a",
     "title": "Inheritance",
-    "content": "Supertypes "
+    "content": "Supertypes ",
+    "timestamp": 1746534120034
   }
 }
