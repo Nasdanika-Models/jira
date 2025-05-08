@@ -11,7 +11,7 @@ public class AsynchronousRateLimitingJiraRestClientFactory extends AsynchronousI
 	private RateLimiter rateLimiter;
 	
 	public AsynchronousRateLimitingJiraRestClientFactory(double requestsPerSecond) {
-		rateLimiter = RateLimiter.create(requestsPerSecond);
+		rateLimiter = requestsPerSecond > 0 ? RateLimiter.create(requestsPerSecond) : null;
 	}
 	
 	@Override
@@ -21,7 +21,9 @@ public class AsynchronousRateLimitingJiraRestClientFactory extends AsynchronousI
 	
 	@Override
 	protected void onRequest(Request request) {
-		rateLimiter.acquire();
+		if (rateLimiter != null) {
+			rateLimiter.acquire();
+		}
 	}
 
 }
