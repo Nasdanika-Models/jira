@@ -1,38 +1,13 @@
 package org.nasdanika.models.jira.processors;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.util.Collection;
-import java.util.Map;
 import java.util.function.BiConsumer;
 
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EClassifier;
-import org.eclipse.emf.ecore.EDataType;
-import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EReference;
 import org.nasdanika.common.Context;
-import org.nasdanika.common.NasdanikaException;
 import org.nasdanika.common.ProgressMonitor;
-import org.nasdanika.drawio.Connection;
-import org.nasdanika.drawio.Document;
-import org.nasdanika.drawio.Layer;
-import org.nasdanika.drawio.Model;
-import org.nasdanika.drawio.Node;
-import org.nasdanika.drawio.Page;
-import org.nasdanika.drawio.Root;
-import org.nasdanika.graph.emf.EObjectNode;
 import org.nasdanika.graph.processor.NodeProcessorConfig;
 import org.nasdanika.models.app.Action;
 import org.nasdanika.models.app.Label;
 import org.nasdanika.models.app.graph.WidgetFactory;
-import org.nasdanika.models.ecore.graph.processors.EClassNodeProcessor;
-import org.nasdanika.models.ecore.graph.processors.EClassifierNodeProcessor;
-import org.nasdanika.models.ecore.graph.processors.EClassifierNodeProcessorFactory;
-import org.nasdanika.models.ecore.graph.processors.EDataTypeNodeProcessor;
-import org.nasdanika.models.ecore.graph.processors.EEnumNodeProcessor;
 import org.nasdanika.models.ecore.graph.processors.EPackageNodeProcessor;
 import org.nasdanika.models.ecore.graph.processors.EPackageNodeProcessorFactory;
 import org.nasdanika.models.jira.JiraPackage;
@@ -90,7 +65,7 @@ public class EcoreGenJiraProcessorsFactory {
 						<dependency>
 							<groupId>org.nasdanika.models.jira</groupId>
 							<artifactId>client</artifactId>
-							<version>2025.2.0</version>
+							<version>2025.5.0</version>
 						</dependency>
 						...
 					</dependencies>
@@ -183,6 +158,10 @@ public class EcoreGenJiraProcessorsFactory {
 					System.out.println(issue);
 				}				
 				```
+				
+				#### Telemetry
+				
+				If you need telemetry in addition to rate limiting, use [AsynchronousTelemetryRateLimitingJiraRestClientFactory](https://github.com/Nasdanika-Models/jira/blob/main/client/src/main/java/org/nasdanika/models/jira/client/AsynchronousTelemetryRateLimitingJiraRestClientFactory.java)								
 				
 				## Working with the model
 				
