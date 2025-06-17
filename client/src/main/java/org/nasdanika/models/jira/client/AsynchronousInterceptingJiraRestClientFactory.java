@@ -4,6 +4,7 @@ import java.net.URI;
 
 import com.atlassian.httpclient.api.Request;
 import com.atlassian.httpclient.api.Response;
+import com.atlassian.httpclient.api.factory.HttpClientOptions;
 import com.atlassian.jira.rest.client.api.AuthenticationHandler;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
 import com.atlassian.jira.rest.client.internal.async.AsynchronousHttpClientFactory;
@@ -38,13 +39,27 @@ public class AsynchronousInterceptingJiraRestClientFactory extends AsynchronousJ
 	    	@Override
 	    	protected void onFail(Request request, Throwable th) {
 	    		AsynchronousInterceptingJiraRestClientFactory.this.onFail(request, th);
-	    	}	    	
+	    	}	   
+	    	
+	    	@Override
+	    	protected HttpClientOptions createHttpClientOptions() {
+	    		return AsynchronousInterceptingJiraRestClientFactory.this.setHttpClientOptions(super.createHttpClientOptions());
+	    	}
 	    	
 	    };
 	    
 		DisposableHttpClient httpClient = factory.createClient(serverUri, authenticationHandler);
         return new AsynchronousJiraRestClient(serverUri, httpClient);
 	}	
+	
+	/**
+	 * Override to set {@link HttpClientOptions}. For example, set trusting self-signed certificates to <code>true</code>.
+	 * @param httpClientOptions
+	 * @return argument options, may replace.
+	 */
+	protected HttpClientOptions setHttpClientOptions(HttpClientOptions httpClientOptions) {
+		return httpClientOptions;
+	}
 	
 	/**
 	 * Override to return false if interception of response is not desired

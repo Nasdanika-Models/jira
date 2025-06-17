@@ -150,7 +150,7 @@ public class AsynchronousInterceptingHttpClientFactory extends AsynchronousHttpC
                     }
                 });
         
-        HttpClientOptions options = new HttpClientOptions();
+        HttpClientOptions options = createHttpClientOptions();
         options.setRequestPreparer(this::onRequest);
 
         HttpClient httpClient = defaultHttpClientFactory.create(options);
@@ -202,6 +202,15 @@ public class AsynchronousInterceptingHttpClientFactory extends AsynchronousHttpC
             }
         };
 		
+	}
+
+	/**
+	 * Override to customize {@link HttpClientOptions}. 
+	 * For example, set trusting self-signed certificates to <code>true</code>.
+	 * @return
+	 */
+	protected HttpClientOptions createHttpClientOptions() {
+		return new HttpClientOptions();
 	}
 	
 	/**
