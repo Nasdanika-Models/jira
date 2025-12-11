@@ -61,7 +61,7 @@ public class TestJiraModelDocGen {
 		Transformer<EObject,Element> graphFactory = new Transformer<>(new EcoreGraphFactory());
 		Map<EObject, Element> graph = graphFactory.transform(ePackages, false, progressMonitor);
 
-		NopEndpointProcessorConfigFactory<WidgetFactory> configFactory = new NopEndpointProcessorConfigFactory<>() {
+		NopEndpointProcessorConfigFactory<WidgetFactory, Object> configFactory = new NopEndpointProcessorConfigFactory<>() {
 			
 			@Override
 			protected boolean isPassThrough(Connection connection) {
@@ -70,8 +70,8 @@ public class TestJiraModelDocGen {
 			
 		};
 		
-		Transformer<Element,ProcessorConfig> processorConfigTransformer = new Transformer<>(configFactory);				
-		Map<Element, ProcessorConfig> configs = processorConfigTransformer.transform(graph.values(), false, progressMonitor);
+		Transformer<Element,ProcessorConfig<WidgetFactory, WidgetFactory, Object>> processorConfigTransformer = new Transformer<>(configFactory);				
+		Map<Element, ProcessorConfig<WidgetFactory, WidgetFactory, Object>> configs = processorConfigTransformer.transform(graph.values(), false, progressMonitor);
 		
 		MutableContext context = Context.EMPTY_CONTEXT.fork();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
@@ -91,9 +91,9 @@ public class TestJiraModelDocGen {
 				diagnosticConsumer,
 				ecoreGenJiraProcessorFactory);
 		
-		EObjectNodeProcessorReflectiveFactory<WidgetFactory, WidgetFactory> eObjectNodeProcessorReflectiveFactory = new EObjectNodeProcessorReflectiveFactory<>(ecoreNodeProcessorFactory);
+		EObjectNodeProcessorReflectiveFactory<WidgetFactory, WidgetFactory, Object> eObjectNodeProcessorReflectiveFactory = new EObjectNodeProcessorReflectiveFactory<>(ecoreNodeProcessorFactory);
 		EObjectReflectiveProcessorFactoryProvider eObjectReflectiveProcessorFactoryProvider = new EObjectReflectiveProcessorFactoryProvider(eObjectNodeProcessorReflectiveFactory);
-		Map<Element, ProcessorInfo<Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
+		Map<Element, ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
 		
 		WidgetFactory jiraProcessor = null;
 		Collection<Throwable> resolveFailures = new ArrayList<>();		
@@ -105,13 +105,13 @@ public class TestJiraModelDocGen {
 		);
 		
 		for (EPackage topLevelPackage: ePackages) {
-			for (Entry<Element, ProcessorInfo<Object>> re: registry.entrySet()) {
+			for (Entry<Element, ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>> re: registry.entrySet()) {
 				Element element = re.getKey();
 				if (element instanceof EObjectNode) {
 					EObjectNode eObjNode = (EObjectNode) element;
 					EObject target = eObjNode.get();
 					if (target == topLevelPackage) {
-						ProcessorInfo<Object> info = re.getValue();
+						ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object> info = re.getValue();
 						Object processor = info.getProcessor();
 						if (processor instanceof WidgetFactory) {
 							WidgetFactory widgetFactoryNodeProcessor = (WidgetFactory) processor;

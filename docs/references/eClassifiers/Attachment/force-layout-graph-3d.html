@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Force Graph 3D</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/css/app.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script><script type="importmap">
+{
+    "imports" : {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.177.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.177.0/examples/jsm/"
+    }
+}
+</script>    
+<!-- Node text styling -->      
+<style>
+  .node-label {
+        font-size: 12px;
+        padding: 1px 4px;
+        border-radius: 4px;
+        background-color: rgba(0,0,0,0.5);
+        user-select: none;
+      }               
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+</head>
+  <body>
+    <div tabindex="-1" id="nsd_iyy" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">Hover mouse over nodes elements to display tooltips.
+Double-click on nodes to navigate go documentation.
+Left click - rotate.
+Mouse wheel - zoom.
+Right click - pan.
+Drag to rearrange.
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="a6a3236d-cf39-4d98-84ed-ab1546003a2f" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="../../../search.html" data-nsd-label-uuid="6cda374c-6e96-4612-baea-a2568140f198" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../glossary.html" data-nsd-label-uuid="cbf31862-1b9a-4543-88fb-6a340bb51113" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="../../../index.html" title="A model of Jira objects" data-nsd-label-uuid="9ee188b7-806a-43c3-bed8-bcd7699d09bd" class="navbar-brand">
+              <img src="https://docs.nasdanika.org/images/jira.svg" class="nsd-app-label-icon"/>Jira</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_ixp" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_ixp" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="../../../classifiers.html" data-nsd-label-uuid="0b51bc62-bffa-4eb0-b3bc-2520d8b2da7b" class="nav-link">Classifiers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../../diagram.html" data-nsd-label-uuid="d258bbe7-a2e0-4026-a223-967b3db0069d" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                </li>
+                <li class="nav-item">
+                  <li data-nsd-label-uuid="b036a260-901c-4a17-822b-b24d1d72c494" class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</a>
+                    <div class="dropdown-menu">
+                      <a href="../../../default-graph.html" data-nsd-label-uuid="ae836f0d-67c1-4914-86cd-554fcd77a42a" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="f9a8e9dc-6d67-4ccd-8478-405259a0d5dc" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="3212f720-f719-455f-8bc3-6b1c392f812e" class="dropdown-item">Force Graph</a>
+                      <a href="../../../force-layout-graph-3d.html" data-nsd-label-uuid="0e3ac14e-04b7-47a4-b430-36a879ba3ac7" class="dropdown-item">Force Graph 3D</a>
+                      <a href="../../../force-layout-graph-3d-detailed.html" data-nsd-label-uuid="fa44f89f-9e61-4073-9097-65ff10eac309" class="dropdown-item">Force Graph 3D Detailed</a>
+                      <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
+                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="50420b08-3c3d-4c68-ab20-1e49299a1e1e" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="97544ffc-9a74-42c9-9ffd-c3d6b312a72c" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="c9f521eb-a2f6-4193-8372-d1a1f99bb2d9" class="dropdown-item">Force Graph</a>
+                      <a href="../../../force-layout-graph-3d-with-dependencies-and-subpackages.html" data-nsd-label-uuid="1ba6edc2-76f9-414b-86d6-cfb7c802f7c8" class="dropdown-item">Force Graph 3D</a>
+                      <a href="../../../force-layout-graph-3d-with-dependencies-and-subpackages-detailed.html" data-nsd-label-uuid="c1458188-e5a9-4dd9-ac06-e095fad27dbb" class="dropdown-item">Force Graph 3D Detailed</a>
+                    </div>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <input type="text" id="4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1"/>
+          <div id="4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel"></div>
+          <script>$(document).ready( function() {
+$('#4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../Actor/index.html';"},"data-nsd-label-uuid":"cd632afc-1bf9-49eb-9bd1-3aeb08c132ec","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif","id":"nsd-app-nav-item-a894d175-19c6-4986-94d7-f439cb632bf9","text":"<i>Actor<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../AddressableEntity/index.html';"},"data-nsd-label-uuid":"3676260f-f92e-4348-b7db-3cc40c133712","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-d21c1607-d15c-4aca-9bb9-8b4705786b62","text":"<i>AddressableEntity<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../AdressableNamedEntity/index.html';"},"data-nsd-label-uuid":"19daebb3-f6a1-4f18-8f48-1c2fe5ccc522","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-a6746a3b-1e50-477c-a294-d1c91e9b1b9c","text":"<i>AdressableNamedEntity<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../AdressableNamedIdentifiableEntity/index.html';"},"data-nsd-label-uuid":"f7c17c6f-50d4-44fd-9e6a-e4ac394d8a4f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-dcbf7c76-9886-4e0b-9dbe-9f6e617bc188","text":"<i>AdressableNamedIdentifiableEntity<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../AssigneeType/index.html';"},"data-nsd-label-uuid":"e90d826b-32bb-46c4-9343-ad4c25a5daa9","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EEnum.gif","id":"nsd-app-nav-item-67f1484f-f30b-452e-a095-38c21f6e2b31","text":"AssigneeType","type":"leaf"},{"a_attr":{"onclick":"window.location='index.html';"},"data-nsd-label-uuid":"13c9c41c-9b47-43ab-9fcc-8613565dcacd","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","state":{"selected":true},"id":"nsd-app-nav-item-1c79e935-c69f-454e-acac-02051251a4cb","text":"Attachment","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicComponent/index.html';"},"data-nsd-label-uuid":"2518fde2-2b15-40e6-9010-b53ceb19abc5","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-a423f3eb-863d-452f-a90d-21d19f2894dc","text":"BasicComponent","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicIssue/index.html';"},"data-nsd-label-uuid":"0a281813-1a9f-4b7e-bbbd-fb1f2ff04c2a","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-609efd3c-93d0-43af-be17-834c2854a5ab","text":"BasicIssue","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicPriority/index.html';"},"data-nsd-label-uuid":"0d8dcb89-44d6-4a51-9485-f9b96e2e0f95","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-e09ec30b-7c73-4cd7-b520-2d9dd6677575","text":"BasicPriority","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicProject/index.html';"},"data-nsd-label-uuid":"845948e5-792c-4341-baa4-e9a074a37b13","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-f627b74a-40c4-43a3-a39f-c0bebf966942","text":"BasicProject","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicProjectRole/index.html';"},"data-nsd-label-uuid":"c167e5f9-03d9-4017-85bf-b9f1abffbde0","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-80b40038-2762-4fe5-9f52-19db0c1ca750","text":"BasicProjectRole","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicUser/index.html';"},"data-nsd-label-uuid":"841c2865-b17d-4e0e-bd49-4e6e4291f46e","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-261ff780-45c8-4ae5-967d-e6f8a6199da8","text":"BasicUser","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicVotes/index.html';"},"data-nsd-label-uuid":"eb9a1afd-e56b-443d-ac46-e43ed6ae092f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-a2c47037-df0f-46dd-a92e-6e0ca1e680bb","text":"BasicVotes","type":"leaf"},{"a_attr":{"onclick":"window.location='../BasicWatchers/index.html';"},"data-nsd-label-uuid":"a0a34d1b-365a-4f8c-be9e-489cfa47256c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-ca377771-e640-49f2-85a0-87ec5ce930cd","text":"BasicWatchers","type":"leaf"},{"a_attr":{"onclick":"window.location='../ChangelogGroup/index.html';"},"data-nsd-label-uuid":"9c28f807-ab0f-4335-8d76-bbad486b6a5d","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-4862ede5-83d4-4b72-a75f-dc69128171fd","text":"ChangelogGroup","type":"leaf"},{"a_attr":{"onclick":"window.location='../ChangelogItem/index.html';"},"data-nsd-label-uuid":"530e2f6b-d838-4bcd-997a-1ceeedd31353","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-1ccaeded-51d9-4382-9db6-a8f478ee9627","text":"ChangelogItem","type":"leaf"},{"a_attr":{"onclick":"window.location='../Comment/index.html';"},"data-nsd-label-uuid":"4f0c90aa-1157-4931-8f4d-8bd223c5b3f0","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-f51addcb-ece1-495f-a974-a8869dd1a788","text":"Comment","type":"leaf"},{"a_attr":{"onclick":"window.location='../Component/index.html';"},"data-nsd-label-uuid":"9f41caca-d89d-41b0-aae0-9b960db0a878","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-3d8a2537-9f1e-473c-9dce-f56425ee1691","text":"Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../ComponentReference/index.html';"},"data-nsd-label-uuid":"b80c3850-cd9d-449f-b2de-a7a7b34e981a","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-0eee9195-e59c-4fee-862f-0d7efb9b7774","text":"ComponentReference","type":"leaf"},{"a_attr":{"onclick":"window.location='../Group/index.html';"},"data-nsd-label-uuid":"93c7d73c-3b9a-488e-868a-661a3c2b19ef","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-5b861074-94fc-4009-851e-53f1d18a28e8","text":"Group","type":"leaf"},{"a_attr":{"onclick":"window.location='../IdentifiableEntity/index.html';"},"data-nsd-label-uuid":"6ecb20b8-9c2c-4111-9739-893bb4a43444","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-73a60168-d8e6-43e4-b6e3-d261af857547","text":"<i>IdentifiableEntity<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../Issue/index.html';"},"data-nsd-label-uuid":"52cb55ae-4252-43a4-8742-9c19ad2ec11c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-85a0be26-4fa9-4468-84ce-b37476218339","text":"Issue","type":"leaf"},{"a_attr":{"onclick":"window.location='../IssueField/index.html';"},"data-nsd-label-uuid":"61f2c16d-22aa-4878-a989-c3d71c881016","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-171f5002-a928-452e-a547-1bec04a9b1c5","text":"IssueField","type":"leaf"},{"a_attr":{"onclick":"window.location='../IssueLink/index.html';"},"data-nsd-label-uuid":"2910e187-69ab-4199-9d52-499c5f674cae","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-08b1112d-6ad5-4928-b1a7-7e88a734fbe7","text":"IssueLink","type":"leaf"},{"a_attr":{"onclick":"window.location='../IssueReference/index.html';"},"data-nsd-label-uuid":"83575e21-53ad-490e-b385-ccb88e81f051","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-4f098f57-a011-40fd-a18c-ff46dd54999b","text":"IssueReference","type":"leaf"},{"a_attr":{"onclick":"window.location='../IssueType/index.html';"},"data-nsd-label-uuid":"9902d699-da02-4b82-b356-b07a6f06db88","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-cb11429d-90c1-4cd5-983c-5e12f1e42ab8","text":"IssueType","type":"leaf"},{"a_attr":{"onclick":"window.location='../Jira/index.html';"},"data-nsd-label-uuid":"b2df8fe7-67bf-4752-a0d3-cbde9d67d71b","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-32471e3a-0d47-4463-8c9e-7360d0aa734f","text":"Jira","type":"leaf"},{"a_attr":{"onclick":"window.location='../NamedEntity/index.html';"},"data-nsd-label-uuid":"63efdf86-48fc-40cf-9959-d80eff319b48","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-8dc06b6a-aa23-48c9-ab63-35dac5550fe8","text":"<i>NamedEntity<\/i>","type":"leaf"},{"a_attr":{"onclick":"window.location='../Operations/index.html';"},"data-nsd-label-uuid":"7b77c884-9e29-4609-9f9c-689c27e53806","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-49dae5a3-ea43-41b2-95b9-d3f1fe95cd0a","text":"Operations","type":"leaf"},{"a_attr":{"onclick":"window.location='../Project/index.html';"},"data-nsd-label-uuid":"44b087db-7fe4-4b78-8a22-fa786fc94636","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-41e3b8fe-cad4-4875-9eb1-2c955ea81753","text":"Project","type":"leaf"},{"a_attr":{"onclick":"window.location='../ProjectReference/index.html';"},"data-nsd-label-uuid":"b3a00f7e-3d71-43f2-ae1c-38c4451807ed","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-e0a9bef9-2f40-4331-9f5d-9101b49510ad","text":"ProjectReference","type":"leaf"},{"a_attr":{"onclick":"window.location='../ProjectRole/index.html';"},"data-nsd-label-uuid":"5d33da14-a9cf-4d8e-b07c-84c5b856790d","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-1491ce7b-d1f7-4b6a-a752-ca344a7df55d","text":"ProjectRole","type":"leaf"},{"a_attr":{"onclick":"window.location='../Resolution/index.html';"},"data-nsd-label-uuid":"9846f178-ca28-434c-af21-030a3c6909d0","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-ff423b51-7ad2-4d7e-8e44-9c7bd2e0ab12","text":"Resolution","type":"leaf"},{"a_attr":{"onclick":"window.location='../RoleActor/index.html';"},"data-nsd-label-uuid":"49c8bfe8-33c6-4dd1-a3c9-a730040f95b3","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-1881afe1-6481-46cf-a537-5006521efd02","text":"RoleActor","type":"leaf"},{"a_attr":{"onclick":"window.location='../Status/index.html';"},"data-nsd-label-uuid":"ffeb545c-2f22-4ae7-be33-f0539a56f399","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-c21420c4-2dfa-4b79-aeb6-54d7a14258ac","text":"Status","type":"leaf"},{"a_attr":{"onclick":"window.location='../StatusCategory/index.html';"},"data-nsd-label-uuid":"9184236e-9889-468f-bc43-b87d28940b6f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-90aff202-0ce6-4e3f-a210-6eec4281f0b0","text":"StatusCategory","type":"leaf"},{"a_attr":{"onclick":"window.location='../Subtask/index.html';"},"data-nsd-label-uuid":"a200997e-3a13-4a67-aa4a-6aff1b726b4e","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-06b4eeb8-56b2-449e-a017-0485ea0a36e4","text":"Subtask","type":"leaf"},{"a_attr":{"onclick":"window.location='../TimeTracking/index.html';"},"data-nsd-label-uuid":"14dcb6c4-b1c5-4ea8-9ae5-93b70a8ab0bb","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-c774bf1b-0e39-405b-981b-a1463100004b","text":"TimeTracking","type":"leaf"},{"a_attr":{"onclick":"window.location='../User/index.html';"},"data-nsd-label-uuid":"a70c9247-d026-49ef-87c9-3f26a7118ee9","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-4ef19cf9-e9e4-4d07-bbf5-1b9c8d1f8907","text":"User","type":"leaf"},{"a_attr":{"onclick":"window.location='../UserReference/index.html';"},"data-nsd-label-uuid":"2ea8cbf7-49b8-4425-a29d-5887871285f8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-75745ca3-dcef-4d77-ab81-15d0876199ba","text":"UserReference","type":"leaf"},{"a_attr":{"onclick":"window.location='../Version/index.html';"},"data-nsd-label-uuid":"974bceda-e8df-47e2-bbc4-142965b1bd3a","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-a7839833-4ecc-425b-9a4e-d3b77d27c648","text":"Version","type":"leaf"},{"a_attr":{"onclick":"window.location='../Visibility/index.html';"},"data-nsd-label-uuid":"303b6bbb-89d0-43fa-adb6-e5b5c8db2df8","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-29c2a29a-20f7-4215-a46f-652d12141752","text":"Visibility","type":"leaf"},{"a_attr":{"onclick":"window.location='../Worklog/index.html';"},"data-nsd-label-uuid":"6b953fec-5ec7-44f8-b005-4a7feb9e94f3","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-b1334008-ad93-445d-a4a3-81c96f4b2a0c","text":"Worklog","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel"}}));
+// Tokens: searchInputSelector, timer, treeSelector
+$('#4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel_searchInput').keyup(function () {
+    if (window['nsd_jstTreeSearchTimer_nsd_iyx']) { 
+		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_iyx']); 
+	}
+    window['nsd_jstTreeSearchTimer_nsd_iyx'] = setTimeout(function () {
+      var v = $('#4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel_searchInput').val();
+      $('#4f8708b4-26b1-4941-a01b-e6e4a119e5c4-navigation-panel').jstree(true).search(v);
+    }, 250);
+  });
+
+});</script>
+        </div>
+        <main data-nsd-label-uuid="86df818e-222c-46c3-9523-c7fbc21c37e0" data-nsd-action-uris="uuid:86df818e-222c-46c3-9523-c7fbc21c37e0" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html" data-nsd-label-uuid="13c9c41c-9b47-43ab-9fcc-8613565dcacd">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Attachment</a>
+                    </li>
+                    <li class="breadcrumb-item"><span data-nsd-label-uuid="898f5e99-e271-42a3-a403-22f3ba399922"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="86df818e-222c-46c3-9523-c7fbc21c37e0">Force Graph 3D</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <H1><span data-nsd-label-uuid="86df818e-222c-46c3-9523-c7fbc21c37e0" class="nsd-app-content-panel-title">Force Graph 3D<a data-toggle="modal" data-target="#nsd_iyy" href="#" title="A live force-layout graph of package classifiers showing detailed relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                </H1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"><div id="force-graph-100" class="row" style="height:70vh;width:100%">
+</div>
+<script type="module">
+	import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+	import SpriteText from "https://cdn.jsdelivr.net/npm/three-spritetext@1.10.0/dist/three-spritetext.mjs";
+
+	        new ForceGraph3D(
+                document.getElementById('force-graph-100'), 
+                {
+                        extraRenderers: [
+                                new CSS2DRenderer()
+                        ]
+                })
+                .graphData({
+          "nodes": [
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 7,
+              "name": "Issue",
+              "id": "Issue@ecore://nasdanika.org/models/jira",
+              "value": [{"externalLink": "../Issue/index.html"}],
+              "group": "ecore://nasdanika.org/models/jira"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif",
+              "name": "EDate",
+              "id": "EDate@http://www.eclipse.org/emf/2002/Ecore",
+              "value": [{"externalLink": "https://ecore.models.nasdanika.org/references/eClassifiers/EDate/index.html"}],
+              "group": "http://www.eclipse.org/emf/2002/Ecore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "AddressableEntity",
+              "id": "AddressableEntity@ecore://nasdanika.org/models/jira",
+              "value": [{"externalLink": "../AddressableEntity/index.html"}],
+              "group": "ecore://nasdanika.org/models/jira"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif",
+              "name": "EInt",
+              "id": "EInt@http://www.eclipse.org/emf/2002/Ecore",
+              "value": [{"externalLink": "https://ecore.models.nasdanika.org/references/eClassifiers/EInt/index.html"}],
+              "group": "http://www.eclipse.org/emf/2002/Ecore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif",
+              "name": "EString",
+              "id": "EString@http://www.eclipse.org/emf/2002/Ecore",
+              "value": [{"externalLink": "https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html"}],
+              "group": "http://www.eclipse.org/emf/2002/Ecore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 4,
+              "name": "BasicUser",
+              "id": "BasicUser@ecore://nasdanika.org/models/jira",
+              "value": [{"externalLink": "../BasicUser/index.html"}],
+              "group": "ecore://nasdanika.org/models/jira"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 6,
+              "name": "Attachment",
+              "id": "Attachment@ecore://nasdanika.org/models/jira",
+              "value": [{"externalLink": ""}],
+              "group": "ecore://nasdanika.org/models/jira"
+            }
+          ],
+          "links": [
+            {
+              "rotation": 0,
+              "source": "Attachment@ecore://nasdanika.org/models/jira",
+              "target": "AddressableEntity@ecore://nasdanika.org/models/jira",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "author",
+              "source": "Attachment@ecore://nasdanika.org/models/jira",
+              "target": "BasicUser@ecore://nasdanika.org/models/jira",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "attachments",
+              "source": "Issue@ecore://nasdanika.org/models/jira",
+              "target": "Attachment@ecore://nasdanika.org/models/jira",
+              "group": "reference",
+              "curvature": 0
+            }
+          ]
+        })
+                .nodeAutoColorBy('group')
+                .nodeVal('size')
+                .linkDirectionalArrowLength(2.5)
+                .linkDirectionalArrowRelPos(1)
+                .linkCurvature('curvature')
+                .linkCurveRotation('rotation')
+                .linkAutoColorBy('group')
+                .onNodeClick((node, event) => {
+       if (node.lastClick) {
+        if (event.timeStamp - node.lastClick < 500) {
+			if (Array.isArray(node.value) && node.value.length > 0) {
+				if (node.value[0].link) {
+					window.open(node.value[0].link, "_self");
+				} else if (node.value[0].externalLink) {
+					window.open(node.value[0].externalLink);
+				}
+			}
+			delete node.lastClick;
+		} else {
+			node.lastClick = event.timeStamp;
+		}
+	} else {
+		node.lastClick = event.timeStamp;
+	}
+   })
+                .nodeThreeObject(node => {
+        const nodeEl = document.createElement('div');
+        nodeEl.textContent = node.name;
+        nodeEl.style.color = node.color;
+        nodeEl.className = 'node-label';
+        return new CSS2DObject(nodeEl);
+      })
+                .nodeThreeObjectExtend(true)
+                .linkThreeObject(link => {
+         // extend link with text sprite
+         if (link.name && !link.curvature) {
+           const sprite = new SpriteText(link.name);
+           sprite.color = 'lightgrey';
+           sprite.textHeight = 1.5;
+           return sprite;
+         }
+       })
+                .linkPositionUpdate((sprite, { start, end }) => {
+		if (sprite) {
+          const pos = Object.assign(...['x', 'y', 'z'].map(c => ({
+            [c]: start[c] + (end[c] - start[c]) / 1.3
+          })));
+
+          // Position sprite
+          Object.assign(sprite.position, pos);
+        }
+       })
+                .linkThreeObjectExtend(true)
+                .onNodeDragEnd(node => {
+          node.fx = node.x;
+          node.fy = node.y;
+          node.fz = node.z;
+        })
+</script>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/jira" data-nsd-label-uuid="13e106ef-a413-440d-86ce-0fb20616478c" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

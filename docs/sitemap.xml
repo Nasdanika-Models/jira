@@ -2,2422 +2,2632 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://jira.models.nasdanika.org/circular-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2025-06-29T11:56:26.435-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.739-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.426-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.729-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/classifiers.html</loc>
-    <lastmod>2025-06-29T11:56:26.396-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.702-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/default-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2025-06-29T11:56:26.434-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.737-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.424-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.728-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.423-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.726-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph-3d-detailed.html</loc>
-    <lastmod>2025-06-29T11:56:26.432-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.736-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph-3d-with-dependencies-and-subpackages-detailed.html</loc>
-    <lastmod>2025-06-29T11:56:26.481-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.746-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph-3d-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2025-06-29T11:56:26.477-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.744-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph-3d.html</loc>
-    <lastmod>2025-06-29T11:56:26.429-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.733-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2025-06-29T11:56:26.437-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.741-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.427-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.731-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/glossary.html</loc>
-    <lastmod>2025-06-29T11:56:26.495-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.756-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.459-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.896-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.467-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.908-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.466-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.905-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.463-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.902-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:33.909-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.469-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.908-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.461-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.899-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Actor/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.462-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.901-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.471-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.912-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.480-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.923-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.479-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.921-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.478-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.921-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:33.927-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.483-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.925-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.470-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.911-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.475-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.917-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AddressableEntity/references/eStructuralFeatures/self/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.474-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.915-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.485-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.928-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.492-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.937-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.491-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.936-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.490-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.933-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:33.940-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.493-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.938-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.484-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.927-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedEntity/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.488-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.930-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.496-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.944-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.504-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.952-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.502-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.951-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.501-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.950-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:33.955-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.505-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.954-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.495-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.942-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.498-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.945-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AdressableNamedIdentifiableEntity/type-parameters.html</loc>
-    <lastmod>2025-06-29T11:56:25.499-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.947-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/AssigneeType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.506-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.957-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.508-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.959-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.531-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.980-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.529-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.978-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.528-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.977-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:33.982-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.532-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.981-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.507-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.958-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.524-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.972-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.533-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.985-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/author/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.522-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.971-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/contentUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.511-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.962-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/creationDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.512-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.963-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/filename/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.514-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.965-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/mimeType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.516-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.967-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/size/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.519-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.968-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references/eStructuralFeatures/thumbnailUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.520-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.969-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Attachment/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.526-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.974-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.535-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.987-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.545-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.544-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.998-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.543-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.996-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.003-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.548-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.001-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.534-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.986-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.539-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.992-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.550-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.004-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicComponent/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.538-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:33.990-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.553-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.007-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.563-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.018-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.562-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.016-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.561-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.015-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.020-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.565-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.019-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.552-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.005-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.558-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.011-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.566-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.022-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicIssue/references/eStructuralFeatures/key/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.557-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.009-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.568-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.025-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.578-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.032-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.574-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.031-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.572-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.030-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.035-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.582-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.033-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.567-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.023-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.570-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.027-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicPriority/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.586-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.036-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.590-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.039-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.604-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.049-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.603-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.048-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.602-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.047-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.052-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.605-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.051-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.588-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.037-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.597-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.043-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.606-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.053-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProject/references/eStructuralFeatures/key/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.596-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.041-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.608-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.055-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.614-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.062-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.612-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.060-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.611-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.060-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.064-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.615-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.063-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.607-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.054-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.610-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.058-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicProjectRole/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.617-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.065-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.620-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.068-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.633-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.080-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.632-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.079-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.631-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.078-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.083-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.634-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.081-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.618-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.067-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.626-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.073-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.635-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.085-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/references/eStructuralFeatures/accountId/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.624-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.070-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicUser/references/eStructuralFeatures/displayName/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.625-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.072-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.638-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.087-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.649-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.097-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.647-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.096-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.645-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.095-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.100-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.651-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.098-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.637-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.086-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.643-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.092-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.653-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.101-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/references/eStructuralFeatures/hasVoted/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.641-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.090-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicVotes/references/eStructuralFeatures/votes/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.642-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.091-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.658-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.103-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.667-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.114-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.666-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.113-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.665-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.112-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.117-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.668-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.115-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.657-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.102-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.662-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.109-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.669-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.118-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/references/eStructuralFeatures/isWatching/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.660-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.107-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/BasicWatchers/references/eStructuralFeatures/numWatchers/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.662-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.108-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.671-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.121-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.685-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.133-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.683-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.132-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.681-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.131-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.136-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.687-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.134-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.670-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.120-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.688-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.137-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/author/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.676-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.125-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/created/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.674-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.123-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/references/eStructuralFeatures/items/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.677-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.127-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogGroup/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.678-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.128-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.692-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.139-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.706-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.152-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.705-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.151-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.704-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.150-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.155-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.707-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.153-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.690-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.138-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.708-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.156-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/custom/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.694-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.142-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/field/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.697-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.143-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/from/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.698-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.144-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/fromString/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.700-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.145-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/to/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.701-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.146-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ChangelogItem/references/eStructuralFeatures/toString/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.702-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.148-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.711-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.159-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.732-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.178-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.731-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.176-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.730-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.175-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.180-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.733-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.179-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.710-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.158-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.734-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.182-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/author/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.723-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.168-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/body/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.713-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.161-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/creationDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.714-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.162-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/id/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.715-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.163-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/self/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.717-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.165-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/updateAuthor/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.724-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.170-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/updateDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.720-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.167-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references/eStructuralFeatures/visibility/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.725-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.171-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Comment/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.726-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.172-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.737-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.185-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.753-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.199-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.751-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.198-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.749-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.197-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.201-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.755-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.200-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.736-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.183-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.746-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.193-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.756-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.203-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references/eStructuralFeatures/assignee/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.744-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.191-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references/eStructuralFeatures/assigneeType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.740-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.188-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references/eStructuralFeatures/isAssigneeTypeValid/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.741-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.189-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references/eStructuralFeatures/realAssignee/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.745-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.192-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references/eStructuralFeatures/realAssigneeType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.742-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.190-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Component/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.747-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.195-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.759-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.206-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.767-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.212-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.766-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.211-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.765-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.210-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.215-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.768-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.213-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.758-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.205-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.762-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.207-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.770-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.216-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ComponentReference/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.763-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.208-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.772-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.219-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.778-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.777-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.224-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.776-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.223-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.227-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.780-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.226-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.771-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.217-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.773-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.220-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Group/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.781-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.228-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.785-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.232-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.796-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.241-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.795-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.240-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.793-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.239-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.244-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.797-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.243-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.784-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.230-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.792-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.237-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/references/eStructuralFeatures/id/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.789-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.234-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IdentifiableEntity/type-parameters.html</loc>
-    <lastmod>2025-06-29T11:56:25.790-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.235-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.801-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.247-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.875-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.312-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.874-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.310-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.873-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.309-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.315-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.877-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.313-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.800-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.246-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.861-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.296-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.878-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.316-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/affectedVersions/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.818-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.261-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/assignee/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.820-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.263-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/attachments/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.823-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.264-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/changelog/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.824-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.266-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/comments/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.825-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.268-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/components/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.828-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.269-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/creationDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.803-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.250-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.804-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.251-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/dueDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.805-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.251-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/expandos/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.807-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.254-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/fixVersions/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.829-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.270-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/issueFields/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.830-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.272-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/issueLinks/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.831-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.273-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/issueType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.833-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.275-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/labels/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.809-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.256-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/operations/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.835-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.276-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/priority/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.836-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.279-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/project/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.838-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.280-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/reporter/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.840-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.282-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/resolution/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.842-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.284-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/status/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.843-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.285-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/subtasks/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.847-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.288-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/summary/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.811-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.256-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/timeTracking/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.850-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.289-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/transitionsUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.812-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.258-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/updateDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.815-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.259-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/votes/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.853-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.292-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/watchers/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.856-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.293-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references/eStructuralFeatures/worklogs/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.859-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.295-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Issue/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.862-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.298-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.881-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.319-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.897-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.331-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.896-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.330-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.895-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.329-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.334-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.898-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.332-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.880-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.318-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.890-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.324-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.899-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.335-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/references/eStructuralFeatures/type/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.886-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.322-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/references/eStructuralFeatures/value/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.888-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.323-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueField/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.890-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.325-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.902-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.338-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.912-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.347-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.910-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.346-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.909-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.345-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.349-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.912-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.348-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.901-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.337-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.914-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.351-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/references/eStructuralFeatures/inbound/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.905-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.340-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/references/eStructuralFeatures/targetIssueKey/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.906-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.341-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueLink/references/eStructuralFeatures/targetIssueUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.907-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.343-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.918-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.353-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.927-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.360-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.925-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.359-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.924-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.358-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.362-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.928-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.361-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.916-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.352-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.921-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.355-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.929-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.363-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueReference/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.922-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.356-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.932-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.366-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.945-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.379-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.944-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.378-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.943-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.377-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.382-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.946-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.380-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.931-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.365-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.938-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.372-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.948-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.383-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.935-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.369-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/references/eStructuralFeatures/iconUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.936-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.370-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/IssueType/references/eStructuralFeatures/isSubtask/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.937-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.371-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.962-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.396-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.961-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.395-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.960-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.394-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.399-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.964-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.398-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.950-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.385-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:25.965-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.400-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/references/eStructuralFeatures/groups/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.955-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.388-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/references/eStructuralFeatures/projects/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.956-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.389-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/references/eStructuralFeatures/users/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.958-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.391-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Jira/references.html</loc>
-    <lastmod>2025-06-29T11:56:25.952-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.386-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.967-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.404-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.975-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.412-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.974-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.411-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.973-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.410-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.415-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.976-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.413-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.967-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.403-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:25.971-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.408-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/NamedEntity/references/eStructuralFeatures/name/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.970-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.406-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.985-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.422-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.983-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.420-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:25.981-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.419-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.424-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:25.986-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.423-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Operations/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.978-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.417-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:25.990-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.427-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.032-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.451-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.030-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.451-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.028-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.449-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.455-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.034-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.453-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.990-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.425-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.020-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.444-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.035-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.456-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/components/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.998-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.433-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.993-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.429-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/expandos/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.994-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.430-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/issues/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.005-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.436-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/issueTypes/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.001-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.434-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/lead/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.008-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.437-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/projectRoles/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.009-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.439-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/roles/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.011-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.440-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/statusCategories/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.014-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.441-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/uri/index.html</loc>
-    <lastmod>2025-06-29T11:56:25.995-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.431-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references/eStructuralFeatures/versions/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.017-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.443-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Project/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.023-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.445-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.040-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.459-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.052-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.466-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.049-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.464-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.047-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.463-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.469-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.054-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.467-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.039-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.458-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.043-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.460-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.056-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.470-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectReference/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.045-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.461-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.063-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.473-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.078-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.483-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.076-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.481-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.074-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.480-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.485-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.080-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.484-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.060-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.472-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.069-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.477-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.082-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.486-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/references/eStructuralFeatures/actors/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.068-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.476-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.066-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.475-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/ProjectRole/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.072-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.479-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.089-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.489-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.103-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.497-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.101-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.496-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.100-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.496-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.500-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.105-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.499-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.086-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.488-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.096-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.492-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.107-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.502-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Resolution/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.094-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.491-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.112-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.505-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.130-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.517-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.128-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.516-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.128-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.515-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.520-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.131-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.518-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.111-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.504-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.125-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.512-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.133-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.521-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/references/eStructuralFeatures/avatarUrl/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.117-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.507-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/references/eStructuralFeatures/displayName/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.120-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.509-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/references/eStructuralFeatures/type/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.123-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.510-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/RoleActor/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.126-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.513-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.136-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.524-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.158-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.537-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.157-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.536-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.154-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.535-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.539-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.160-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.538-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.135-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.523-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.148-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.530-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.161-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.541-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.140-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.526-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/references/eStructuralFeatures/iconUrl/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.143-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.527-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/references/eStructuralFeatures/value/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.145-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.528-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Status/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.149-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.531-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.167-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.544-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.182-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.554-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.179-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.552-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.177-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.551-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.556-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.184-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.555-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.165-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.543-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.174-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.549-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.187-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.557-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/references/eStructuralFeatures/colorName/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.171-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.547-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/StatusCategory/references/eStructuralFeatures/key/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.173-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.548-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.194-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.560-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.219-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.575-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.217-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.574-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.214-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.573-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.578-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.222-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.576-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.192-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.559-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.224-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.579-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references/eStructuralFeatures/issueKey/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.198-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.562-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references/eStructuralFeatures/issueType/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.204-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.566-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references/eStructuralFeatures/issueUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.200-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.563-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references/eStructuralFeatures/status/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.207-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.568-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references/eStructuralFeatures/summary/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.202-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.564-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Subtask/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.209-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.569-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.230-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.582-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.245-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.592-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.243-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.591-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.242-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.590-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.594-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.247-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.593-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.229-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.581-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.248-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.596-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/references/eStructuralFeatures/originalEstimateMinutes/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.235-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.585-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/references/eStructuralFeatures/remainingEstimateMinutes/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.237-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.586-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/TimeTracking/references/eStructuralFeatures/timeSpentMinutes/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.239-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.588-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.254-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.600-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.272-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.615-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.272-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.614-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.270-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.613-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.618-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.274-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.616-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.252-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.598-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.264-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.608-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.276-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.619-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/references/eStructuralFeatures/active/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.257-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.602-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/references/eStructuralFeatures/emailAddress/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.259-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.603-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/references/eStructuralFeatures/groups/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.261-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.606-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/references/eStructuralFeatures/timezone/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.260-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.605-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/User/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.265-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.609-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.282-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.622-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.295-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.628-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.293-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.627-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.291-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.626-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.631-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.297-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.630-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.281-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.621-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.286-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.624-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.299-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.632-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/UserReference/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.288-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.625-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.305-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.636-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.333-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.651-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.331-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.650-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.328-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.649-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.654-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.335-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.653-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.303-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.634-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.323-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.645-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.337-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.656-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/references/eStructuralFeatures/description/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.308-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.638-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/references/eStructuralFeatures/id/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.310-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.639-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/references/eStructuralFeatures/isArchived/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.312-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.640-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/references/eStructuralFeatures/isReleased/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.316-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.642-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Version/references/eStructuralFeatures/releaseDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.319-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.644-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.341-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.659-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.350-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.668-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.348-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.666-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.347-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.664-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.670-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.352-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.669-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.340-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.658-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.354-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.672-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/references/eStructuralFeatures/group/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.344-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.661-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Visibility/references/eStructuralFeatures/value/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.345-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.662-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/attributes.html</loc>
-    <lastmod>2025-06-29T11:56:26.359-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.675-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/circular-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.389-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.696-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/default-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.386-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.694-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/diagram.html</loc>
-    <lastmod>2025-06-29T11:56:26.382-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.693-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/force-layout-graph-3d.html</loc>
+    <lastmod>2025-12-10T17:57:34.698-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/force-layout-graph.html</loc>
-    <lastmod>2025-06-29T11:56:26.392-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.697-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.357-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.674-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/inheritance.html</loc>
-    <lastmod>2025-06-29T11:56:26.377-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.689-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/load-specification.html</loc>
-    <lastmod>2025-06-29T11:56:26.393-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.699-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/author/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.371-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.685-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/comment/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.361-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.677-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/creationDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.362-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.678-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/issueUri/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.363-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.679-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/minutesSpent/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.365-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.681-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/startDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.367-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.683-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/updateAuthor/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.373-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.687-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/updateDate/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.369-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.684-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references/eStructuralFeatures/visibility/index.html</loc>
-    <lastmod>2025-06-29T11:56:26.375-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.688-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/references/eClassifiers/Worklog/references.html</loc>
-    <lastmod>2025-06-29T11:56:26.378-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.690-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://jira.models.nasdanika.org/search.html</loc>
-    <lastmod>2025-06-29T11:56:26.494-04:00</lastmod>
+    <lastmod>2025-12-10T17:57:34.755-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

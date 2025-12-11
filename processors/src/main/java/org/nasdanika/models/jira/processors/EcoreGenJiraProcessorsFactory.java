@@ -217,7 +217,7 @@ public class EcoreGenJiraProcessorsFactory {
 				"""
 	)
 	public EPackageNodeProcessor createEPackageProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
@@ -273,7 +273,7 @@ public class EcoreGenJiraProcessorsFactory {
 		
 //	@EClassifierNodeProcessorFactory
 //	public EClassifierNodeProcessor<?> createEClassifierProcessor(
-//			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+//			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 //			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 //			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 //			ProgressMonitor progressMonitor) {

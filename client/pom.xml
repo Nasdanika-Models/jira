@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nasdanika.models.jira</groupId>
-		<version>2025.10.0</version>
+		<version>2025.12.0</version>
 		<artifactId>parent</artifactId>
 		<relativePath>..</relativePath>
 	</parent>
@@ -66,12 +66,12 @@
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-rest-java-client-api</artifactId>
-            <version>6.0.2</version>
+            <version>7.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-rest-java-client-core</artifactId>
-            <version>6.0.2</version>
+            <version>7.0.1</version>
         </dependency>
         <dependency>
             <groupId>io.atlassian.util.concurrent</groupId>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>com.atlassian.httpclient</groupId>
             <artifactId>atlassian-httpclient-api</artifactId>
-            <version>4.2.1</version>
+            <version>5.0.1</version>
         </dependency>
         <dependency>
             <groupId>io.atlassian.fugue</groupId>
@@ -91,7 +91,7 @@
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-sdk</artifactId>
-            <version>1.54.1</version>
+            <version>1.56.0</version>
         </dependency>
 	</dependencies>
 	    
