@@ -14,7 +14,7 @@ public class JiraEPackageResourceSetCapabilityFactory extends EPackageCapability
 
 	@Override
 	protected URI getDocumentationURI() {
-		return URI.createURI("https://maven.models.nasdanika.org/");
+		return URI.createURI("https://jira.models.nasdanika.org/");
 	}
 
 }
